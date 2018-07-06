@@ -8,11 +8,11 @@ Reptil::Reptil()
 
 
 Reptil::Reptil(int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
-		string dieta, Veterinario vet, Tratador trat, string batismo, bool veneno, string tipo_veneno)
+		string dieta, Veterinario vet, Tratador trat, string batismo, bool veneno, string tipoVeneno)
 :Animal(id, classe, nome, nomeCient, sexo, tamanho, dieta, vet, trat, batismo)
 {
 	a_veneno = veneno;
-	a_tipo_veneno = tipo_veneno;
+	a_tipoVeneno = tipoVeneno;
 }
 
 Reptil::~Reptil()
@@ -33,7 +33,7 @@ void Reptil::impress()
 
 	cout << "Caracterísicas Reptil: " << endl;
 	cout << "Venenoso? " << a_veneno << endl;
-	cout << "Tipo do Veneno: " << a_tipo_veneno << endl;
+	cout << "Tipo do Veneno: " << a_tipoVeneno << endl;
 
 	cout << endl;
 	cout << endl;
