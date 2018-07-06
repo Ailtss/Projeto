@@ -18,7 +18,7 @@ Exotico::~Exotico()
 
 void Exotico::impress()
 {
-	cout << "Ibama: " << a_ibama << endl;
+	cout << "Ibama: " << m_ibama << endl;
 
 	cout << "Características Exotico: " << endl;
 	cout << "Pais de origem: " << m_paisOrigem << endl;

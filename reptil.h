@@ -11,11 +11,11 @@ protected:
 public:
 	Reptil();
 	Reptil(int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
-		string dieta, Veterinario vet, Tratador trat, string batismo, bool veneno, string tipoVeneno);
+		string dieta, Veterinario vet, Tratador trat, string batismo, bool venenoso, string tipoVeneno);
 	~Reptil();
 
 	void impress();
 
-}
+};
 
 #endif

@@ -14,4 +14,6 @@ class Exotico : public AnimalSilvestre
 		~Exotico();
 
 		void impress();
-}
+};
+
+#endif

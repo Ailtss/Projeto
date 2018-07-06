@@ -1,28 +1,28 @@
 #include "animalSilvestre.h"
 
-animalSilvestre::animalSilvestre()
+AnimalSilvestre::AnimalSilvestre()
 {
 
 }
 
-animalSilvestre::animalSilvestre(string ibama)
+AnimalSilvestre::AnimalSilvestre(string ibama)
 {
 	m_ibama = ibama;
 }
 
-animalSilvestre::~animalSilvestre()
+AnimalSilvestre::~AnimalSilvestre()
 {
 
 }
 
 //setters
-void animalSilvestre::setIbama(string ibama)
+void AnimalSilvestre::setIbama(string ibama)
 {
 	m_ibama = ibama;
 }
 
 //getters
-string animalSilvestre::getIbama()
+string AnimalSilvestre::getIbama()
 {
 	return m_ibama;
 }
