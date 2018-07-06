@@ -7,12 +7,12 @@ Animal::Animal()
 
 }
 
-Animal::Animal(int id, string classe, string nome, string nomecient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo)
+Animal::Animal(int id, string classe, string nome, string nomeCient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo)
 {
 	a_id = id;
 	a_classe = classe;
 	a_nome = nome;
-	a_nomecient = nomecient;
+	a_nomeCient = nomeCient;
 	a_sexo = sexo;
 	a_tamanho = tamanho;
 	a_dieta = dieta;
@@ -47,9 +47,9 @@ void Animal::setAnNome(string nome)
 	a_nome = nome;
 }
 
-void Animal::setAnNomeCient(string nomecient)
+void Animal::setAnNomeCient(string nomeCient)
 {
-	a_nomecient = nomecient;
+	a_nomeCient = nomeCient;
 }
 
 void Animal::setAnSexo(char sexo)
@@ -97,7 +97,7 @@ string Animal::getAnNome()
 
 string Animal::getAnNomeCient()
 {
-	return a_nomecient;
+	return a_nomeCient;
 }
 
 char Animal::getAnSexo()
@@ -135,7 +135,7 @@ void Animal::impress()
 	cout << "Animal: " << a_nome << endl;
 	cout << a_id << endl;
 	cout << a_classe << endl;
-	cout << a_nomecient << endl;
+	cout << a_nomeCient << endl;
 	cout << a_sexo << endl;
 	cout << a_tamanho << endl;
 	cout << a_dieta << endl;

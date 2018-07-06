@@ -10,7 +10,7 @@ protected:
 	int a_id;
 	string a_classe;
 	string a_nome;
-	string a_nomecient;
+	string a_nomeCient;
 	char a_sexo;
 	float a_tamanho;
 	string a_dieta;
@@ -20,7 +20,7 @@ protected:
 
 public:
 	Animal();
-	Animal(int id, string classe, string nome, string nomecient, char sexo, float tamanho,
+	Animal(int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
 		string dieta, Veterinario vet, Tratador trat, string batismo);
 	~Animal();
 
@@ -29,7 +29,7 @@ public:
 	void setAnId(int id);
 	void setAnClasse(string classe);
 	void setAnNome(string nome);
-	void setAnNomeCient(string nomecient);
+	void setAnNomeCient(string nomeCient);
 	void setAnSexo(char sexo);
 	void setAnTamanho(float tamanho);
 	void setAnDieta(string dieta);

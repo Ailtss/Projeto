@@ -4,6 +4,8 @@ using namespace std;
 #include "tratador.h"
 #include "animal.h"
 #include "anfibio.h"
+#include "mamifero.h"
+#include "ave.h"
 
 
 int main(int argc, char const *argv[])
@@ -20,7 +22,7 @@ int main(int argc, char const *argv[])
 	cout << endl;
 	cout << endl;
 
-	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, 0, '+', "aves");
+	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, 0, '+', "Aves");
 
 	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, 1, '-', "Répteis");
 
@@ -28,7 +30,7 @@ int main(int argc, char const *argv[])
 
 	//tres.impress();
 
-	Animal teste(15, "Mammalia", "Leão", "Panthera Leo", 'M', 2, "Carne", dois, tres, "Simba");
+	Ave teste(15, "Mammalia", "Leão", "Panthera Leo", 'M', 2, "Carne", dois, tres, "Simba", 10, 15);
 
 	teste.impress();
 
