@@ -10,7 +10,7 @@ class Mamifero : public Animal
 
 	public:
 		Mamifero();
-		Mamifero(int id, string classe, string nome, string nomecient, char sexo, float tamanho,
+		Mamifero(int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
 		string dieta, Veterinario vet, Tratador trat, string batismo, string a_corPelo);
 		~Mamifero();
 
