@@ -6,18 +6,23 @@ using namespace std;
 #include "anfibio.h"
 #include "mamifero.h"
 #include "ave.h"
+#include "reptil.h"
+#include "aveExotica.h"
+#include "avenativo.h"
 
 
 int main(int argc, char const *argv[])
 {
+
+/*
 	cout << "Testando classe Funcionário: " << endl;
 	cout << endl;
 	cout << endl;
-/*
+
 	Funcionario um(13, "Ailton Gabriel","070931384-54", 20, 0, '+');
 
 	um.impress();
-*/
+
 	cout << "Testando classe Veterinário: " << endl;
 	cout << endl;
 	cout << endl;
@@ -34,7 +39,7 @@ int main(int argc, char const *argv[])
 
 	teste.impress();
 
-	
+*/
 
 	return 0;
 }
