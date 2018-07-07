@@ -24,6 +24,11 @@ public:
 	//void CadastrarTrat();
 	void menu();
 	void consultarAnimal(string key);
+	void RemoveFuncionario(int id);
+	void RemoveAnimal(int id);
+
+	void cadastrartTrat(Tratador t);
+	void cadastrarVet(Veterinario v);
 
 
 
