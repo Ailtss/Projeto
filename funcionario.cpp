@@ -6,13 +6,13 @@ Funcionario::Funcionario()
 	m_nome = "";
 	m_cpf = "";
 	m_idade = 0;
-	m_tipo_sanguineo = 0;
+	m_tipo_sanguineo = "";
 	m_fatorRH = 0;
 	m_especialidade = "";
 }
 
 
-Funcionario::Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fatorRH, string especialidade)
+Funcionario::Funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fatorRH, string especialidade)
 {
 	m_id = id;
 	m_nome = nome;
@@ -51,7 +51,7 @@ void Funcionario::setIdade(short idade)
 	m_idade = idade;
 }
 
-void Funcionario::setTipoSanguineo(short tipo_sanguineo)
+void Funcionario::setTipoSanguineo(string tipo_sanguineo)
 {
 	m_tipo_sanguineo = tipo_sanguineo;
 }
@@ -87,7 +87,7 @@ short Funcionario::getIdade()
 	return m_idade;
 }
 
-short Funcionario::getTipoSanguineo()
+string Funcionario::getTipoSanguineo()
 {
 	return m_tipo_sanguineo;
 }

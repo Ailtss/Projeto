@@ -6,7 +6,7 @@ Tratador::Tratador()
 
 }
 
-Tratador::Tratador(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fatorRH, string especialidade)
+Tratador::Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fatorRH, string especialidade)
 :Funcionario(id, nome, cpf, idade, tipo_sanguineo, fatorRH, especialidade) {}
 
 

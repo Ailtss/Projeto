@@ -13,7 +13,7 @@ using namespace std;
 void consultarAnimal(string key)
 {
 
-	if(key == "Mammalia" || key == "Reptilia" || key = "Aves" || key == "Amphibia")
+	if(key == "Mammalia" || key == "Reptilia" || key == "Aves" || key == "Amphibia")
 	{
 		for(auto i = mapaAnimais.begin(); i != mapaAnimais.end(); ++i)
 		{
@@ -43,7 +43,7 @@ void consultarAnimal(string key)
 			}
 		}
 	}
-}
+} 
 
 void RemoveFuncionario(int id)
 {
@@ -212,8 +212,8 @@ void cadastrarVet(Veterinario v)
 int main(int argc, char const *argv[])
 {
 
-	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, 1, '-', "Répteis");
-	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, 0, '+', "Aves");
+	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, "O", '-', "Répteis");
+	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, "A", '+', "Aves");
 
 	cadastrarTrat(tres);
 	cadastrarVet(dois);

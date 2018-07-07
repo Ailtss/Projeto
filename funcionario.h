@@ -13,12 +13,12 @@ protected:
 	string m_nome;
 	string m_cpf;
 	short m_idade;
-	short m_tipo_sanguineo;
+	string m_tipo_sanguineo;
 	char m_fatorRH;
 	string m_especialidade; //Tipo de animal em que o mesmo é especialista;
 public:
 	Funcionario();
-	Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fatorRH, string especialidade);
+	Funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fatorRH, string especialidade);
 	~Funcionario();
 
 	//setters
@@ -26,7 +26,7 @@ public:
 	void setNome(string nome);
 	void setCpf(string cpf);
 	void setIdade(short idade);
-	void setTipoSanguineo(short tipo_sanguineo);
+	void setTipoSanguineo(string tipo_sanguineo);
 	void setFatorRH(char fatorRH);
 	void setEspecialidade(string especialidade);
 
@@ -36,7 +36,7 @@ public:
 	string getNome();
 	string getCpf();
 	short getIdade();
-	short getTipoSanguineo();
+	string getTipoSanguineo();
 	char getFatorRH();
 	string getEspecialidade();
 
