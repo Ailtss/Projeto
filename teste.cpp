@@ -1,28 +1,59 @@
 #include <iostream>
+#include <fstream>
+#include <map>
+#include <memory>
 using namespace std;
-#include "veterinario.h"
-#include "tratador.h"
-#include "animal.h"
 #include "anfibio.h"
 #include "mamifero.h"
-#include "ave.h"
 #include "reptil.h"
-#include "aveExotica.h"
 #include "avenativo.h"
+#include "aveExotica.h"
 
 
 int main(int argc, char const *argv[])
 {
 
-/*
+	map<int, unique_ptr<Animal>> listaAnimais;
+	map<int, unique_ptr<Funcionario>> listaFuncionarios;
+	ifstream animais, funcionarios;
+	animais.open("animais.csv");
+	funcionarios.open("funcionarios.csv");
+	if(animais.bad() || funcionarios.bad())
+	{
+		cerr << "Os arquivos não abriram corretamente!" << endl;
+	}
+
+	while(!animais.eof())
+	{
+		string id,
+		string classe;
+		string nome;
+		string nomeCient;
+		string sexo;
+		string tamanho;
+		string dieta;
+		Veterinario vet;
+		Tratador trat;
+		string batismo;
+		string corPelo;
+		getline(animais, id, ";");
+	}
+
+
+
+
+
+
+
+
 	cout << "Testando classe Funcionário: " << endl;
 	cout << endl;
 	cout << endl;
-
+/*
 	Funcionario um(13, "Ailton Gabriel","070931384-54", 20, 0, '+');
 
 	um.impress();
-
+*/
 	cout << "Testando classe Veterinário: " << endl;
 	cout << endl;
 	cout << endl;
@@ -39,7 +70,8 @@ int main(int argc, char const *argv[])
 
 	teste.impress();
 
-*/
-
+	
+	animais.close();
+	funcionarios.close();
 	return 0;
 }
