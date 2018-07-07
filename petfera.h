@@ -10,14 +10,17 @@
 #include "reptil.h"
 #include "aveNativa.h"
 #include "aveExotica.h"
+#include "tratador.h"
+#include "veterinario.h"
+#include "funcionario.h"
 
 using namespace std;
 
 class PetFera
 {
 private:
-	map<int, unique_ptr<Animal>> mapaAnimais;
-	map<int, unique_ptr<Funcionario>> mapaFuncionarios;
+	map<int, shared_ptr<Animal>> mapaAnimais;
+	map<int, shared_ptr<Funcionario>> mapaFuncionarios;
 
 public:
 	PetFera();

@@ -63,6 +63,13 @@ PetFera::PetFera()
 void PetFera::consultarAnimal(string key)
 {
 
+	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, "O", '+', "Aves");
+
+	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, "AB", '-', "Répteis");
+
+	mapaAnimais.insert(pair<int, shared_ptr<Animal>>(15, make_shared<Mamifero>(15, "Mammalia", "Leão", "Panthera Leo", 'M', 2, "Carne", dois, tres, "Simba", "Dourado")));
+	mapaAnimais.insert(pair<int, shared_ptr<Animal>>(16, make_shared<Mamifero>(16, "Mammalia", "Pantera", "Panthera Leo", 'M', 2, "Carne", dois, tres, "Mustaf", "Preto")));
+	mapaAnimais.insert(pair<int, shared_ptr<Animal>>(01, make_shared<Ave>(01, "Aves", "Águia", "Aquila Adalberti", 'M', 2, "Grãos", dois, tres, "Ícaro", 10, 15)));
 	if(key == "Mammalia" || key == "Reptilia" || key == "Aves" || key == "Amphibia")
 	{
 		for(auto i = mapaAnimais.begin(); i != mapaAnimais.end(); ++i)
