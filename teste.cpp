@@ -73,9 +73,116 @@ void RemoveFuncionario(int id)
 
 }
 
+void RemoveAnimal(int id)
+{
+	ifstream arqLer("animais.csv");
+
+	if(arqLer.bad())
+	{
+		cerr << "Arquivo Animal não foi aberto corretamente" << endl;
+	}
+
+	else
+	{
+		int contLinha = 0;
+		vector<string> s_vetor;
+		string linha;
+		string s;
+		string aux = "";
+		int valor = 0;
+
+		while(getline(arqLer, linha))
+		{
+			s_vetor.push_back(linha);
+
+		}
+
+		arqLer.close();
+
+		ifstream file("animais.csv");
+
+		while(getline(file, linha))
+		{
+			getline(file, s, ';');
+			contLinha++;
+			aux = s;
+			valor = stoi(s);
+			if(valor == id)
+			{
+				break;
+			}
+			
+		}
+
+		file.close();
+
+		ofstream arqWrite("animais.csv");
+
+
+
+		s_vetor.erase(s_vetor.begin()+contLinha);
+
+
+		for(unsigned int i = 0; i < s_vetor.size(); i++)
+		{
+			arqWrite << s_vetor[i] << endl;
+		}
+
+
+		arqWrite.close();
+
+	}
+
+
+}
+
+
+void cadastrarTrat(Tratador t)
+{
+	ofstream arqWrite("funcionarios.csv", std::ios_base::app);
+
+	if(arqWrite.bad())
+	{
+		cerr << "Arquivo funcionários não foi aberto corretamente" << endl;
+	}
+
+	else
+	{
+		arqWrite << t.getId() << ";" << "Tratador;" << t.getNome() << ";" << t.getCpf()
+		 << ";" << t.getIdade() << ";" << t.getTipoSanguineo() << ";" << t.getFatorRH() << ";" << t.getEspecialidade() << endl;
+	}
+
+	arqWrite.close();
+}
+
+void cadastrarVet(Veterinario v)
+{
+	ofstream arqWrite("funcionarios.csv", std::ios_base::app);
+
+	if(arqWrite.bad())
+	{
+		cerr << "Arquivo funcionários não foi aberto corretamente" << endl;
+	}
+
+	else
+	{
+		arqWrite << v.getId() << ";" << "Veterinário;" << v.getNome() << ";" << v.getCpf()
+		 << ";" << v.getIdade() << ";" << v.getTipoSanguineo() << ";" << v.getFatorRH() << ";" << v.getEspecialidade() << endl;
+	}
+
+	arqWrite.close();
+}
+
 
 int main(int argc, char const *argv[])
 {
+
+	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, 1, '-', "Répteis");
+	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, 0, '+', "Aves");
+
+	cadastrarTrat(tres);
+	cadastrarVet(dois);
+
 /*
 	map<int, unique_ptr<Animal>> mapaAnimais;
 	map<int, unique_ptr<Funcionario>> mapaFuncionarios;
@@ -126,7 +233,6 @@ int main(int argc, char const *argv[])
 	}
 	*/
 
-	RemoveFuncionario(7);
 
 
 
