@@ -2,6 +2,7 @@
 #include <fstream>
 #include <map>
 #include <memory>
+#include <vector>
 using namespace std;
 #include "anfibio.h"
 #include "mamifero.h"
@@ -9,12 +10,75 @@ using namespace std;
 #include "aveNativa.h"
 #include "aveExotica.h"
 
+void RemoveFuncionario(int id)
+{
+	ifstream arqLer("funcionarios.csv");
+
+	if(arqLer.bad())
+	{
+		cerr << "Arquivo funcionário não foi aberto corretamente" << endl;
+	}
+
+	else
+	{
+		int contLinha = 0;
+		vector<string> s_vetor;
+		string linha;
+		string s;
+		string aux = "";
+		int valor = 0;
+
+		while(getline(arqLer, linha))
+		{
+			s_vetor.push_back(linha);
+
+		}
+
+		arqLer.close();
+
+		ifstream file("funcionarios.csv");
+
+		while(getline(file, linha))
+		{
+			getline(file, s, ';');
+			contLinha++;
+			aux = s;
+			valor = stoi(s);
+			if(valor == id)
+			{
+				break;
+			}
+			
+		}
+
+		file.close();
+
+		ofstream arqWrite("funcionarios.csv");
+
+
+
+		s_vetor.erase(s_vetor.begin()+contLinha);
+
+
+		for(unsigned int i = 0; i < s_vetor.size(); i++)
+		{
+			arqWrite << s_vetor[i] << endl;
+		}
+
+
+		arqWrite.close();
+
+	}
+
+
+}
+
 
 int main(int argc, char const *argv[])
 {
-
-	map<int, unique_ptr<Animal>> listaAnimais;
-	map<int, unique_ptr<Funcionario>> listaFuncionarios;
+/*
+	map<int, unique_ptr<Animal>> mapaAnimais;
+	map<int, unique_ptr<Funcionario>> mapaFuncionarios;
 	ifstream animais, funcionarios;
 	animais.open("animais.csv");
 	funcionarios.open("funcionarios.csv");
@@ -36,6 +100,7 @@ int main(int argc, char const *argv[])
 		const char *c_tipo_sanguineo;
 		const char *c_fatorRH;
 
+
 	while(!funcionarios.eof())
 	{
 		
@@ -54,26 +119,20 @@ int main(int argc, char const *argv[])
 		c_fatorRH = fatorRH.c_str();
 	}
 
-	cout << _id << endl;
-	cout << tipo << endl;
-	cout << nome << endl;
-	cout << cpf << endl;
-	cout << _idade << endl;
-	cout << c_tipo_sanguineo << endl;
-	cout << c_fatorRH << endl;
-	cout << especialidade << endl;
-
-	/*if(tipo == "Tratador")
+	if(tipo == "Tratador")
 	{
-		Tratador um(_id, nome, cpf, _idade, c_tipo_sanguineo, c_fatorRH, especialidade);
+		Tratador um(_id, nome, cpf, _idade, *c_tipo_sanguineo, *c_fatorRH, especialidade);
 		um.impress();
 	}
-/*
-	while(!animais.eof())
-	{
-		Veterinario dois(13, "Figueira Dantas","070931384-54", 20, 0, '+', "Aves");
+	*/
 
-		Tratador tres(26, "Ramos da Silva", "070931384-54", 22, 1, '-', "Répteis");
+	RemoveFuncionario(7);
+
+
+
+/*	while(!animais.eof())
+	{
+	
 		string id;
 		string classe;
 		string nome;
@@ -85,6 +144,7 @@ int main(int argc, char const *argv[])
 		string trat;
 		string batismo;
 		string corPelo;
+
 		getline(animais, id, ';');
 		getline(animais, classe, ';');
 		getline(animais, nome, ';');
@@ -100,8 +160,8 @@ int main(int argc, char const *argv[])
 		float _tamanho = atof(tamanho.c_str());
 		const char *_sexo = sexo.c_str();
 	}
-
 */
+
 
 
 
@@ -135,7 +195,7 @@ int main(int argc, char const *argv[])
 	teste.impress();
 */
 	
-	animais.close();
-	funcionarios.close();
+	//animais.close();
+	//funcionarios.close();
 	return 0;
 }
