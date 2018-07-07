@@ -23,6 +23,52 @@ int main(int argc, char const *argv[])
 		cerr << "Os arquivos não abriram corretamente!" << endl;
 	}
 
+		string id;
+		string tipo;
+		string nome;
+		string cpf;
+		string idade;
+		string tipo_sanguineo;
+		string fatorRH;
+		string especialidade;
+		int _id;
+		short _idade;
+		const char *c_tipo_sanguineo;
+		const char *c_fatorRH;
+
+	while(!funcionarios.eof())
+	{
+		
+
+		getline(funcionarios, id, ';');
+		getline(funcionarios, tipo, ';');
+		getline(funcionarios, nome, ';');
+		getline(funcionarios, cpf, ';');
+		getline(funcionarios, idade, ';');
+		getline(funcionarios, tipo_sanguineo, ';');
+		getline(funcionarios, fatorRH, ';');
+		getline(funcionarios, especialidade, ';');
+		int _id = atoi(id.c_str());
+		short _idade = atoi(idade.c_str());
+		const char *c_tipo_sanguineo = tipo_sanguineo.c_str();
+		const char *c_fatorRH = fatorRH.c_str();
+	}
+
+	cout << id << endl;
+	cout << tipo << endl;
+	cout << nome << endl;
+	cout << cpf << endl;
+	cout << idade << endl;
+	cout << tipo_sanguineo << endl;
+	cout << fatorRH << endl;
+	cout << especialidade << endl;
+
+	if(tipo == "Tratador")
+	{
+		Tratador um(_id, nome, cpf, _idade, c_tipo_sanguineo, c_fatorRH, especialidade);
+		um.impress();
+	}
+/*
 	while(!animais.eof())
 	{
 		Veterinario dois(13, "Figueira Dantas","070931384-54", 20, 0, '+', "Aves");
@@ -50,10 +96,12 @@ int main(int argc, char const *argv[])
 		getline(animais, trat, ';');
 		getline(animais, batismo, ';');
 		getline(animais, corPelo, ';');
-		short _id = atoi(id.c_str());
-		short _tamanho = atof(tamanho.c_str());
+		int _id = atoi(id.c_str());
+		float _tamanho = atof(tamanho.c_str());
 		const char *_sexo = sexo.c_str();
 	}
+
+*/
 
 
 
@@ -69,7 +117,7 @@ int main(int argc, char const *argv[])
 	Funcionario um(13, "Ailton Gabriel","070931384-54", 20, 0, '+');
 
 	um.impress();
-*/
+
 	cout << "Testando classe Veterinário: " << endl;
 	cout << endl;
 	cout << endl;
@@ -85,7 +133,7 @@ int main(int argc, char const *argv[])
 	Ave teste(15, "Mammalia", "Leão", "Panthera Leo", 'M', 2, "Carne", dois, tres, "Simba", 10, 15);
 
 	teste.impress();
-
+*/
 	
 	animais.close();
 	funcionarios.close();
