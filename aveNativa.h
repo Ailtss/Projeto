@@ -6,6 +6,7 @@
 
 class AveNativa : public Nativo, public Ave
 {
+public:
 	AveNativa();
 	AveNativa(string ibama, string uf_origem, string autorizacao,
 		int id, string classe, string nome, string nomeCient, char sexo, float tamanho,

@@ -14,5 +14,4 @@ int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
 AveNativa::~AveNativa()
 {
 
-} 
-
+}
