@@ -14,6 +14,11 @@ private:
 	map<int, unique_ptr<Animal>> mapaAnimais;
 	map<int, unique_ptr<Funcionario>> mapaFuncionarios;
 
+public:
+
+	void CadastrarTrat(int id);
+
+
 
 };
 

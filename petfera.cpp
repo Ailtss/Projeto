@@ -5,7 +5,7 @@ PetFera::PetFera()
 }
 
 
-void PetFera::CadastrarTrat(Tratador t)
+void PetFera::CadastrarTrat()
 {
 	ofstream arqWrite("funcionarios.csv", std::ios_base::app);
 
