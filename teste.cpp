@@ -48,22 +48,22 @@ int main(int argc, char const *argv[])
 		getline(funcionarios, tipo_sanguineo, ';');
 		getline(funcionarios, fatorRH, ';');
 		getline(funcionarios, especialidade, ';');
-		int _id = atoi(id.c_str());
-		short _idade = atoi(idade.c_str());
-		const char *c_tipo_sanguineo = tipo_sanguineo.c_str();
-		const char *c_fatorRH = fatorRH.c_str();
+		_id = atoi(id.c_str());
+		_idade = stoi(idade);
+		c_tipo_sanguineo = tipo_sanguineo.c_str();
+		c_fatorRH = fatorRH.c_str();
 	}
 
-	cout << id << endl;
+	cout << _id << endl;
 	cout << tipo << endl;
 	cout << nome << endl;
 	cout << cpf << endl;
-	cout << idade << endl;
-	cout << tipo_sanguineo << endl;
-	cout << fatorRH << endl;
+	cout << _idade << endl;
+	cout << c_tipo_sanguineo << endl;
+	cout << c_fatorRH << endl;
 	cout << especialidade << endl;
 
-	if(tipo == "Tratador")
+	/*if(tipo == "Tratador")
 	{
 		Tratador um(_id, nome, cpf, _idade, c_tipo_sanguineo, c_fatorRH, especialidade);
 		um.impress();
