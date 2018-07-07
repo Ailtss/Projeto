@@ -10,6 +10,41 @@ using namespace std;
 #include "aveNativa.h"
 #include "aveExotica.h"
 
+void consultarAnimal(string key)
+{
+
+	if(key == "Mammalia" || key == "Reptilia" || key = "Aves" || key == "Amphibia")
+	{
+		for(auto i = mapaAnimais.begin(); i != mapaAnimais.end(); ++i)
+		{
+			if(i->second.get()->getAnClasse() == key)
+			{
+				cout << i->first << " =v " << endl;
+				i->second.get()->impress();
+			}
+			else
+			{
+				cout << "Animal(is) não encontrado(s)..." << endl;
+			}
+		}
+	}
+	else
+	{
+		for(auto i = mapaAnimais.begin(); i != mapaAnimais.end(); ++i)
+		{
+			if(i->second.get()->getAnBatismo() == key)
+			{
+				cout << "Id: " << i->first << " =v " << endl;
+				i->second.get()->impress();
+			}
+			else
+			{
+				cout << "Animal não encontrado..." << endl;
+			}
+		}
+	}
+}
+
 void RemoveFuncionario(int id)
 {
 	ifstream arqLer("funcionarios.csv");
