@@ -1,5 +1,5 @@
 # Projeto Final LP1 - PetFera
-# Autores: Ailton e Felipe
+Autores: Ailton e Felipe
 
 Pet Fera é uma loja que comercializa animais silvestres com os devidos cuidados e autorizações do
 Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis (IBAMA). Para garantir
