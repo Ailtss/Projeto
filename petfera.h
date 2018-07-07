@@ -21,7 +21,9 @@ private:
 
 public:
 	PetFera();
-	void CadastrarTrat();
+	//void CadastrarTrat();
+	void menu();
+	void consultarAnimal(string key);
 
 
 

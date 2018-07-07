@@ -6,7 +6,7 @@ PetFera::PetFera()
 }
 
 
-void PetFera::CadastrarTrat()
+/*void PetFera::CadastrarTrat()
 {
 	Tratador t;
 	int ID;
@@ -58,4 +58,113 @@ void PetFera::CadastrarTrat()
 	}
 
 	arqWrite.close();
+}*/
+
+void PetFera::consultarAnimal(string key)
+{
+
+	if(key == "Mammalia" || key == "Reptilia" || key == "Aves" || key == "Amphibia")
+	{
+		for(auto i = mapaAnimais.begin(); i != mapaAnimais.end(); ++i)
+		{
+			if(i->second.get()->getAnClasse() == key)
+			{
+				cout << i->first << " =v " << endl;
+				i->second.get()->impress();
+			}
+			else
+			{
+				cout << "Animal(is) não encontrado(s)..." << endl;
+			}
+		}
+	}
+	else
+	{
+		for(auto i = mapaAnimais.begin(); i != mapaAnimais.end(); ++i)
+		{
+			if(i->second.get()->getAnBatismo() == key)
+			{
+				cout << "Id: " << i->first << " =v " << endl;
+				i->second.get()->impress();
+			}
+			else
+			{
+				cout << "Animal não encontrado..." << endl;
+			}
+		}
+	}
+}
+
+void PetFera::menu()
+{
+	int id = 0;
+	bool sair = false;
+	while(sair == false)
+	{
+		int input;
+		cout << "Bem-vindo ao PetFera." << endl;
+		cout << endl;
+		cout << "(1) Cadastro de animais" << endl;
+		cout << "(2) Remoção de animal" << endl;
+		cout << "(3) Alteração de dados de um animal" << endl;
+		cout << "(4) Consulta de animal por nome ou classe" << endl;
+		cout << "(5) Consulta de animal por veterinário ou tratador" << endl;
+		cout << "(6) Cadastro de tratador" << endl;
+		cout << "(7) Cadastro de veterinário" << endl;
+		cout << "(0) Sair" << endl;
+		cout << endl;
+		cout << "Opção escolhida: ";
+		cin >> input;
+		switch(input)
+		{
+			case 0:
+			{
+				sair = true;
+				break;
+			}
+			case 1:
+			{
+				//CadastrarAnimal();
+				break;
+			}
+			case 2:
+			{
+				cout << "Digite o ID do animal a ser removido: ";
+				cin >> id;
+				//RemoverAnimal(id);
+				break;
+			}
+			case 3:
+			{
+				cout << "Digite o ID do animal a ser alterado: ";
+				cin >> id;
+				//AlteracaoCadastro();
+				break;
+			}
+			case 4:
+			{
+				string key;
+				cout << "Digite o nome ou a classe do animal a ser consultado: ";
+				cin >> key;
+				this->consultarAnimal(key);
+				break;
+			}
+			case 5:
+			{
+				//consultaPorFuncionario();
+				break;
+			}
+			case 6:
+			{
+				//CadastrarTrat();
+				break;
+			}
+			case 7:
+			{
+				//CadastrarVet();
+				break;
+			}
+
+		}
+	}
 }

@@ -47,7 +47,7 @@ using namespace std;
 } 
 */
 
-void RemoveFuncionario(int id)
+/*void RemoveFuncionario(int id)
 {
 	ifstream arqLer("funcionarios.csv");
 
@@ -208,7 +208,7 @@ void cadastrarVet(Veterinario v)
 	}
 
 	arqWrite.close();
-}
+}*/
 
 
 int main(int argc, char const *argv[])
@@ -222,7 +222,7 @@ int main(int argc, char const *argv[])
 
 	PetFera p;
 
-	p.CadastrarTrat();
+	p.menu();
 
 
 
