@@ -9,8 +9,9 @@ using namespace std;
 #include "reptil.h"
 #include "aveNativa.h"
 #include "aveExotica.h"
+#include "petfera.h"
 
-void consultarAnimal(string key)
+/*void consultarAnimal(string key)
 {
 
 	if(key == "Mammalia" || key == "Reptilia" || key == "Aves" || key == "Amphibia")
@@ -44,6 +45,7 @@ void consultarAnimal(string key)
 		}
 	}
 } 
+*/
 
 void RemoveFuncionario(int id)
 {
@@ -215,8 +217,14 @@ int main(int argc, char const *argv[])
 	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, "O", '-', "Répteis");
 	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, "A", '+', "Aves");
 
-	cadastrarTrat(tres);
-	cadastrarVet(dois);
+	//cadastrarTrat(tres);
+	//cadastrarVet(dois);
+
+	PetFera p;
+
+	p.CadastrarTrat();
+
+
 
 /*
 	map<int, unique_ptr<Animal>> mapaAnimais;

@@ -5,6 +5,11 @@
 #include <map>
 #include <memory>
 #include <vector>
+#include "anfibio.h"
+#include "mamifero.h"
+#include "reptil.h"
+#include "aveNativa.h"
+#include "aveExotica.h"
 
 using namespace std;
 
@@ -15,8 +20,8 @@ private:
 	map<int, unique_ptr<Funcionario>> mapaFuncionarios;
 
 public:
-
-	void CadastrarTrat(int id);
+	PetFera();
+	void CadastrarTrat();
 
 
 
