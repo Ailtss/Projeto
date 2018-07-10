@@ -9,9 +9,9 @@ class MamiferoNativo : public Nativo, public Mamifero
 
 public:
 	MamiferoNativo();
-	MamiferoNativo(string ibama, string uf_origem, string autorizacao,
-		int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
-		string dieta, Veterinario vet, Tratador trat, string batismo, string corPelo);
+	MamiferoNativo(int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
+		string dieta, Veterinario vet, Tratador trat, string batismo, string corPelo,
+		string ibama, string uf_origem, string autorizacao);
 	~MamiferoNativo();
 
 };

@@ -21,8 +21,6 @@ public:
 	//getters
 	string getIbama();
 
-	virtual void impress() = 0;
-
 };
 
 #endif
