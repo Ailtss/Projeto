@@ -28,6 +28,9 @@ protected:
 	map<int, shared_ptr<Tratador>> mapaTratadores;
 public:
 	PetFera();
+	void clearScreen();
+	void cadastrarAnimalNativo();
+	void cadastrarAnimalExotico();
 	void init();
 
 };

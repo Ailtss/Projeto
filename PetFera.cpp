@@ -5,6 +5,141 @@ PetFera::PetFera()
 
 }
 
+void PetFera::clearScreen()
+{
+	cout << "\033[2J\033[1;1H";
+}
+
+void PetFera::cadastrarAnimalNativo()
+{
+	vector<string> dados;
+	string aux;
+	int id;
+	int valor;
+	cout << "Informe o ID do animal: " << endl;
+	getline(cin, aux);
+	id = stoi(aux);
+	cin.ignore();
+	dados.push_back(aux);
+
+	cout << "Digite um número que indique a classe do Animal: " << endl;
+	cout << "(1)Mammalia" << " " << "(2)Amphibia" << " " << "(3)Reptilia" << " " << "(4)Aves" << endl;
+	getline(cin, aux);
+	valor = stoi(aux);
+	cin.ignore();
+
+	if(valor == 1)
+	{
+		dados.push_back("Mammalia");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe a cor do pelo do animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+ 		clearScreen();
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe a UF de origem do animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux);
+		clearScreen();
+
+		cout << "Informe a Autorização do animal: " << endl;
+		getline(cin, aux);
+		cin.ignore();
+		dados.push_back(aux); 
+		clearScreen();
+
+		shared_ptr<Animal> m = make_shared<MamiferoNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], dados[10], dados[11], dados[12], dados[13]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+
+	}
+
+	else if(valor == 2)
+	{
+		dados.push_back("Amphibia");
+
+	}
+
+	else if(valor == 3)
+	{
+		dados.push_back("Reptilia");
+	}
+
+	else
+	{
+		dados.push_back("Aves");
+	}
+
+	
+
+
+}
+
+void cadastrarAnimalExotico()
+{
+
+}
+
 void PetFera::init()
 {
 	ifstream Funcionarios("data/funcionarios.csv");
@@ -122,7 +257,7 @@ void PetFera::init()
 				{
 					int aux = stoi(dadosLinha[0]);
 					bool venenoso = false;
-					if(dadosLinha[13] == "true")
+					if(dadosLinha[10] == "true")
 					{
 						venenoso = true;
 					}
@@ -134,7 +269,7 @@ void PetFera::init()
 				{
 					int aux = stoi(dadosLinha[0]);
 					bool venenoso = false;
-					if(dadosLinha[11] == "true")
+					if(dadosLinha[10] == "true")
 					{
 						venenoso = true;
 					}
