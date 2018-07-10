@@ -24,7 +24,8 @@ class PetFera
 {
 protected:
 	map<int, shared_ptr<Animal>> mapaAnimais;
-	map<int, shared_ptr<Funcionario>> mapaFuncionarios;
+	map<int, shared_ptr<Veterinario>> mapaVeterinarios;
+	map<int, shared_ptr<Tratador>> mapaTratadores;
 public:
 	PetFera();
 	void init();
