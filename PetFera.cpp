@@ -105,9 +105,73 @@ void PetFera::init()
 			dadosLinha.clear();
 		}
 	}
+
+	else
+	{
+		ceer << "Arquivo de Animais não foi aberto corretamente!" << end;
+	}
+
 	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
 	{
     	cout << it->first << " " << it->second << endl;
 	}
-	ifstream mapaFuncionarios("data/funcionarios.csv");
+
+	Animais.close();
+	
+
+
+	ifstream Funcionarios("data/funcionarios.csv");
+
+	if(!Funcionarios.bad())
+	{
+		while(!Funcionarios.eof())
+		{
+			string linhas;
+			string dados;
+			getline(Funcionarios, linhas, '\n');
+			istringstream linha(linhas);
+
+			while(getline(linha, dado, ';'))
+			{
+				dadosLinha.push_back(dado);
+			}
+
+			cout << linha.str() << endl;
+			
+			if(dadosLinha[1] == "Tratador")
+			{
+
+				int aux = stoi(dadosLinha[0]);
+
+				shared_ptr<Funcionario> f = make_shared<Tratador>(aux, dadosLinha[2], dadosLinha[3], (Transformar string to shortt), dadosLinha[5], *(dadosLinha[6].c_str()), dadosLinha[7]);
+				this->mapaFuncionarios.insert(pair<int, shared_ptr<Funcionario>>(aux, f));
+			}
+
+			else
+			{
+				int aux = stoi<dadosLinha[0];
+
+				shared_ptr<Funcionario> f = make_shared<Veterinario>(aux, dadosLinha[2], dadosLinha[3], (Transformar string to shortt), dadosLinha[5], *(dadosLinha[6].c_str()), dadosLinha[7]);
+				this->mapaFuncionarios.insert(pair<int, shared_ptr<Funcionario>>(aux, f));
+			}
+
+			dadosLinha.clear();
+		}
+	}
+
+	else
+	{
+		ceer << "Arquivo de Funcionários não foi aberto corretamente!" << endl;
+	}
+
+	for(auto it = this->mapaFuncionarios.begin(); it != this->mapaFuncionarios.end(); ++it)
+	{
+    	cout << it->first << " " << it->second << endl;
+	}
+
+	Funcionarios.close();
+
+
+
+
 }
