@@ -17,6 +17,8 @@ public:
 
 	void impress();
 
+	ostream& print(ostream &o);
+
 };
 
 

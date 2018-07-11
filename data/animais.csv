@@ -1,4 +1,5 @@
-1;Mammalia;Leão;Panthera leo;M;2;Carne;13;14;Simba;Dourado;asd;asd;asd
-2;Aves;Aguia;Aguia;F;5;Graos;15;14;Katya;12;15;asd;asd
-3;Reptilia;Lagarto;Lagarto leo;M;7;Mosca;17;16;Lange;true;mortal;ads;asd
-4;Amphibia;Sapo;Anura;F;8;Mosca;15;16;Mattel;15;asd;asd;asd;asd
+1;Mammalia;Leão;Panthera leo;M;2;Carne13;14;Simba;Dourado;asd;asd;asd
+2;Aves;Aguia;Aguia;F;5;Graos15;14;Katya;12;15;asd;asd; 
+4;Amphibia;Sapo;Anura;F;8;Mosca15;16;Mattel;15;asd;asd;asd;asd
+5;Mammalia;Tigre;Panthera Tigre;M;2;Carne15;16;Max Steel;Laranja;asd;Austrália;sad
+6;Reptilia;Iguana;Panthera Iguana;M;1;Insetos13;14;Lerroy Jenkins;1;mortal;asd;Austrália

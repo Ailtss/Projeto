@@ -4,15 +4,12 @@
 #include <memory>
 #include <vector>
 using namespace std;
-#include "anfibioExotico.h"
-#include "anfibioNativo.h"
-#include "mamiferoExotico.h"
-#include "mamiferoNativo.h"
-#include "reptilExotico.h"
-#include "reptilNativo.h"
+#include "anfibio.h"
+#include "mamifero.h"
+#include "reptil.h"
 #include "aveNativa.h"
 #include "aveExotica.h"
-#include "PetFera.h"
+#include "petfera.h"
 
 /*void consultarAnimal(string key)
 {
@@ -216,23 +213,17 @@ void cadastrarVet(Veterinario v)
 
 int main(int argc, char const *argv[])
 {
-	
+
+	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, "O", '-', "Répteis");
+	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, "A", '+', "Aves");
+
+	//cadastrarTrat(tres);
+	//cadastrarVet(dois);
+
 	PetFera p;
 
-	p.init();
-	p.cadastrarAnimalNativo();
-	p.cadastrarAnimalExotico();
-	p.removerAnimal();
-	p.endAnimais();
+	p.menu();
 
-	/*Veterinario um(13,"Figueira Dantas", "070931384-54", 20,"A",'+', "Aves");
-	Tratador dois(16, "Ramos da Silva", "070931384-54", 22, "O", '-', "Répteis");
-	MamiferoNativo teste(2,"Mammalia", "Leão", "Panthera Leo", 'M', 2.0,
-		"Carne", um, dois, "Simba", "Dourado",
-		"asd", "Austrália", "sda");
-
-	cout << teste << endl;
-	*/
 
 
 /*

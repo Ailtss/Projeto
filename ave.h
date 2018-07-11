@@ -17,6 +17,8 @@ class Ave : public Animal
 
 		void impress();
 
+		ostream& print(ostream &o);
+
 };
 
 #endif

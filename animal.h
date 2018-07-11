@@ -52,6 +52,9 @@ public:
 
 	void impress();
 
+	friend ostream& operator<< (ostream &o, Animal &a); 
+	virtual ostream& print(ostream&) = 0;
+
 
 
 };

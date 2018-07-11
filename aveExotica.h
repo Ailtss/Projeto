@@ -11,6 +11,8 @@ class AveExotica : public Ave, public Exotico
 		AveExotica(int id, string classe, string nome, string nomeCient, char sexo, float tamanho,
 	string dieta, Veterinario vet, Tratador trat, string batismo, int tamanhoBico, int envergadura, string ibama, string paisOrigem);
 		~AveExotica();
+
+		ostream& print(ostream &o);
 };
 
 #endif

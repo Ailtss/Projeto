@@ -43,3 +43,10 @@ void Ave::impress()
 	
 	a_trat.impress();
 }
+
+ostream& Ave::print(ostream &o)
+{
+	o << a_id << ";" << a_classe << ";" << a_nome << ";" << a_nomeCient << ";" << a_sexo << ";" << a_tamanho << ";" << a_dieta << a_vet.getId() << ";" << a_trat.getId() << ";" << a_batismo << ";"
+	<< a_tamanhoBico << ";" << a_envergadura;
+	return o;
+}

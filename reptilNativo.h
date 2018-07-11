@@ -13,6 +13,7 @@ public:
 		string dieta, Veterinario vet, Tratador trat, string batismo, bool venenoso, string tipoVeneno,
 		string ibama, string uf_origem, string autorizacao);
 	~ReptilNativo();
+	ostream& print(ostream &o);
 
 };
 

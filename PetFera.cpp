@@ -169,9 +169,13 @@ void PetFera::init()
 		cerr << "Arquivo de Animais não foi aberto corretamente!" << endl;
 	}
 
+	shared_ptr<Animal> print;
+
 	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
 	{
-    	cout << it->first << " " << it->second << endl;
+		print = it->second;
+    	cout << it->first << endl;
+    	cout << *print << endl;
 	}
 
 	Animais.close();
@@ -184,6 +188,7 @@ void PetFera::clearScreen()
 
 void PetFera::cadastrarAnimalNativo()
 {
+	shared_ptr<Animal> print;
 	vector<string> dados;
 	string aux;
 	int id;
@@ -204,22 +209,27 @@ void PetFera::cadastrarAnimalNativo()
 
 		cout << "Informe o nome do Animal: " << endl;
 		getline(cin, aux);
+		cout << "Nome do Animal: " << aux << endl;
 		dados.push_back(aux);
 
 		cout << "Informe o nome científico:  " << endl;
 		getline(cin, aux);
+		cout << "Nome Científico do Animal: " << aux << endl;
 		dados.push_back(aux);
 
 		cout << "Informe o sexo do animal(M/F): " << endl;
 		getline(cin, aux);
+		cout << "Sexo do animal: " << aux << endl;
 		dados.push_back(aux);
 
 		cout << "Informe o tamanho do animal: " << endl;
 		getline(cin, aux);
+		cout << "Tamanho do animal: " << aux << endl;
 		dados.push_back(aux);
 
 		cout << "Informe a dieta do animal: " << endl;
 		getline(cin, aux);
+		cout << "Dieta do Animal: " << aux << endl;
 		dados.push_back(aux);
 
 		cout << "Informe o ID do Veterinário do animal: " << endl;
@@ -236,6 +246,7 @@ void PetFera::cadastrarAnimalNativo()
 
 		cout << "Informe o nome de batismo do animal: " << endl;
 		getline(cin, aux);
+		cout << "Nome de bastismo do animal: " << aux << endl;
 		dados.push_back(aux);
 
 		cout << "Informe a cor do pelo do animal: " << endl;
@@ -466,12 +477,14 @@ void PetFera::cadastrarAnimalNativo()
 
 	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
 	{
-    	cout << it->first << " " << it->second << endl;
+		print = it->second;
+    	cout << it->first << " " << *print << endl;
 	}
 }
 
 void PetFera::cadastrarAnimalExotico()
 {
+	shared_ptr<Animal> print;
 	vector<string> dados;
 	string aux;
 	int id;
@@ -738,12 +751,14 @@ void PetFera::cadastrarAnimalExotico()
 
 	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
 	{
-    	cout << it->first << " " << it->second << endl;
+		print = it->second;
+    	cout << it->first << " " << *print << endl;
 	}
 }
 
 bool PetFera::removerAnimal()
 {
+	shared_ptr<Animal> print;
 	int idRemovido = 0;
 	cout << "Digite o id do animal a ser removido: ";
 	cin >> idRemovido;
@@ -755,11 +770,29 @@ bool PetFera::removerAnimal()
 			cout << "Animal removido com sucesso!" << endl;
 			for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
 			{
-    			cout << it->first << " " << it->second << endl;
+				print = it->second;
+    			cout << it->first << " " << *print << endl;
 			}
 			return true;
 		}
 	}
 	cout << "Animal não foi encontrado no sistema, tente novamente..." << endl;
 	return false;
+}
+
+void PetFera::endAnimais() //Fazendo o teste só com Animais pois já está totalmente sobrecarregado
+{
+	ofstream Animais("data/animais.csv");
+	shared_ptr<Animal> a;
+
+	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
+		{
+			a = it->second;
+
+			Animais << *a << endl;
+    		
+		}
+
+		Animais.close();
+
 }

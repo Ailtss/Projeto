@@ -14,6 +14,8 @@ class Mamifero : public Animal
 		~Mamifero();
 
 		void impress();
+		ostream& print(ostream &o);
+
 
 };
 

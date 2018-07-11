@@ -13,6 +13,7 @@ public:
 		string dieta, Veterinario vet, Tratador trat, string batismo, int totalMudas, string ultimaMuda,
 		string ibama, string paisOrigem);
 	~AnfibioExotico();
+	ostream& print(ostream &o);
 
 };
 

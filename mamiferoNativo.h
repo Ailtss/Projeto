@@ -13,6 +13,7 @@ public:
 		string dieta, Veterinario vet, Tratador trat, string batismo, string corPelo,
 		string ibama, string uf_origem, string autorizacao);
 	~MamiferoNativo();
+	ostream& print(ostream &o);
 
 };
 

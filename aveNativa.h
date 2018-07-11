@@ -12,6 +12,7 @@ public:
 		string dieta, Veterinario vet, Tratador trat, string batismo, int tamanhoBico, int envergadura,
 		string ibama, string uf_origem, string autorizacao);
 	~AveNativa();
+	ostream& print(ostream &o);
 };
 
 #endif

@@ -13,6 +13,8 @@ public:
 		string dieta, Veterinario vet, Tratador trat, string batismo, int totalMudas, string ultimaMuda,
 		string ibama, string uf_origem, string autorizacao);
 	~AnfibioNativo();
+	
+	ostream& print(ostream &o);
 
 };
 

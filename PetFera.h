@@ -34,6 +34,8 @@ public:
 	void cadastrarAnimalExotico();
 	bool removerAnimal();
 
+	void endAnimais();
+
 };
 
 #endif

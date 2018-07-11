@@ -152,3 +152,9 @@ void Animal::impress()
 	a_trat.impress();
 
 }
+
+
+ostream& operator<<(ostream& o, Animal &a)
+{
+	return a.print(o);
+}

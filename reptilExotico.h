@@ -13,6 +13,7 @@ public:
 		string dieta, Veterinario vet, Tratador trat, string batismo, bool venenoso, string tipoVeneno,
 		string ibama, string paisOrigem);
 	~ReptilExotico();
+	ostream& print(ostream &o);
 
 };
 
