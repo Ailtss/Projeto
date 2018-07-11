@@ -5,141 +5,6 @@ PetFera::PetFera()
 
 }
 
-void PetFera::clearScreen()
-{
-	cout << "\033[2J\033[1;1H";
-}
-
-void PetFera::cadastrarAnimalNativo()
-{
-	vector<string> dados;
-	string aux;
-	int id;
-	int valor;
-	cout << "Informe o ID do animal: " << endl;
-	getline(cin, aux);
-	id = stoi(aux);
-	cin.ignore();
-	dados.push_back(aux);
-
-	cout << "Digite um número que indique a classe do Animal: " << endl;
-	cout << "(1)Mammalia" << " " << "(2)Amphibia" << " " << "(3)Reptilia" << " " << "(4)Aves" << endl;
-	getline(cin, aux);
-	valor = stoi(aux);
-	cin.ignore();
-
-	if(valor == 1)
-	{
-		dados.push_back("Mammalia");
-
-		cout << "Informe o nome do Animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe o nome científico:  " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe o sexo do animal(M/F): " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe o tamanho do animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe a dieta do animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe o ID do Veterinário do animal: " << endl;
-		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
-		getline(cin, aux);
-		int idVet = stoi(aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe o ID do Tratador do animal: " << endl;
-		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
-		getline(cin, aux);
-		int idTrat = stoi(aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe o nome de batismo do animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe a cor do pelo do animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
- 		clearScreen();
-
-		cout << "Informe o Ibama do animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe a UF de origem do animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux);
-		clearScreen();
-
-		cout << "Informe a Autorização do animal: " << endl;
-		getline(cin, aux);
-		cin.ignore();
-		dados.push_back(aux); 
-		clearScreen();
-
-		shared_ptr<Animal> m = make_shared<MamiferoNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
-					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], dados[10], dados[11], dados[12], dados[13]);
-		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
-
-	}
-
-	else if(valor == 2)
-	{
-		dados.push_back("Amphibia");
-
-	}
-
-	else if(valor == 3)
-	{
-		dados.push_back("Reptilia");
-	}
-
-	else
-	{
-		dados.push_back("Aves");
-	}
-
-	
-
-
-}
-
-void cadastrarAnimalExotico()
-{
-
-}
-
 void PetFera::init()
 {
 	ifstream Funcionarios("data/funcionarios.csv");
@@ -310,4 +175,591 @@ void PetFera::init()
 	}
 
 	Animais.close();
+}
+
+void PetFera::clearScreen()
+{
+	cout << "\033[2J\033[1;1H";
+}
+
+void PetFera::cadastrarAnimalNativo()
+{
+	vector<string> dados;
+	string aux;
+	int id;
+	int valor;
+	cout << "Informe o ID do animal: " << endl;
+	getline(cin, aux);
+	id = stoi(aux);
+	dados.push_back(aux);
+
+	cout << "Digite um número que indique a classe do Animal: " << endl;
+	cout << "(1)Mammalia" << " " << "(2)Amphibia" << " " << "(3)Reptilia" << " " << "(4)Aves" << endl;
+	getline(cin, aux);
+	valor = stoi(aux);
+
+	if(valor == 1)
+	{
+		dados.push_back("Mammalia");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a cor do pelo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a UF de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a Autorização do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<MamiferoNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], dados[10], dados[11], dados[12], dados[13]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+
+	}
+
+	else if(valor == 2)
+	{
+		dados.push_back("Amphibia");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o total de mudas do animal: " << endl;
+		getline(cin, aux);
+		int mudas = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe a última muda do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a UF de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a Autorização do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<AnfibioNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], mudas, dados[11], dados[12], dados[13], dados[14]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+
+	}
+
+	else if(valor == 3)
+	{
+		dados.push_back("Reptilia");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe se o animal é venenoso (true/false): " << endl;
+		getline(cin, aux);
+		bool venenoso = false;
+		if(aux == "true")
+		{
+			venenoso = true;
+		}
+		dados.push_back(aux);
+
+		cout << "Informe o tipo de veneno do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a UF de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a Autorização do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<ReptilNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], venenoso, dados[11], dados[12], dados[13], dados[14]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+	}
+
+	else
+	{
+		dados.push_back("Aves");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe se o tamanho do bico do animal: " << endl;
+		getline(cin, aux);
+		int bico = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe a envergadura do animal: " << endl;
+		getline(cin, aux);
+		int envergadura = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a UF de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a Autorização do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<AveNativa>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], bico, envergadura, dados[12], dados[13], dados[14]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+	}
+
+	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
+	{
+    	cout << it->first << " " << it->second << endl;
+	}
+}
+
+void PetFera::cadastrarAnimalExotico()
+{
+	vector<string> dados;
+	string aux;
+	int id;
+	int valor;
+	cout << "Informe o ID do animal: " << endl;
+	getline(cin, aux);
+	id = stoi(aux);
+	dados.push_back(aux);
+
+	cout << "Digite um número que indique a classe do Animal: " << endl;
+	cout << "(1)Mammalia" << " " << "(2)Amphibia" << " " << "(3)Reptilia" << " " << "(4)Aves" << endl;
+	getline(cin, aux);
+	valor = stoi(aux);
+
+	if(valor == 1)
+	{
+		dados.push_back("Mammalia");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a cor do pelo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o país de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<MamiferoExotico>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], dados[10], dados[11], dados[12]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+
+	}
+
+	else if(valor == 2)
+	{
+		dados.push_back("Amphibia");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o total de mudas do animal: " << endl;
+		getline(cin, aux);
+		int mudas = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe a última muda do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o país de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<AnfibioExotico>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], mudas, dados[11], dados[12], dados[13]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+
+	}
+
+	else if(valor == 3)
+	{
+		dados.push_back("Reptilia");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe se o animal é venenoso (true/false): " << endl;
+		getline(cin, aux);
+		bool venenoso = false;
+		if(aux == "true")
+		{
+			venenoso = true;
+		}
+		dados.push_back(aux);
+
+		cout << "Informe o tipo de veneno do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o país de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<ReptilExotico>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], venenoso, dados[11], dados[12], dados[13]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+	}
+
+	else
+	{
+		dados.push_back("Aves");
+
+		cout << "Informe o nome do Animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome científico:  " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o sexo do animal(M/F): " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o tamanho do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe a dieta do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Veterinário do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Veterinário digite 0." << endl;
+		getline(cin, aux);
+		int idVet = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o ID do Tratador do animal: " << endl;
+		cout << "Warning: Se o animal não possuir um Tratador digite 0." << endl;
+		getline(cin, aux);
+		int idTrat = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o nome de batismo do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe se o tamanho do bico do animal: " << endl;
+		getline(cin, aux);
+		int bico = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe a envergadura do animal: " << endl;
+		getline(cin, aux);
+		int envergadura = stoi(aux);
+		dados.push_back(aux);
+
+		cout << "Informe o Ibama do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		cout << "Informe o país de origem do animal: " << endl;
+		getline(cin, aux);
+		dados.push_back(aux);
+
+		shared_ptr<Animal> m = make_shared<AveExotica>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados[4].c_str()), stof(dados[5]),
+					dados[6], *(this->mapaVeterinarios[idVet]), *(this->mapaTratadores[idTrat]), dados[9], bico, envergadura, dados[12], dados[13]);
+		this->mapaAnimais.insert(pair<int, shared_ptr<Animal>>(id, m));
+	}
+
+	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
+	{
+    	cout << it->first << " " << it->second << endl;
+	}
+}
+
+bool PetFera::removerAnimal()
+{
+	int idRemovido = 0;
+	cout << "Digite o id do animal a ser removido: ";
+	cin >> idRemovido;
+	for(auto i = mapaAnimais.begin(); i != mapaAnimais.end(); i++)
+	{
+		if(i->first == idRemovido)
+		{
+			mapaAnimais.erase(i);
+			cout << "Animal removido com sucesso!" << endl;
+			for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
+			{
+    			cout << it->first << " " << it->second << endl;
+			}
+			return true;
+		}
+	}
+	cout << "Animal não foi encontrado no sistema, tente novamente..." << endl;
+	return false;
 }

@@ -216,16 +216,13 @@ void cadastrarVet(Veterinario v)
 
 int main(int argc, char const *argv[])
 {
-
-	Tratador tres(26, "Ramos da Silva", "070931384-54", 22, "O", '-', "Répteis");
-	Veterinario dois(13, "Figueira Dantas","070931384-54", 20, "A", '+', "Aves");
-
-	//cadastrarTrat(tres);
-	//cadastrarVet(dois);
-
+	
 	PetFera p;
 
 	p.init();
+	p.cadastrarAnimalNativo();
+	p.cadastrarAnimalExotico();
+	p.removerAnimal();
 
 
 

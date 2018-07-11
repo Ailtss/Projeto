@@ -29,9 +29,10 @@ protected:
 public:
 	PetFera();
 	void clearScreen();
+	void init();
 	void cadastrarAnimalNativo();
 	void cadastrarAnimalExotico();
-	void init();
+	bool removerAnimal();
 
 };
 
