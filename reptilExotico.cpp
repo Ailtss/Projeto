@@ -18,7 +18,7 @@ ReptilExotico::~ReptilExotico()
 
 ostream& ReptilExotico::print(ostream &o)
 {
-	o << a_id << ";" << a_classe << ";" << a_nome << ";" << a_nomeCient << ";" << a_sexo << ";" << a_tamanho << ";" << a_dieta << a_vet.getId() << ";" << a_trat.getId() << ";" << a_batismo <<
+	o << a_id << ";" << a_classe << ";" << a_nome << ";" << a_nomeCient << ";" << a_sexo << ";" << a_tamanho << ";" << a_dieta << ";" << a_vet.getId() << ";" << a_trat.getId() << ";" << a_batismo <<
 	";" << a_venenoso << ";" << a_tipoVeneno << ";" << m_ibama << ";" << m_paisOrigem;
 	return o;
 }

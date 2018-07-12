@@ -118,3 +118,8 @@ void Funcionario::impress()
 
 */
 
+
+ostream& operator<< (ostream &o, Funcionario &f)
+{
+	return f.print(o);
+}

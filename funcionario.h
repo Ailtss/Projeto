@@ -42,6 +42,9 @@ public:
 
 	virtual void impress() = 0;
 
+	friend ostream& operator<< (ostream &o, Funcionario &f);
+	virtual ostream& print(ostream&) = 0;
+
 
 
 };

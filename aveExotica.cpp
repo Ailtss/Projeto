@@ -19,7 +19,7 @@ AveExotica::~AveExotica()
 
 ostream& AveExotica::print(ostream &o)
 {
-	o << a_id << ";" << a_classe << ";" << a_nome << ";" << a_nomeCient << ";" << a_sexo << ";" << a_tamanho << ";" << a_dieta << a_vet.getId() << ";" << a_trat.getId() << ";" << a_batismo << ";"
+	o << a_id << ";" << a_classe << ";" << a_nome << ";" << a_nomeCient << ";" << a_sexo << ";" << a_tamanho << ";" << a_dieta << ";" << a_vet.getId() << ";" << a_trat.getId() << ";" << a_batismo << ";"
 	<< a_tamanhoBico << ";" << a_envergadura << ";" << m_ibama << ";" << m_paisOrigem;
 	return o;
 }

@@ -31,3 +31,10 @@ void Veterinario::impress()
 
 
 }
+
+ostream& print(ostream& o)
+{
+	o << m_id << ";" << "Vetrinário" << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";"
+	<< m_tipo_sanguineo << ";" << m_fatorRH << ";" << m_especialidade;
+	return o;
+}

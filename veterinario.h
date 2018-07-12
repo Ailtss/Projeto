@@ -13,6 +13,8 @@ public:
     ~Veterinario();
 	void impress();
 
+	ostream& print(ostream& o);
+
 
 };
 

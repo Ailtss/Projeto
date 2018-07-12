@@ -29,3 +29,11 @@ void Tratador::impress()
 	cout << "Done." << endl;
 }
 
+ostream& print(ostream& o)
+{
+	o << m_id << ";" << "Tratador" << ";" << m_nome << ";" << m_cpf << ";" << m_idade << ";" << m_tipo_sanguineo << ";" << m_fatorRH << ";"
+	 << m_especialidade;
+
+	 return o;
+}
+
