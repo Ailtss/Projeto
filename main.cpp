@@ -20,9 +20,11 @@ int main(int argc, char const *argv[])
 	PetFera p;
 
 	p.init();
-	p.consultarAnimal();
-	p.consultarPorFuncionario();
-	p.endAnimais();
+	//p.consultarAnimal();
+	///p.consultarPorFuncionario();
+	//p.endAnimais();
+	p.removerFuncionario();
+	p.endFuncionarios();
 
 	return 0;
 }

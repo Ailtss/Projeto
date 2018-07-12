@@ -37,7 +37,7 @@ void PetFera::init()
 				int aux = stoi(dadosLinha[0]);
 				short idade = stoi(dadosLinha[3]);
 
-				shared_ptr<Tratador> f = make_shared<Tratador>(aux, dadosLinha[1], dadosLinha[2], idade, dadosLinha[4], *(dadosLinha[5].c_str()), dadosLinha[6]);
+				shared_ptr<Tratador> f = make_shared<Tratador>(aux, dadosLinha[2], dadosLinha[3], idade, dadosLinha[5], *(dadosLinha[6].c_str()), dadosLinha[7]);
 				this->mapaTratadores.insert(pair<int, shared_ptr<Tratador>>(aux, f));
 			}
 
@@ -46,7 +46,7 @@ void PetFera::init()
 				int aux = stoi(dadosLinha[0]);
 				short idade = stoi(dadosLinha[3]);
 
-				shared_ptr<Veterinario> f = make_shared<Veterinario>(aux, dadosLinha[1], dadosLinha[2], idade, dadosLinha[4], *(dadosLinha[5].c_str()), dadosLinha[6]);
+				shared_ptr<Veterinario> f = make_shared<Veterinario>(aux, dadosLinha[2], dadosLinha[3], idade, dadosLinha[5], *(dadosLinha[6].c_str()), dadosLinha[7]);
 				this->mapaVeterinarios.insert(pair<int, shared_ptr<Veterinario>>(aux, f));
 			}
 
@@ -59,14 +59,18 @@ void PetFera::init()
 		cerr << "Arquivo de Funcionários não foi aberto corretamente!" << endl;
 	}
 
+	shared_ptr<Funcionario> f;
+
 	for(auto it = this->mapaTratadores.begin(); it != this->mapaTratadores.end(); ++it)
 	{
-    	cout << *(it->second) << endl;
+    	f = it->second;
+    	cout << it->first << " " << *f << endl;
 	}
 
 	for(auto it = this->mapaVeterinarios.begin(); it != this->mapaVeterinarios.end(); ++it)
 	{
-    	cout << *(it->second) << endl;
+    	f = it->second;
+    	cout << it->first << " " << *f << endl;
 	}
 
 	Funcionarios.close();
@@ -849,6 +853,158 @@ bool PetFera::removerAnimal()
 	return false;
 }
 
+void PetFera::cadastrarVeterinario()
+{
+	shared_ptr<Funcionario> print;
+	vector<string> dados;
+	string help;
+
+	cout << "Informe o ID do Veterinário: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o Nome do Veterinário: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o CPF do Veterinário: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe a idade do Veterinário:" << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o tipo sanguíneo do Veterinário: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o fator RH do Veterinário: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe a especialidade do Veterinário: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	int id = stoi(dados[0]);
+
+	shared_ptr<Veterinario> v = make_shared<Veterinario>(id, dados[1], dados[2], stoi(dados[3]), dados[4], *(dados[5].c_str()), dados[6]);
+
+	this->mapaVeterinarios.insert(pair<int, shared_ptr<Veterinario>>(id, v));
+
+
+	for(auto it = this->mapaVeterinarios.begin(); it != this->mapaVeterinarios.end(); ++it)
+	{
+		print = it->second;
+    	cout << it->first << " " << *print << endl;
+	}
+}
+
+
+void PetFera::cadastrarTratador()
+{
+	shared_ptr<Tratador> print;
+	vector<string> dados;
+	string help;
+
+	cout << "Informe o ID do Tratador: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o Nome do Tratador: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o CPF do Tratador: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe a idade do Tratador:" << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o tipo sanguíneo do Tratador: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe o fator RH do Tratador: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	cout << "Informe a especialidade do Tratador: " << endl;
+	getline(cin, help);
+	dados.push_back(help);
+
+	int id = stoi(dados[0]);
+
+	shared_ptr<Tratador> t = make_shared<Tratador>(id, dados[1], dados[2], stoi(dados[3]), dados[4], *(dados[5].c_str()), dados[6]);
+
+	this->mapaTratadores.insert(pair<int, shared_ptr<Tratador>>(id, t));
+
+	for(auto it = this->mapaTratadores.begin(); it != this->mapaTratadores.end(); ++it)
+	{
+		print = it->second;
+    	cout << it->first << " " << *print << endl;
+	}
+}
+
+bool PetFera::removerFuncionario()
+{
+	shared_ptr<Funcionario> print;
+	int idRemovido = 0;
+	char aux;
+	cout << "Deseja remover um Tratador ou Veterinário? (T/V)" << endl;
+	cin >> aux;
+
+	if(aux == 'T')
+	{
+		cout << "Digite o id do Tratador a ser removido: ";
+		cin >> idRemovido;
+		for(auto i = mapaTratadores.begin(); i != mapaTratadores.end(); i++)
+		{
+			if(i->first == idRemovido)
+			{
+				mapaTratadores.erase(i);
+				cout << "Tratador removido com sucesso!" << endl;
+				for(auto it = this->mapaTratadores.begin(); it != this->mapaTratadores.end(); ++it)
+				{
+					print = it->second;
+    				cout << it->first << " " << *print << endl;
+				}
+				return true;
+			}
+		}
+		cout << "Funcionário não foi encontrado no sistema, tente novamente..." << endl;
+		return false;
+	}
+
+	else
+	{
+		cout << "Digite o id do Veterinário a ser removido: ";
+		cin >> idRemovido;
+		for(auto i = mapaVeterinarios.begin(); i != mapaVeterinarios.end(); i++)
+		{
+			if(i->first == idRemovido)
+			{
+				mapaVeterinarios.erase(i);
+				cout << "Veterinário removido com sucesso!" << endl;
+				for(auto it = this->mapaVeterinarios.begin(); it != this->mapaVeterinarios.end(); ++it)
+				{
+					print = it->second;
+    				cout << it->first << " " << *print << endl;
+				}
+				return true;
+			}
+		}
+		cout << "Fuincionário não foi encontrado no sistema, tente novamente..." << endl;
+		return false;
+	}
+
+	return false;
+	
+}
+
 void PetFera::endAnimais() //Fazendo o teste só com Animais pois já está totalmente sobrecarregado
 {
 	ofstream Animais("data/animais.csv");
@@ -864,4 +1020,28 @@ void PetFera::endAnimais() //Fazendo o teste só com Animais pois já está tota
 
 		Animais.close();
 
+}
+
+void PetFera::endFuncionarios()
+{
+	ofstream Funcionarios("data/funcionarios.csv");
+	shared_ptr<Funcionario> f;
+
+	for(auto it = this->mapaTratadores.begin(); it != this->mapaTratadores.end(); ++it)
+		{
+			f = it->second;
+
+			Funcionarios << *f << endl;
+    		
+		}
+
+	for(auto it = this->mapaVeterinarios.begin(); it != this->mapaVeterinarios.end(); ++it)
+		{
+			f = it->second;
+
+			Funcionarios << *f << endl;
+    		
+		}
+
+		Funcionarios.close();
 }

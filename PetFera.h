@@ -33,12 +33,15 @@ public:
 	void init();
 	void cadastrarAnimalNativo();
 	void cadastrarAnimalExotico();
+	void cadastrarVeterinario();
+	void cadastrarTratador();
 	void consultarAnimal();
 	void consultarPorFuncionario();
 	bool removerAnimal();
+	bool removerFuncionario();
 
 	void endAnimais();
-
+	void endFuncionarios();
 };
 
 #endif
