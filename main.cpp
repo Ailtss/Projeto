@@ -21,6 +21,7 @@ int main(int argc, char const *argv[])
 
 	p.init();
 	p.consultarAnimal();
+	p.consultarPorFuncionario();
 	p.endAnimais();
 
 	return 0;

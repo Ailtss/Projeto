@@ -5,6 +5,11 @@ PetFera::PetFera()
 
 }
 
+PetFera::~PetFera()
+{
+
+}
+
 void PetFera::init()
 {
 	ifstream Funcionarios("data/funcionarios.csv");
@@ -56,12 +61,12 @@ void PetFera::init()
 
 	for(auto it = this->mapaTratadores.begin(); it != this->mapaTratadores.end(); ++it)
 	{
-    	cout << it->first << " " << it->second << endl;
+    	cout << *(it->second) << endl;
 	}
 
 	for(auto it = this->mapaVeterinarios.begin(); it != this->mapaVeterinarios.end(); ++it)
 	{
-    	cout << it->first << " " << it->second << endl;
+    	cout << *(it->second) << endl;
 	}
 
 	Funcionarios.close();
@@ -174,7 +179,6 @@ void PetFera::init()
 	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); ++it)
 	{
 		print = it->second;
-    	cout << it->first << endl;
     	cout << *print << endl;
 	}
 
@@ -762,13 +766,13 @@ void PetFera::consultarAnimal()
 	bool achou = false;
 	cout << "Digite o id do animal ou a sua classe: ";
 	getline(cin, consulta);
-	if(consulta == "Mammalia" || consulta == "Aves" || consulta == "Amphibia" || consulta = "Reptilia")
+	if(consulta == "Mammalia" || consulta == "Aves" || consulta == "Amphibia" || consulta == "Reptilia")
 	{
-		for(auto it = mapaAnimais.begin(); it != mapaAnimais.end(); it++)
+		for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); it++)
 		{
 			if(it->second->getAnClasse() == consulta)
 			{
-				cout << *(it->second);
+				cout << *(it->second) << endl;
 				achou = true;
 			}
 		}
@@ -780,11 +784,11 @@ void PetFera::consultarAnimal()
 	else
 	{
 		int idProcurado = stoi(consulta);
-		for(auto it = mapaAnimais.begin(); it != mapaAnimais.end(); it++)
+		for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); it++)
 		{
 			if(it->second->getAnId() == idProcurado)
 			{
-				cout << *(it->second);
+				cout << *(it->second) << endl;
 				achou = true;
 			}
 		}
@@ -793,6 +797,32 @@ void PetFera::consultarAnimal()
 			cout << "Animal não encontrado no sistema..." << endl;
 		}
 	}
+}
+
+void PetFera::consultarPorFuncionario()
+{
+	int idFuncionario;
+	bool achou = false;
+	cout << "Digite o id do tratador ou do veterinário: ";
+	cin >> idFuncionario;
+	for(auto it = this->mapaAnimais.begin(); it != this->mapaAnimais.end(); it++)
+	{
+		if(it->second->getAnVet().getId() == idFuncionario)
+		{
+			cout << *(it->second) << endl;
+			achou = true;
+		}
+
+		else if(it->second->getAnTrat().getId() == idFuncionario)
+		{
+			cout << *(it->second) << endl;
+			achou = true;
+		}
+	}
+	if(achou == false)
+		{
+			cout << "Não existem animais sob a responsabilidade do tratador/veterinário com id "<< idFuncionario << "..." << endl;
+		}
 }
 
 bool PetFera::removerAnimal()

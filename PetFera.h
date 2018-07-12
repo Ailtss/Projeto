@@ -28,11 +28,13 @@ protected:
 	map<int, shared_ptr<Tratador>> mapaTratadores;
 public:
 	PetFera();
+	~PetFera();
 	void clearScreen();
 	void init();
 	void cadastrarAnimalNativo();
 	void cadastrarAnimalExotico();
 	void consultarAnimal();
+	void consultarPorFuncionario();
 	bool removerAnimal();
 
 	void endAnimais();
