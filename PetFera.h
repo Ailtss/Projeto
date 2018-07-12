@@ -32,6 +32,7 @@ public:
 	void init();
 	void cadastrarAnimalNativo();
 	void cadastrarAnimalExotico();
+	void consultarAnimal();
 	bool removerAnimal();
 
 	void endAnimais();

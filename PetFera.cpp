@@ -756,6 +756,45 @@ void PetFera::cadastrarAnimalExotico()
 	}
 }
 
+void PetFera::consultarAnimal()
+{
+	string consulta;
+	bool achou = false;
+	cout << "Digite o id do animal ou a sua classe: ";
+	getline(cin, consulta);
+	if(consulta == "Mammalia" || consulta == "Aves" || consulta == "Amphibia" || consulta = "Reptilia")
+	{
+		for(auto it = mapaAnimais.begin(); it != mapaAnimais.end(); it++)
+		{
+			if(it->second->getAnClasse() == consulta)
+			{
+				cout << *(it->second);
+				achou = true;
+			}
+		}
+		if(achou == false)
+		{
+			cout << "Classe de animais não encontrada mo sistema..." << endl;
+		}
+	}
+	else
+	{
+		int idProcurado = stoi(consulta);
+		for(auto it = mapaAnimais.begin(); it != mapaAnimais.end(); it++)
+		{
+			if(it->second->getAnId() == idProcurado)
+			{
+				cout << *(it->second);
+				achou = true;
+			}
+		}
+		if(achou == false)
+		{
+			cout << "Animal não encontrado no sistema..." << endl;
+		}
+	}
+}
+
 bool PetFera::removerAnimal()
 {
 	shared_ptr<Animal> print;
