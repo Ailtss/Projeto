@@ -3,7 +3,7 @@
 
 #include "ave.h"
 #include "nativo.h"
-
+/**@brief Classe Derivada da classe Ave e da classe Nativo*/
 class AveNativa : public Nativo, public Ave
 {
 public:

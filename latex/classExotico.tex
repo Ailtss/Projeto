@@ -1,0 +1,116 @@
+\hypertarget{classExotico}{}\section{Exotico Class Reference}
+\label{classExotico}\index{Exotico@{Exotico}}
+
+
+Classe \hyperlink{classExotico}{Exotico} que herda da classe \hyperlink{classAnimal}{Animal} Silvestre.  
+
+
+
+
+{\ttfamily \#include $<$exotico.\+h$>$}
+
+
+
+Inheritance diagram for Exotico\+:
+% FIG 0
+
+
+Collaboration diagram for Exotico\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExotico_ae69f9a35c795a2357c43b801386424bb}{Exotico} ()
+\item 
+\hyperlink{classExotico_a4823ceb226bf90019f9e31e3f66b7ed5}{Exotico} (string ibama, string pais\+Origem)
+\item 
+\hyperlink{classExotico_ae62d95f6e05e2e259bbe3e7e5b633fb8}{$\sim$\+Exotico} ()
+\item 
+void \hyperlink{classExotico_a154a739577eca475e8e8451db6971633}{impress} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classExotico_a4ac7dec507f3420f4c96318c22ec6f36}{m\+\_\+pais\+Origem}
+\begin{DoxyCompactList}\small\item\em Local de Origem do animal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{classExotico}{Exotico} que herda da classe \hyperlink{classAnimal}{Animal} Silvestre. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Exotico@{Exotico}!Exotico@{Exotico}}
+\index{Exotico@{Exotico}!Exotico@{Exotico}}
+\subsubsection[{\texorpdfstring{Exotico()}{Exotico()}}]{\setlength{\rightskip}{0pt plus 5cm}Exotico\+::\+Exotico (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classExotico_ae69f9a35c795a2357c43b801386424bb}{}\label{classExotico_ae69f9a35c795a2357c43b801386424bb}
+
+\begin{DoxyCode}
+4 \{
+5 
+6 \}
+\end{DoxyCode}
+\index{Exotico@{Exotico}!Exotico@{Exotico}}
+\index{Exotico@{Exotico}!Exotico@{Exotico}}
+\subsubsection[{\texorpdfstring{Exotico(string ibama, string pais\+Origem)}{Exotico(string ibama, string paisOrigem)}}]{\setlength{\rightskip}{0pt plus 5cm}Exotico\+::\+Exotico (
+\begin{DoxyParamCaption}
+\item[{string}]{ibama, }
+\item[{string}]{pais\+Origem}
+\end{DoxyParamCaption}
+)}\hypertarget{classExotico_a4823ceb226bf90019f9e31e3f66b7ed5}{}\label{classExotico_a4823ceb226bf90019f9e31e3f66b7ed5}
+
+\begin{DoxyCode}
+9 :\hyperlink{classAnimalSilvestre_ab399a508e477d58526bdde4c49365488}{AnimalSilvestre}(ibama)
+10 \{
+11     \hyperlink{classExotico_a4ac7dec507f3420f4c96318c22ec6f36}{m\_paisOrigem} = paisOrigem;
+12 \}
+\end{DoxyCode}
+\index{Exotico@{Exotico}!````~Exotico@{$\sim$\+Exotico}}
+\index{````~Exotico@{$\sim$\+Exotico}!Exotico@{Exotico}}
+\subsubsection[{\texorpdfstring{$\sim$\+Exotico()}{~Exotico()}}]{\setlength{\rightskip}{0pt plus 5cm}Exotico\+::$\sim$\+Exotico (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classExotico_ae62d95f6e05e2e259bbe3e7e5b633fb8}{}\label{classExotico_ae62d95f6e05e2e259bbe3e7e5b633fb8}
+
+\begin{DoxyCode}
+15 \{
+16 
+17 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Exotico@{Exotico}!impress@{impress}}
+\index{impress@{impress}!Exotico@{Exotico}}
+\subsubsection[{\texorpdfstring{impress()}{impress()}}]{\setlength{\rightskip}{0pt plus 5cm}void Exotico\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classExotico_a154a739577eca475e8e8451db6971633}{}\label{classExotico_a154a739577eca475e8e8451db6971633}
+
+\begin{DoxyCode}
+20 \{
+21     cout << \textcolor{stringliteral}{"Ibama: "} << \hyperlink{classAnimalSilvestre_a4c92c625318b23e550b8bb24fb934d14}{m\_ibama} << endl;
+22 
+23     cout << \textcolor{stringliteral}{"Características Exotico: "} << endl;
+24     cout << \textcolor{stringliteral}{"Pais de origem: "} << \hyperlink{classExotico_a4ac7dec507f3420f4c96318c22ec6f36}{m\_paisOrigem} << endl;
+25 \}\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Exotico@{Exotico}!m\+\_\+pais\+Origem@{m\+\_\+pais\+Origem}}
+\index{m\+\_\+pais\+Origem@{m\+\_\+pais\+Origem}!Exotico@{Exotico}}
+\subsubsection[{\texorpdfstring{m\+\_\+pais\+Origem}{m_paisOrigem}}]{\setlength{\rightskip}{0pt plus 5cm}string Exotico\+::m\+\_\+pais\+Origem\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classExotico_a4ac7dec507f3420f4c96318c22ec6f36}{}\label{classExotico_a4ac7dec507f3420f4c96318c22ec6f36}
+
+
+Local de Origem do animal. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{exotico_8h}{exotico.\+h}\item 
+src/\hyperlink{exotico_8cpp}{exotico.\+cpp}\end{DoxyCompactItemize}

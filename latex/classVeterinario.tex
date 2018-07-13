@@ -1,0 +1,139 @@
+\hypertarget{classVeterinario}{}\section{Veterinario Class Reference}
+\label{classVeterinario}\index{Veterinario@{Veterinario}}
+
+
+Classe Derivada Veterinário que herda da classe Funcionário.  
+
+
+
+
+{\ttfamily \#include $<$veterinario.\+h$>$}
+
+
+
+Inheritance diagram for Veterinario\+:
+% FIG 0
+
+
+Collaboration diagram for Veterinario\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVeterinario_af8dc5f6f77bf8c70dd94d54766764134}{Veterinario} ()
+\item 
+\hyperlink{classVeterinario_aca44aaf2acc5bb63ceb85a2a5b8be3ab}{Veterinario} (int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, char fator\+RH, string especialidade)
+\item 
+\hyperlink{classVeterinario_a0de805e30bc7006d2035458f80c18671}{$\sim$\+Veterinario} ()
+\item 
+void \hyperlink{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}{impress} ()
+\item 
+ostream \& \hyperlink{classVeterinario_a2226579fc4858f2a6d7c7d1efe739b2a}{print} (ostream \&o)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe Derivada Veterinário que herda da classe Funcionário. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Veterinario@{Veterinario}!Veterinario@{Veterinario}}
+\index{Veterinario@{Veterinario}!Veterinario@{Veterinario}}
+\subsubsection[{\texorpdfstring{Veterinario()}{Veterinario()}}]{\setlength{\rightskip}{0pt plus 5cm}Veterinario\+::\+Veterinario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classVeterinario_af8dc5f6f77bf8c70dd94d54766764134}{}\label{classVeterinario_af8dc5f6f77bf8c70dd94d54766764134}
+
+\begin{DoxyCode}
+4 \{
+5 
+6 \}
+\end{DoxyCode}
+\index{Veterinario@{Veterinario}!Veterinario@{Veterinario}}
+\index{Veterinario@{Veterinario}!Veterinario@{Veterinario}}
+\subsubsection[{\texorpdfstring{Veterinario(int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, char fator\+R\+H, string especialidade)}{Veterinario(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fatorRH, string especialidade)}}]{\setlength{\rightskip}{0pt plus 5cm}Veterinario\+::\+Veterinario (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{nome, }
+\item[{string}]{cpf, }
+\item[{short}]{idade, }
+\item[{string}]{tipo\+\_\+sanguineo, }
+\item[{char}]{fator\+RH, }
+\item[{string}]{especialidade}
+\end{DoxyParamCaption}
+)}\hypertarget{classVeterinario_aca44aaf2acc5bb63ceb85a2a5b8be3ab}{}\label{classVeterinario_aca44aaf2acc5bb63ceb85a2a5b8be3ab}
+
+\begin{DoxyCode}
+9 :\hyperlink{classFuncionario_a7cd39b2c6cd2449162481a8c0e7a2429}{Funcionario}(\textcolor{keywordtype}{id}, nome, cpf, idade, tipo\_sanguineo, fatorRH, especialidade) \{\}
+\end{DoxyCode}
+\index{Veterinario@{Veterinario}!````~Veterinario@{$\sim$\+Veterinario}}
+\index{````~Veterinario@{$\sim$\+Veterinario}!Veterinario@{Veterinario}}
+\subsubsection[{\texorpdfstring{$\sim$\+Veterinario()}{~Veterinario()}}]{\setlength{\rightskip}{0pt plus 5cm}Veterinario\+::$\sim$\+Veterinario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classVeterinario_a0de805e30bc7006d2035458f80c18671}{}\label{classVeterinario_a0de805e30bc7006d2035458f80c18671}
+
+\begin{DoxyCode}
+14 \{
+15 
+16 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Veterinario@{Veterinario}!impress@{impress}}
+\index{impress@{impress}!Veterinario@{Veterinario}}
+\subsubsection[{\texorpdfstring{impress()}{impress()}}]{\setlength{\rightskip}{0pt plus 5cm}void Veterinario\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}{}\label{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}
+
+
+Implements \hyperlink{classFuncionario_aeaa43599aa64998372ad7044315ed4f7}{Funcionario}.
+
+
+\begin{DoxyCode}
+20 \{
+21 
+22     cout << \textcolor{stringliteral}{"Funcionário Veterinário: "} << \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome} << endl;
+23     cout << \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id} << endl;
+24     cout << \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf} << endl;
+25     cout << \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade} << endl;
+26     cout << \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo} << endl;
+27     cout << \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH} << endl;
+28     cout << \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade} << endl;
+29 
+30     cout << \textcolor{stringliteral}{"Done."} << endl;
+31 
+32 
+33 \}
+\end{DoxyCode}
+\index{Veterinario@{Veterinario}!print@{print}}
+\index{print@{print}!Veterinario@{Veterinario}}
+\subsubsection[{\texorpdfstring{print(ostream \&o)}{print(ostream &o)}}]{\setlength{\rightskip}{0pt plus 5cm}ostream \& Veterinario\+::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classVeterinario_a2226579fc4858f2a6d7c7d1efe739b2a}{}\label{classVeterinario_a2226579fc4858f2a6d7c7d1efe739b2a}
+
+
+Implements \hyperlink{classFuncionario_a06bb354ea21c7059a9740a6402f26b5c}{Funcionario}.
+
+
+\begin{DoxyCode}
+36 \{
+37     o << \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id} << \textcolor{stringliteral}{";"} << \textcolor{stringliteral}{"Veterinário"} << \textcolor{stringliteral}{";"} << \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome} << \textcolor{stringliteral}{";"} << \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade} << \textcolor{stringliteral}{";"}
+38     << \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo} << \textcolor{stringliteral}{";"} << \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade};
+39     \textcolor{keywordflow}{return} o;
+40 \}\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{veterinario_8h}{veterinario.\+h}\item 
+src/\hyperlink{veterinario_8cpp}{veterinario.\+cpp}\end{DoxyCompactItemize}

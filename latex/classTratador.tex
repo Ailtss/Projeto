@@ -1,0 +1,137 @@
+\hypertarget{classTratador}{}\section{Tratador Class Reference}
+\label{classTratador}\index{Tratador@{Tratador}}
+
+
+Classe derivada \hyperlink{classTratador}{Tratador} que herda da classe \hyperlink{classFuncionario}{Funcionario}.  
+
+
+
+
+{\ttfamily \#include $<$tratador.\+h$>$}
+
+
+
+Inheritance diagram for Tratador\+:
+% FIG 0
+
+
+Collaboration diagram for Tratador\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classTratador_a4339bfc1e32968609401440338eeba20}{Tratador} ()
+\item 
+\hyperlink{classTratador_a5f25dd6ac50c9635f9ce67f01914393a}{Tratador} (int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, char fator\+RH, string especialidade)
+\item 
+\hyperlink{classTratador_a8750ed6960e786da5d6f87e05b491093}{$\sim$\+Tratador} ()
+\item 
+void \hyperlink{classTratador_ac7651dbd65916ae7a37251314fd06797}{impress} ()
+\item 
+ostream \& \hyperlink{classTratador_ac421665ebd5c8661c8a971d8dd1d426b}{print} (ostream \&o)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Classe derivada \hyperlink{classTratador}{Tratador} que herda da classe \hyperlink{classFuncionario}{Funcionario}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Tratador@{Tratador}!Tratador@{Tratador}}
+\index{Tratador@{Tratador}!Tratador@{Tratador}}
+\subsubsection[{\texorpdfstring{Tratador()}{Tratador()}}]{\setlength{\rightskip}{0pt plus 5cm}Tratador\+::\+Tratador (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTratador_a4339bfc1e32968609401440338eeba20}{}\label{classTratador_a4339bfc1e32968609401440338eeba20}
+
+\begin{DoxyCode}
+5 \{
+6 
+7 \}
+\end{DoxyCode}
+\index{Tratador@{Tratador}!Tratador@{Tratador}}
+\index{Tratador@{Tratador}!Tratador@{Tratador}}
+\subsubsection[{\texorpdfstring{Tratador(int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, char fator\+R\+H, string especialidade)}{Tratador(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fatorRH, string especialidade)}}]{\setlength{\rightskip}{0pt plus 5cm}Tratador\+::\+Tratador (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{nome, }
+\item[{string}]{cpf, }
+\item[{short}]{idade, }
+\item[{string}]{tipo\+\_\+sanguineo, }
+\item[{char}]{fator\+RH, }
+\item[{string}]{especialidade}
+\end{DoxyParamCaption}
+)}\hypertarget{classTratador_a5f25dd6ac50c9635f9ce67f01914393a}{}\label{classTratador_a5f25dd6ac50c9635f9ce67f01914393a}
+
+\begin{DoxyCode}
+10 :\hyperlink{classFuncionario_a7cd39b2c6cd2449162481a8c0e7a2429}{Funcionario}(\textcolor{keywordtype}{id}, nome, cpf, idade, tipo\_sanguineo, fatorRH, especialidade) \{\}
+\end{DoxyCode}
+\index{Tratador@{Tratador}!````~Tratador@{$\sim$\+Tratador}}
+\index{````~Tratador@{$\sim$\+Tratador}!Tratador@{Tratador}}
+\subsubsection[{\texorpdfstring{$\sim$\+Tratador()}{~Tratador()}}]{\setlength{\rightskip}{0pt plus 5cm}Tratador\+::$\sim$\+Tratador (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classTratador_a8750ed6960e786da5d6f87e05b491093}{}\label{classTratador_a8750ed6960e786da5d6f87e05b491093}
+
+\begin{DoxyCode}
+14 \{
+15 
+16 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Tratador@{Tratador}!impress@{impress}}
+\index{impress@{impress}!Tratador@{Tratador}}
+\subsubsection[{\texorpdfstring{impress()}{impress()}}]{\setlength{\rightskip}{0pt plus 5cm}void Tratador\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classTratador_ac7651dbd65916ae7a37251314fd06797}{}\label{classTratador_ac7651dbd65916ae7a37251314fd06797}
+
+
+Implements \hyperlink{classFuncionario_aeaa43599aa64998372ad7044315ed4f7}{Funcionario}.
+
+
+\begin{DoxyCode}
+20 \{
+21     cout << \textcolor{stringliteral}{"Funcionário Tratador: "} << \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome} << endl;
+22     cout << \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id} << endl;
+23     cout << \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf} << endl;
+24     cout << \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade} << endl;
+25     cout << \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo} << endl;
+26     cout << \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH} << endl;
+27     cout << \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade} << endl;
+28 
+29     cout << \textcolor{stringliteral}{"Done."} << endl;
+30 \}
+\end{DoxyCode}
+\index{Tratador@{Tratador}!print@{print}}
+\index{print@{print}!Tratador@{Tratador}}
+\subsubsection[{\texorpdfstring{print(ostream \&o)}{print(ostream &o)}}]{\setlength{\rightskip}{0pt plus 5cm}ostream \& Tratador\+::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{o}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classTratador_ac421665ebd5c8661c8a971d8dd1d426b}{}\label{classTratador_ac421665ebd5c8661c8a971d8dd1d426b}
+
+
+Implements \hyperlink{classFuncionario_a06bb354ea21c7059a9740a6402f26b5c}{Funcionario}.
+
+
+\begin{DoxyCode}
+33 \{
+34     o << \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id} << \textcolor{stringliteral}{";"} << \textcolor{stringliteral}{"Tratador"} << \textcolor{stringliteral}{";"} << \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome} << \textcolor{stringliteral}{";"} << \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade} << \textcolor{stringliteral}{";"} << \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo} << \textcolor{stringliteral}{";"} << \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH} << \textcolor{stringliteral}{";"}
+35      << \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade};
+36 
+37      \textcolor{keywordflow}{return} o;
+38 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{tratador_8h}{tratador.\+h}\item 
+src/\hyperlink{tratador_8cpp}{tratador.\+cpp}\end{DoxyCompactItemize}

@@ -2,10 +2,12 @@
 #define MAMIFERO_H
 #include "animal.h"
 
+/**@brief Classe Derivada da classe Animal*/
 class Mamifero : public Animal
 {
 
 	protected:
+		/**@brief Cor do pelo do mamífero*/
 		string a_corPelo;
 
 	public:

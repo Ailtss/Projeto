@@ -1,0 +1,665 @@
+\hypertarget{classAnimal}{}\section{Animal Class Reference}
+\label{classAnimal}\index{Animal@{Animal}}
+
+
+{\ttfamily \#include $<$animal.\+h$>$}
+
+
+
+Inheritance diagram for Animal\+:
+% FIG 0
+
+
+Collaboration diagram for Animal\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnimal_a1e726a49ec952443190ac62dad22353c}{Animal} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+\hyperlink{classAnimal_a2336a70f8816269adabb814c876f36a5}{Animal} (int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, \hyperlink{classVeterinario}{Veterinario} vet, \hyperlink{classTratador}{Tratador} trat, string batismo)
+\begin{DoxyCompactList}\small\item\em Construtor parametrizado. \end{DoxyCompactList}\item 
+\hyperlink{classAnimal_a476af25adde5f0dfa688129c8f86fa5c}{$\sim$\+Animal} ()
+\begin{DoxyCompactList}\small\item\em Destrutor padrão. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_acec30bb98d54e4f838619c6b300ec64a}{set\+An\+Id} (int id)
+\begin{DoxyCompactList}\small\item\em Setter para o ID. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a3408e2ea8624789f41d04e994fc7c004}{set\+An\+Classe} (string classe)
+\begin{DoxyCompactList}\small\item\em Setter para a classe. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a4671ad519aa7c27ef72bcf21d00f2afb}{set\+An\+Nome} (string nome)
+\begin{DoxyCompactList}\small\item\em Setter para o nome. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a1657423dc5747a03587961b1e8198df9}{set\+An\+Nome\+Cient} (string nome\+Cient)
+\begin{DoxyCompactList}\small\item\em Setter para o Nome Científico. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_ad9aceda995534ac42ff744e1f4755e64}{set\+An\+Sexo} (char sexo)
+\begin{DoxyCompactList}\small\item\em Setter para o sexo do \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a97269d392f68c95a04c77c0f226d9a4a}{set\+An\+Tamanho} (float tamanho)
+\begin{DoxyCompactList}\small\item\em Setter para o tamanho. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a24cbb6a7b596c3dfcd41b842926865ba}{set\+An\+Dieta} (string dieta)
+\begin{DoxyCompactList}\small\item\em Setter para a Dieta. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_afa0c79f46bbce259561b23c2329140ed}{set\+An\+Vet} (\hyperlink{classVeterinario}{Veterinario} vet)
+\begin{DoxyCompactList}\small\item\em Setter para o objeto Veterinário. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a0b45ad707287f6fdcaee769352481e00}{set\+An\+Trat} (\hyperlink{classTratador}{Tratador} trat)
+\begin{DoxyCompactList}\small\item\em Setter para o objeto \hyperlink{classTratador}{Tratador}. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_a2e8b46c87f3e287979bfa71333c9993c}{set\+An\+Batismo} (string batismo)
+\begin{DoxyCompactList}\small\item\em Setter para o nome de Batismo. \end{DoxyCompactList}\item 
+int \hyperlink{classAnimal_a6ecedda7678495e0a7ad7518f81df97a}{get\+An\+Id} ()
+\begin{DoxyCompactList}\small\item\em Getter para o Id. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_af5fcc32101cf561359e98d2fa639e6c8}{get\+An\+Classe} ()
+\begin{DoxyCompactList}\small\item\em Getter para a Classe. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a5f5d18cb8cb210bc040a1824f2c563b7}{get\+An\+Nome} ()
+\begin{DoxyCompactList}\small\item\em Getter para o Nome. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_ad85e22e58b1eb1a1e1dfa82565eb0b07}{get\+An\+Nome\+Cient} ()
+\begin{DoxyCompactList}\small\item\em Getter para o Nome Científico. \end{DoxyCompactList}\item 
+char \hyperlink{classAnimal_abf665342c066528a05c06141c308dcf0}{get\+An\+Sexo} ()
+\begin{DoxyCompactList}\small\item\em Getter para o Sexo. \end{DoxyCompactList}\item 
+float \hyperlink{classAnimal_ac41f9d4acfdb320b0a9f03c7fb439852}{get\+An\+Tamanho} ()
+\begin{DoxyCompactList}\small\item\em Getter para o tamanho. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a8ebc0bf27012a5cbf394c8f1b99f785a}{get\+An\+Dieta} ()
+\begin{DoxyCompactList}\small\item\em Getter para a Dieta. \end{DoxyCompactList}\item 
+\hyperlink{classVeterinario}{Veterinario} \hyperlink{classAnimal_a8bf6c4f4fcb8adf1904ca85dd09c5da1}{get\+An\+Vet} ()
+\begin{DoxyCompactList}\small\item\em Getter para o objeto Veterinário. \end{DoxyCompactList}\item 
+\hyperlink{classTratador}{Tratador} \hyperlink{classAnimal_aac17c7dfee9b147d830a6a920a372e01}{get\+An\+Trat} ()
+\begin{DoxyCompactList}\small\item\em Getter para o objeto \hyperlink{classTratador}{Tratador}. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a41e1e02b1ee86e60b0490e03531c53b9}{get\+An\+Batismo} ()
+\begin{DoxyCompactList}\small\item\em Getter para o nome de Batismo. \end{DoxyCompactList}\item 
+void \hyperlink{classAnimal_afd6911459593c12e36e2517e9695f5ba}{impress} ()
+\item 
+virtual ostream \& \hyperlink{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}{print} (ostream \&)=0
+\begin{DoxyCompactList}\small\item\em Método Virtual para tornar a classe Abstrata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\+\_\+id}
+\begin{DoxyCompactList}\small\item\em Id do \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\+\_\+classe}
+\item 
+string \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\+\_\+nome}
+\begin{DoxyCompactList}\small\item\em Nome do \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\+\_\+nome\+Cient}
+\begin{DoxyCompactList}\small\item\em Nome científico do \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+char \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\+\_\+sexo}
+\begin{DoxyCompactList}\small\item\em Sexo do \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+float \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\+\_\+tamanho}
+\begin{DoxyCompactList}\small\item\em Tamanho do \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\+\_\+dieta}
+\begin{DoxyCompactList}\small\item\em Dieta do \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+\hyperlink{classVeterinario}{Veterinario} \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\+\_\+vet}
+\begin{DoxyCompactList}\small\item\em Objeto para a classe Veterinário. \end{DoxyCompactList}\item 
+\hyperlink{classTratador}{Tratador} \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\+\_\+trat}
+\begin{DoxyCompactList}\small\item\em Objeto para a classe \hyperlink{classTratador}{Tratador}. \end{DoxyCompactList}\item 
+string \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\+\_\+batismo}
+\begin{DoxyCompactList}\small\item\em Objeto para o nome de batismo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classAnimal_ae06cad237a6d5123266d3d7ba645ce53}{operator$<$$<$} (ostream \&o, \hyperlink{classAnimal}{Animal} \&a)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do Operador de Inserção para a classe \hyperlink{classAnimal}{Animal} e suas Derivadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Animal@{Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Animal()}{Animal()}}]{\setlength{\rightskip}{0pt plus 5cm}Animal\+::\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a1e726a49ec952443190ac62dad22353c}{}\label{classAnimal_a1e726a49ec952443190ac62dad22353c}
+
+
+Construtor padrão. 
+
+
+\begin{DoxyCode}
+6 \{
+7 
+8 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!Animal@{Animal}}
+\index{Animal@{Animal}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{Animal(int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo)}{Animal(int id, string classe, string nome, string nomeCient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo)}}]{\setlength{\rightskip}{0pt plus 5cm}Animal\+::\+Animal (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{classe, }
+\item[{string}]{nome, }
+\item[{string}]{nome\+Cient, }
+\item[{char}]{sexo, }
+\item[{float}]{tamanho, }
+\item[{string}]{dieta, }
+\item[{{\bf Veterinario}}]{vet, }
+\item[{{\bf Tratador}}]{trat, }
+\item[{string}]{batismo}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a2336a70f8816269adabb814c876f36a5}{}\label{classAnimal_a2336a70f8816269adabb814c876f36a5}
+
+
+Construtor parametrizado. 
+
+
+\begin{DoxyCode}
+11 \{
+12     \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} = id;
+13     \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} = classe;
+14     \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} = nome;
+15     \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} = nomeCient;
+16     \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} = sexo;
+17     \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} = tamanho;
+18     \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} = dieta;
+19     \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet} = vet;
+20     \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat} = trat;
+21     \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} = batismo;
+22 
+23 
+24 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!````~Animal@{$\sim$\+Animal}}
+\index{````~Animal@{$\sim$\+Animal}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{$\sim$\+Animal()}{~Animal()}}]{\setlength{\rightskip}{0pt plus 5cm}Animal\+::$\sim$\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a476af25adde5f0dfa688129c8f86fa5c}{}\label{classAnimal_a476af25adde5f0dfa688129c8f86fa5c}
+
+
+Destrutor padrão. 
+
+
+\begin{DoxyCode}
+27 \{
+28 
+29 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Animal@{Animal}!get\+An\+Batismo@{get\+An\+Batismo}}
+\index{get\+An\+Batismo@{get\+An\+Batismo}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Batismo()}{getAnBatismo()}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::get\+An\+Batismo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a41e1e02b1ee86e60b0490e03531c53b9}{}\label{classAnimal_a41e1e02b1ee86e60b0490e03531c53b9}
+
+
+Getter para o nome de Batismo. 
+
+
+\begin{DoxyCode}
+129 \{
+130     \textcolor{keywordflow}{return} \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo};
+131 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Classe@{get\+An\+Classe}}
+\index{get\+An\+Classe@{get\+An\+Classe}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Classe()}{getAnClasse()}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::get\+An\+Classe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_af5fcc32101cf561359e98d2fa639e6c8}{}\label{classAnimal_af5fcc32101cf561359e98d2fa639e6c8}
+
+
+Getter para a Classe. 
+
+
+\begin{DoxyCode}
+89 \{
+90     \textcolor{keywordflow}{return} \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe};
+91 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Dieta@{get\+An\+Dieta}}
+\index{get\+An\+Dieta@{get\+An\+Dieta}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Dieta()}{getAnDieta()}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::get\+An\+Dieta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a8ebc0bf27012a5cbf394c8f1b99f785a}{}\label{classAnimal_a8ebc0bf27012a5cbf394c8f1b99f785a}
+
+
+Getter para a Dieta. 
+
+
+\begin{DoxyCode}
+114 \{
+115     \textcolor{keywordflow}{return} \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta};
+116 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Id@{get\+An\+Id}}
+\index{get\+An\+Id@{get\+An\+Id}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Id()}{getAnId()}}]{\setlength{\rightskip}{0pt plus 5cm}int Animal\+::get\+An\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a6ecedda7678495e0a7ad7518f81df97a}{}\label{classAnimal_a6ecedda7678495e0a7ad7518f81df97a}
+
+
+Getter para o Id. 
+
+
+\begin{DoxyCode}
+84 \{
+85     \textcolor{keywordflow}{return} \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id};
+86 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Nome@{get\+An\+Nome}}
+\index{get\+An\+Nome@{get\+An\+Nome}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Nome()}{getAnNome()}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::get\+An\+Nome (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a5f5d18cb8cb210bc040a1824f2c563b7}{}\label{classAnimal_a5f5d18cb8cb210bc040a1824f2c563b7}
+
+
+Getter para o Nome. 
+
+
+\begin{DoxyCode}
+94 \{
+95     \textcolor{keywordflow}{return} \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome};
+96 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Nome\+Cient@{get\+An\+Nome\+Cient}}
+\index{get\+An\+Nome\+Cient@{get\+An\+Nome\+Cient}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Nome\+Cient()}{getAnNomeCient()}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::get\+An\+Nome\+Cient (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_ad85e22e58b1eb1a1e1dfa82565eb0b07}{}\label{classAnimal_ad85e22e58b1eb1a1e1dfa82565eb0b07}
+
+
+Getter para o Nome Científico. 
+
+
+\begin{DoxyCode}
+99 \{
+100     \textcolor{keywordflow}{return} \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient};
+101 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Sexo@{get\+An\+Sexo}}
+\index{get\+An\+Sexo@{get\+An\+Sexo}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Sexo()}{getAnSexo()}}]{\setlength{\rightskip}{0pt plus 5cm}char Animal\+::get\+An\+Sexo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_abf665342c066528a05c06141c308dcf0}{}\label{classAnimal_abf665342c066528a05c06141c308dcf0}
+
+
+Getter para o Sexo. 
+
+
+\begin{DoxyCode}
+104 \{
+105     \textcolor{keywordflow}{return} \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo};
+106 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Tamanho@{get\+An\+Tamanho}}
+\index{get\+An\+Tamanho@{get\+An\+Tamanho}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Tamanho()}{getAnTamanho()}}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::get\+An\+Tamanho (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_ac41f9d4acfdb320b0a9f03c7fb439852}{}\label{classAnimal_ac41f9d4acfdb320b0a9f03c7fb439852}
+
+
+Getter para o tamanho. 
+
+
+\begin{DoxyCode}
+109 \{
+110     \textcolor{keywordflow}{return} \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho};
+111 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Trat@{get\+An\+Trat}}
+\index{get\+An\+Trat@{get\+An\+Trat}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Trat()}{getAnTrat()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tratador} Animal\+::get\+An\+Trat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_aac17c7dfee9b147d830a6a920a372e01}{}\label{classAnimal_aac17c7dfee9b147d830a6a920a372e01}
+
+
+Getter para o objeto \hyperlink{classTratador}{Tratador}. 
+
+
+\begin{DoxyCode}
+124 \{
+125     \textcolor{keywordflow}{return} \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat};
+126 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!get\+An\+Vet@{get\+An\+Vet}}
+\index{get\+An\+Vet@{get\+An\+Vet}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{get\+An\+Vet()}{getAnVet()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Veterinario} Animal\+::get\+An\+Vet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a8bf6c4f4fcb8adf1904ca85dd09c5da1}{}\label{classAnimal_a8bf6c4f4fcb8adf1904ca85dd09c5da1}
+
+
+Getter para o objeto Veterinário. 
+
+
+\begin{DoxyCode}
+119 \{
+120     \textcolor{keywordflow}{return} \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet};
+121 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!impress@{impress}}
+\index{impress@{impress}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{impress()}{impress()}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAnimal_afd6911459593c12e36e2517e9695f5ba}{}\label{classAnimal_afd6911459593c12e36e2517e9695f5ba}
+
+
+Implements \hyperlink{classFuncionario_aeaa43599aa64998372ad7044315ed4f7}{Funcionario}.
+
+
+
+Reimplemented in \hyperlink{classAve_a047ce9b9f688db5a9faa24e0eb70aad9}{Ave}, \hyperlink{classReptil_aa0e5c9f9397a5f0670915f8de3d7c468}{Reptil}, and \hyperlink{classMamifero_aece8169f76ded941f520741fd922cdab}{Mamifero}.
+
+
+\begin{DoxyCode}
+134 \{
+135     cout << \textcolor{stringliteral}{"Animal: "} << \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} << endl;
+136     cout << \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} << endl;
+137     cout << \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} << endl;
+138     cout << \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} << endl;
+139     cout << \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} << endl;
+140     cout << \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} << endl;
+141     cout << \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} << endl;
+142     cout << \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} << endl;
+143 
+144     cout << endl;
+145     cout << endl;
+146 
+147     \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet}.\hyperlink{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}{impress}();
+148 
+149     cout << endl;
+150     cout << endl;
+151     
+152     \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat}.\hyperlink{classTratador_ac7651dbd65916ae7a37251314fd06797}{impress}();
+153 
+154 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!print@{print}}
+\index{print@{print}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{print(ostream \&)=0}{print(ostream &)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual ostream\& Animal\+::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}{}\label{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}
+
+
+Método Virtual para tornar a classe Abstrata. 
+
+
+
+Implements \hyperlink{classFuncionario_a06bb354ea21c7059a9740a6402f26b5c}{Funcionario}.
+
+
+
+Implemented in \hyperlink{classAnfibio_a8f2d675d174f4459e400f33de703467a}{Anfibio}, \hyperlink{classAve_abd32f1bfb45910f66aebeba26d231bba}{Ave}, \hyperlink{classReptil_a18885dbd48b1fced7f911f8ebabb58e4}{Reptil}, \hyperlink{classMamifero_a717d161cbc6b3392db3faa2554f5bfa2}{Mamifero}, \hyperlink{classReptilNativo_ae44fd929f6ca100781d7304802865203}{Reptil\+Nativo}, \hyperlink{classAnfibioExotico_ac5d435b804cb80f3a6c3a476ed9c6990}{Anfibio\+Exotico}, \hyperlink{classAnfibioNativo_a2db2ade56011851b6dab72d8598f52c9}{Anfibio\+Nativo}, \hyperlink{classMamiferoExotico_a465d48bc4a1111059ec38a04f76b264e}{Mamifero\+Exotico}, \hyperlink{classMamiferoNativo_a0116235f807fb5a15ace63321d62518d}{Mamifero\+Nativo}, \hyperlink{classReptilExotico_a24e184c97d40c3e9eec065a156db3703}{Reptil\+Exotico}, \hyperlink{classAveExotica_abe7b82c5cd14eefb532db19069fc9fcf}{Ave\+Exotica}, and \hyperlink{classAveNativa_a08a35d6ee2417ab7eebcdbf3b1d164ab}{Ave\+Nativa}.
+
+\index{Animal@{Animal}!set\+An\+Batismo@{set\+An\+Batismo}}
+\index{set\+An\+Batismo@{set\+An\+Batismo}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Batismo(string batismo)}{setAnBatismo(string batismo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Batismo (
+\begin{DoxyParamCaption}
+\item[{string}]{batismo}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a2e8b46c87f3e287979bfa71333c9993c}{}\label{classAnimal_a2e8b46c87f3e287979bfa71333c9993c}
+
+
+Setter para o nome de Batismo. 
+
+
+\begin{DoxyCode}
+76 \{
+77     \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} = batismo;
+78 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Classe@{set\+An\+Classe}}
+\index{set\+An\+Classe@{set\+An\+Classe}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Classe(string classe)}{setAnClasse(string classe)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Classe (
+\begin{DoxyParamCaption}
+\item[{string}]{classe}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a3408e2ea8624789f41d04e994fc7c004}{}\label{classAnimal_a3408e2ea8624789f41d04e994fc7c004}
+
+
+Setter para a classe. 
+
+
+\begin{DoxyCode}
+41 \{
+42     \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} = classe;
+43 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Dieta@{set\+An\+Dieta}}
+\index{set\+An\+Dieta@{set\+An\+Dieta}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Dieta(string dieta)}{setAnDieta(string dieta)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Dieta (
+\begin{DoxyParamCaption}
+\item[{string}]{dieta}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a24cbb6a7b596c3dfcd41b842926865ba}{}\label{classAnimal_a24cbb6a7b596c3dfcd41b842926865ba}
+
+
+Setter para a Dieta. 
+
+
+\begin{DoxyCode}
+64 \{
+65     \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} = dieta;
+66 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Id@{set\+An\+Id}}
+\index{set\+An\+Id@{set\+An\+Id}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Id(int id)}{setAnId(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_acec30bb98d54e4f838619c6b300ec64a}{}\label{classAnimal_acec30bb98d54e4f838619c6b300ec64a}
+
+
+Setter para o ID. 
+
+
+\begin{DoxyCode}
+36 \{
+37     \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} = id;
+38 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Nome@{set\+An\+Nome}}
+\index{set\+An\+Nome@{set\+An\+Nome}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Nome(string nome)}{setAnNome(string nome)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Nome (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a4671ad519aa7c27ef72bcf21d00f2afb}{}\label{classAnimal_a4671ad519aa7c27ef72bcf21d00f2afb}
+
+
+Setter para o nome. 
+
+
+\begin{DoxyCode}
+46 \{
+47     \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} = nome;
+48 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Nome\+Cient@{set\+An\+Nome\+Cient}}
+\index{set\+An\+Nome\+Cient@{set\+An\+Nome\+Cient}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Nome\+Cient(string nome\+Cient)}{setAnNomeCient(string nomeCient)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Nome\+Cient (
+\begin{DoxyParamCaption}
+\item[{string}]{nome\+Cient}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a1657423dc5747a03587961b1e8198df9}{}\label{classAnimal_a1657423dc5747a03587961b1e8198df9}
+
+
+Setter para o Nome Científico. 
+
+
+\begin{DoxyCode}
+51 \{
+52     \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} = nomeCient;
+53 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Sexo@{set\+An\+Sexo}}
+\index{set\+An\+Sexo@{set\+An\+Sexo}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Sexo(char sexo)}{setAnSexo(char sexo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Sexo (
+\begin{DoxyParamCaption}
+\item[{char}]{sexo}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_ad9aceda995534ac42ff744e1f4755e64}{}\label{classAnimal_ad9aceda995534ac42ff744e1f4755e64}
+
+
+Setter para o sexo do \hyperlink{classAnimal}{Animal}. 
+
+
+\begin{DoxyCode}
+56 \{
+57     \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} = sexo;
+58 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Tamanho@{set\+An\+Tamanho}}
+\index{set\+An\+Tamanho@{set\+An\+Tamanho}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Tamanho(float tamanho)}{setAnTamanho(float tamanho)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Tamanho (
+\begin{DoxyParamCaption}
+\item[{float}]{tamanho}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a97269d392f68c95a04c77c0f226d9a4a}{}\label{classAnimal_a97269d392f68c95a04c77c0f226d9a4a}
+
+
+Setter para o tamanho. 
+
+
+\begin{DoxyCode}
+60 \{
+61     \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} = tamanho;
+62 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Trat@{set\+An\+Trat}}
+\index{set\+An\+Trat@{set\+An\+Trat}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Trat(\+Tratador trat)}{setAnTrat(Tratador trat)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Trat (
+\begin{DoxyParamCaption}
+\item[{{\bf Tratador}}]{trat}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_a0b45ad707287f6fdcaee769352481e00}{}\label{classAnimal_a0b45ad707287f6fdcaee769352481e00}
+
+
+Setter para o objeto \hyperlink{classTratador}{Tratador}. 
+
+
+\begin{DoxyCode}
+72 \{
+73     \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat} = trat;
+74 \}
+\end{DoxyCode}
+\index{Animal@{Animal}!set\+An\+Vet@{set\+An\+Vet}}
+\index{set\+An\+Vet@{set\+An\+Vet}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{set\+An\+Vet(\+Veterinario vet)}{setAnVet(Veterinario vet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Animal\+::set\+An\+Vet (
+\begin{DoxyParamCaption}
+\item[{{\bf Veterinario}}]{vet}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnimal_afa0c79f46bbce259561b23c2329140ed}{}\label{classAnimal_afa0c79f46bbce259561b23c2329140ed}
+
+
+Setter para o objeto Veterinário. 
+
+
+\begin{DoxyCode}
+68 \{
+69     \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet} = vet;
+70 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Animal@{Animal}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{o, }
+\item[{{\bf Animal} \&}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classAnimal_ae06cad237a6d5123266d3d7ba645ce53}{}\label{classAnimal_ae06cad237a6d5123266d3d7ba645ce53}
+
+
+Sobrecarga do Operador de Inserção para a classe \hyperlink{classAnimal}{Animal} e suas Derivadas. 
+
+
+\begin{DoxyCode}
+158 \{
+159     \textcolor{keywordflow}{return} a.\hyperlink{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}{print}(o);
+160 \}\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Animal@{Animal}!a\+\_\+batismo@{a\+\_\+batismo}}
+\index{a\+\_\+batismo@{a\+\_\+batismo}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+batismo}{a_batismo}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::a\+\_\+batismo\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{}\label{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}
+
+
+Objeto para o nome de batismo. 
+
+\index{Animal@{Animal}!a\+\_\+classe@{a\+\_\+classe}}
+\index{a\+\_\+classe@{a\+\_\+classe}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+classe}{a_classe}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::a\+\_\+classe\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{}\label{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}
+Classe do \hyperlink{classAnimal}{Animal} \index{Animal@{Animal}!a\+\_\+dieta@{a\+\_\+dieta}}
+\index{a\+\_\+dieta@{a\+\_\+dieta}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+dieta}{a_dieta}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::a\+\_\+dieta\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a32088524517a531af269e3ec04275135}{}\label{classAnimal_a32088524517a531af269e3ec04275135}
+
+
+Dieta do \hyperlink{classAnimal}{Animal}. 
+
+\index{Animal@{Animal}!a\+\_\+id@{a\+\_\+id}}
+\index{a\+\_\+id@{a\+\_\+id}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+id}{a_id}}]{\setlength{\rightskip}{0pt plus 5cm}int Animal\+::a\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{}\label{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}
+
+
+Id do \hyperlink{classAnimal}{Animal}. 
+
+\index{Animal@{Animal}!a\+\_\+nome@{a\+\_\+nome}}
+\index{a\+\_\+nome@{a\+\_\+nome}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+nome}{a_nome}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::a\+\_\+nome\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{}\label{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}
+
+
+Nome do \hyperlink{classAnimal}{Animal}. 
+
+\index{Animal@{Animal}!a\+\_\+nome\+Cient@{a\+\_\+nome\+Cient}}
+\index{a\+\_\+nome\+Cient@{a\+\_\+nome\+Cient}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+nome\+Cient}{a_nomeCient}}]{\setlength{\rightskip}{0pt plus 5cm}string Animal\+::a\+\_\+nome\+Cient\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{}\label{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}
+
+
+Nome científico do \hyperlink{classAnimal}{Animal}. 
+
+\index{Animal@{Animal}!a\+\_\+sexo@{a\+\_\+sexo}}
+\index{a\+\_\+sexo@{a\+\_\+sexo}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+sexo}{a_sexo}}]{\setlength{\rightskip}{0pt plus 5cm}char Animal\+::a\+\_\+sexo\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{}\label{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}
+
+
+Sexo do \hyperlink{classAnimal}{Animal}. 
+
+\index{Animal@{Animal}!a\+\_\+tamanho@{a\+\_\+tamanho}}
+\index{a\+\_\+tamanho@{a\+\_\+tamanho}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+tamanho}{a_tamanho}}]{\setlength{\rightskip}{0pt plus 5cm}float Animal\+::a\+\_\+tamanho\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{}\label{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}
+
+
+Tamanho do \hyperlink{classAnimal}{Animal}. 
+
+\index{Animal@{Animal}!a\+\_\+trat@{a\+\_\+trat}}
+\index{a\+\_\+trat@{a\+\_\+trat}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+trat}{a_trat}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tratador} Animal\+::a\+\_\+trat\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{}\label{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}
+
+
+Objeto para a classe \hyperlink{classTratador}{Tratador}. 
+
+\index{Animal@{Animal}!a\+\_\+vet@{a\+\_\+vet}}
+\index{a\+\_\+vet@{a\+\_\+vet}!Animal@{Animal}}
+\subsubsection[{\texorpdfstring{a\+\_\+vet}{a_vet}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Veterinario} Animal\+::a\+\_\+vet\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{}\label{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}
+
+
+Objeto para a classe Veterinário. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{animal_8h}{animal.\+h}\item 
+src/\hyperlink{animal_8cpp}{animal.\+cpp}\end{DoxyCompactItemize}

@@ -2,11 +2,14 @@
 #define REPTIL_H
 #include "animal.h"
 
+/**@brief Classe Reptil derivada da classe Animal*/
 class Reptil : public Animal
 {
 protected:
-	bool a_venenoso;
-	string a_tipoVeneno;
+	/**@brief Saber se o Reptil é venenoso ou não*/
+	bool a_venenoso; 
+	/**@brief Tipo de Veneno*/
+	string a_tipoVeneno; 
 
 public:
 	Reptil();

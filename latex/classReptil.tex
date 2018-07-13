@@ -1,0 +1,192 @@
+\hypertarget{classReptil}{}\section{Reptil Class Reference}
+\label{classReptil}\index{Reptil@{Reptil}}
+
+
+Classe \hyperlink{classReptil}{Reptil} derivada da classe \hyperlink{classAnimal}{Animal}.  
+
+
+
+
+{\ttfamily \#include $<$reptil.\+h$>$}
+
+
+
+Inheritance diagram for Reptil\+:
+% FIG 0
+
+
+Collaboration diagram for Reptil\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classReptil_a8d4e391e335678b7ed64eda95e050553}{Reptil} ()
+\item 
+\hyperlink{classReptil_a9684945c567d59b4898b3b102823d910}{Reptil} (int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, \hyperlink{classVeterinario}{Veterinario} vet, \hyperlink{classTratador}{Tratador} trat, string batismo, bool venenoso, string tipo\+Veneno)
+\item 
+\hyperlink{classReptil_a826ed679cc45f74fefecef7d4d40b409}{$\sim$\+Reptil} ()
+\item 
+void \hyperlink{classReptil_aa0e5c9f9397a5f0670915f8de3d7c468}{impress} ()
+\item 
+ostream \& \hyperlink{classReptil_a18885dbd48b1fced7f911f8ebabb58e4}{print} (ostream \&o)
+\begin{DoxyCompactList}\small\item\em Método Virtual para tornar a classe Abstrata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classReptil_ab2ebc4cb4f0cf56587b59fdb0d130cf5}{a\+\_\+venenoso}
+\begin{DoxyCompactList}\small\item\em Saber se o \hyperlink{classReptil}{Reptil} é venenoso ou não. \end{DoxyCompactList}\item 
+string \hyperlink{classReptil_ac9ca9b337ca21b72b0ef77b3904b56b7}{a\+\_\+tipo\+Veneno}
+\begin{DoxyCompactList}\small\item\em Tipo de Veneno. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{classReptil}{Reptil} derivada da classe \hyperlink{classAnimal}{Animal}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Reptil@{Reptil}!Reptil@{Reptil}}
+\index{Reptil@{Reptil}!Reptil@{Reptil}}
+\subsubsection[{\texorpdfstring{Reptil()}{Reptil()}}]{\setlength{\rightskip}{0pt plus 5cm}Reptil\+::\+Reptil (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classReptil_a8d4e391e335678b7ed64eda95e050553}{}\label{classReptil_a8d4e391e335678b7ed64eda95e050553}
+
+\begin{DoxyCode}
+5 \{
+6 
+7 \}
+\end{DoxyCode}
+\index{Reptil@{Reptil}!Reptil@{Reptil}}
+\index{Reptil@{Reptil}!Reptil@{Reptil}}
+\subsubsection[{\texorpdfstring{Reptil(int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo, bool venenoso, string tipo\+Veneno)}{Reptil(int id, string classe, string nome, string nomeCient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo, bool venenoso, string tipoVeneno)}}]{\setlength{\rightskip}{0pt plus 5cm}Reptil\+::\+Reptil (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{classe, }
+\item[{string}]{nome, }
+\item[{string}]{nome\+Cient, }
+\item[{char}]{sexo, }
+\item[{float}]{tamanho, }
+\item[{string}]{dieta, }
+\item[{{\bf Veterinario}}]{vet, }
+\item[{{\bf Tratador}}]{trat, }
+\item[{string}]{batismo, }
+\item[{bool}]{venenoso, }
+\item[{string}]{tipo\+Veneno}
+\end{DoxyParamCaption}
+)}\hypertarget{classReptil_a9684945c567d59b4898b3b102823d910}{}\label{classReptil_a9684945c567d59b4898b3b102823d910}
+
+\begin{DoxyCode}
+12 :\hyperlink{classAnimal_a1e726a49ec952443190ac62dad22353c}{Animal}(\textcolor{keywordtype}{id}, classe, nome, nomeCient, sexo, tamanho, dieta, vet, trat, batismo)
+13 \{
+14     \hyperlink{classReptil_ab2ebc4cb4f0cf56587b59fdb0d130cf5}{a\_venenoso} = venenoso;
+15     \hyperlink{classReptil_ac9ca9b337ca21b72b0ef77b3904b56b7}{a\_tipoVeneno} = tipoVeneno;
+16 \}
+\end{DoxyCode}
+\index{Reptil@{Reptil}!````~Reptil@{$\sim$\+Reptil}}
+\index{````~Reptil@{$\sim$\+Reptil}!Reptil@{Reptil}}
+\subsubsection[{\texorpdfstring{$\sim$\+Reptil()}{~Reptil()}}]{\setlength{\rightskip}{0pt plus 5cm}Reptil\+::$\sim$\+Reptil (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classReptil_a826ed679cc45f74fefecef7d4d40b409}{}\label{classReptil_a826ed679cc45f74fefecef7d4d40b409}
+
+\begin{DoxyCode}
+19 \{
+20 
+21 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Reptil@{Reptil}!impress@{impress}}
+\index{impress@{impress}!Reptil@{Reptil}}
+\subsubsection[{\texorpdfstring{impress()}{impress()}}]{\setlength{\rightskip}{0pt plus 5cm}void Reptil\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classReptil_aa0e5c9f9397a5f0670915f8de3d7c468}{}\label{classReptil_aa0e5c9f9397a5f0670915f8de3d7c468}
+
+
+Reimplemented from \hyperlink{classAnimal_afd6911459593c12e36e2517e9695f5ba}{Animal}.
+
+
+\begin{DoxyCode}
+24 \{
+25     cout << \textcolor{stringliteral}{"Animal: "} << \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} << endl;
+26     cout << \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} << endl;
+27     cout << \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} << endl;
+28     cout << \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} << endl;
+29     cout << \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} << endl;
+30     cout << \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} << endl;
+31     cout << \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} << endl;
+32     cout << \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} << endl;
+33 
+34     cout << \textcolor{stringliteral}{"Caracterísicas Reptil: "} << endl;
+35     cout << \textcolor{stringliteral}{"Venenoso? "} << \hyperlink{classReptil_ab2ebc4cb4f0cf56587b59fdb0d130cf5}{a\_venenoso} << endl;
+36     cout << \textcolor{stringliteral}{"Tipo do Veneno: "} << \hyperlink{classReptil_ac9ca9b337ca21b72b0ef77b3904b56b7}{a\_tipoVeneno} << endl;
+37 
+38     cout << endl;
+39     cout << endl;
+40 
+41     \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet}.\hyperlink{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}{impress}();
+42 
+43     cout << endl;
+44     cout << endl;
+45 
+46     \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat}.\hyperlink{classTratador_ac7651dbd65916ae7a37251314fd06797}{impress}();
+47 
+48 \}
+\end{DoxyCode}
+\index{Reptil@{Reptil}!print@{print}}
+\index{print@{print}!Reptil@{Reptil}}
+\subsubsection[{\texorpdfstring{print(ostream \&o)}{print(ostream &o)}}]{\setlength{\rightskip}{0pt plus 5cm}ostream \& Reptil\+::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classReptil_a18885dbd48b1fced7f911f8ebabb58e4}{}\label{classReptil_a18885dbd48b1fced7f911f8ebabb58e4}
+
+
+Método Virtual para tornar a classe Abstrata. 
+
+
+
+Implements \hyperlink{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}{Animal}.
+
+
+
+Reimplemented in \hyperlink{classReptilNativo_ae44fd929f6ca100781d7304802865203}{Reptil\+Nativo}, and \hyperlink{classReptilExotico_a24e184c97d40c3e9eec065a156db3703}{Reptil\+Exotico}.
+
+
+\begin{DoxyCode}
+51 \{
+52     o << \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet}.\hyperlink{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{getId}() << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat}.\hyperlink{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{getId}() << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} <<
+53     \textcolor{stringliteral}{";"} << \hyperlink{classReptil_ab2ebc4cb4f0cf56587b59fdb0d130cf5}{a\_venenoso} << \textcolor{stringliteral}{";"} << \hyperlink{classReptil_ac9ca9b337ca21b72b0ef77b3904b56b7}{a\_tipoVeneno};
+54     \textcolor{keywordflow}{return} o;
+55 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Reptil@{Reptil}!a\+\_\+tipo\+Veneno@{a\+\_\+tipo\+Veneno}}
+\index{a\+\_\+tipo\+Veneno@{a\+\_\+tipo\+Veneno}!Reptil@{Reptil}}
+\subsubsection[{\texorpdfstring{a\+\_\+tipo\+Veneno}{a_tipoVeneno}}]{\setlength{\rightskip}{0pt plus 5cm}string Reptil\+::a\+\_\+tipo\+Veneno\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classReptil_ac9ca9b337ca21b72b0ef77b3904b56b7}{}\label{classReptil_ac9ca9b337ca21b72b0ef77b3904b56b7}
+
+
+Tipo de Veneno. 
+
+\index{Reptil@{Reptil}!a\+\_\+venenoso@{a\+\_\+venenoso}}
+\index{a\+\_\+venenoso@{a\+\_\+venenoso}!Reptil@{Reptil}}
+\subsubsection[{\texorpdfstring{a\+\_\+venenoso}{a_venenoso}}]{\setlength{\rightskip}{0pt plus 5cm}bool Reptil\+::a\+\_\+venenoso\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classReptil_ab2ebc4cb4f0cf56587b59fdb0d130cf5}{}\label{classReptil_ab2ebc4cb4f0cf56587b59fdb0d130cf5}
+
+
+Saber se o \hyperlink{classReptil}{Reptil} é venenoso ou não. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{reptil_8h}{reptil.\+h}\item 
+src/\hyperlink{reptil_8cpp}{reptil.\+cpp}\end{DoxyCompactItemize}

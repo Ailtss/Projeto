@@ -1,0 +1,495 @@
+\hypertarget{classFuncionario}{}\section{Funcionario Class Reference}
+\label{classFuncionario}\index{Funcionario@{Funcionario}}
+
+
+Classe base Abstrata Funcionário.  
+
+
+
+
+{\ttfamily \#include $<$funcionario.\+h$>$}
+
+
+
+Inheritance diagram for Funcionario\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFuncionario_a7cd39b2c6cd2449162481a8c0e7a2429}{Funcionario} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão. \end{DoxyCompactList}\item 
+\hyperlink{classFuncionario_a918cf5f76da6007332303861d37416fd}{Funcionario} (int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, char fator\+RH, string especialidade)
+\begin{DoxyCompactList}\small\item\em Construtor Parametrizado. \end{DoxyCompactList}\item 
+\hyperlink{classFuncionario_a800273bd909dc88f821a414abebc442c}{$\sim$\+Funcionario} ()
+\begin{DoxyCompactList}\small\item\em Destrutor Padrão. \end{DoxyCompactList}\item 
+void \hyperlink{classFuncionario_acc0b430d08b2c459682d7bb01c0ab1c4}{set\+Id} (int id)
+\begin{DoxyCompactList}\small\item\em Setter para o Id. \end{DoxyCompactList}\item 
+void \hyperlink{classFuncionario_aa7876648c2ad5e3f4d3befcabcce0b1c}{set\+Nome} (string nome)
+\begin{DoxyCompactList}\small\item\em Setter para o nome. \end{DoxyCompactList}\item 
+void \hyperlink{classFuncionario_a24de20bbd458ab4723f2f7b42732cf79}{set\+Cpf} (string cpf)
+\begin{DoxyCompactList}\small\item\em Setter para o C\+PF. \end{DoxyCompactList}\item 
+void \hyperlink{classFuncionario_af85eeb2e2b606d60da800c7084f23769}{set\+Idade} (short idade)
+\begin{DoxyCompactList}\small\item\em Setter para a Idade. \end{DoxyCompactList}\item 
+void \hyperlink{classFuncionario_a979101220d0113b4fc018e1c938d86a2}{set\+Tipo\+Sanguineo} (string tipo\+\_\+sanguineo)
+\begin{DoxyCompactList}\small\item\em Setter para o tipo sanguíneo. \end{DoxyCompactList}\item 
+void \hyperlink{classFuncionario_acb31e4c590efd268c4c6484f5999df23}{set\+Fator\+RH} (char fator\+RH)
+\begin{DoxyCompactList}\small\item\em Setter para o Fator RH. \end{DoxyCompactList}\item 
+void \hyperlink{classFuncionario_a799ba2c679c393ca1ee07bb917213f3a}{set\+Especialidade} (string especialidade)
+\begin{DoxyCompactList}\small\item\em Setter para a Especialidade. \end{DoxyCompactList}\item 
+int \hyperlink{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{get\+Id} ()
+\begin{DoxyCompactList}\small\item\em Getter para o ID. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_a13f42e2a8cb0515371b49745e5830c4c}{get\+Nome} ()
+\begin{DoxyCompactList}\small\item\em Getter para o Nome. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_a88db81a06dcaf2115e71be3b1fe8bd1c}{get\+Cpf} ()
+\begin{DoxyCompactList}\small\item\em Getter para o C\+PF. \end{DoxyCompactList}\item 
+short \hyperlink{classFuncionario_ac8b1947b4cb1c1216291c4750670fba2}{get\+Idade} ()
+\begin{DoxyCompactList}\small\item\em Getter para a idade. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_aedc6d72aaa308192628b749db2fad037}{get\+Tipo\+Sanguineo} ()
+\begin{DoxyCompactList}\small\item\em Getter para o Tipo Sanguíneo. \end{DoxyCompactList}\item 
+char \hyperlink{classFuncionario_a094e2183a16b6a6acbf1dac8ecc5a52a}{get\+Fator\+RH} ()
+\begin{DoxyCompactList}\small\item\em Getter para o Fator RH. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_a1a814a8a11d9750dbfedcf8cdf87fd45}{get\+Especialidade} ()
+\begin{DoxyCompactList}\small\item\em Getter para a Especialidade. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classFuncionario_aeaa43599aa64998372ad7044315ed4f7}{impress} ()=0
+\item 
+virtual ostream \& \hyperlink{classFuncionario_a06bb354ea21c7059a9740a6402f26b5c}{print} (ostream \&)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\+\_\+id}
+\begin{DoxyCompactList}\small\item\em Id do Funcionário. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\+\_\+nome}
+\begin{DoxyCompactList}\small\item\em Nome do Funcionário. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\+\_\+cpf}
+\begin{DoxyCompactList}\small\item\em C\+PF do Funcionário. \end{DoxyCompactList}\item 
+short \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\+\_\+idade}
+\begin{DoxyCompactList}\small\item\em Idade do Funcionário. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\+\_\+tipo\+\_\+sanguineo}
+\begin{DoxyCompactList}\small\item\em Tipo Sanguíneo do Funcionário. \end{DoxyCompactList}\item 
+char \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\+\_\+fator\+RH}
+\begin{DoxyCompactList}\small\item\em Fator RH do funcionário. \end{DoxyCompactList}\item 
+string \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\+\_\+especialidade}
+\begin{DoxyCompactList}\small\item\em Especialidade animal do Funcionário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classFuncionario_ad85dd4ac2b20d496f0d964e424cb35c9}{operator$<$$<$} (ostream \&o, \hyperlink{classFuncionario}{Funcionario} \&f)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do Operador de inserção para a classe funcionário e suas classes Derivadas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe base Abstrata Funcionário. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Funcionario@{Funcionario}!Funcionario@{Funcionario}}
+\index{Funcionario@{Funcionario}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{Funcionario()}{Funcionario()}}]{\setlength{\rightskip}{0pt plus 5cm}Funcionario\+::\+Funcionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a7cd39b2c6cd2449162481a8c0e7a2429}{}\label{classFuncionario_a7cd39b2c6cd2449162481a8c0e7a2429}
+
+
+Construtor padrão. 
+
+
+\begin{DoxyCode}
+4 \{
+5     \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id} = 0;
+6     \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome} = \textcolor{stringliteral}{""};
+7     \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf} = \textcolor{stringliteral}{""};
+8     \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade} = 0;
+9     \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo} = \textcolor{stringliteral}{""};
+10     \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH} = 0;
+11     \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade} = \textcolor{stringliteral}{""};
+12 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!Funcionario@{Funcionario}}
+\index{Funcionario@{Funcionario}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{Funcionario(int id, string nome, string cpf, short idade, string tipo\+\_\+sanguineo, char fator\+R\+H, string especialidade)}{Funcionario(int id, string nome, string cpf, short idade, string tipo_sanguineo, char fatorRH, string especialidade)}}]{\setlength{\rightskip}{0pt plus 5cm}Funcionario\+::\+Funcionario (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{nome, }
+\item[{string}]{cpf, }
+\item[{short}]{idade, }
+\item[{string}]{tipo\+\_\+sanguineo, }
+\item[{char}]{fator\+RH, }
+\item[{string}]{especialidade}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a918cf5f76da6007332303861d37416fd}{}\label{classFuncionario_a918cf5f76da6007332303861d37416fd}
+
+
+Construtor Parametrizado. 
+
+
+\begin{DoxyCode}
+16 \{
+17     \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id} = id;
+18     \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome} = nome;
+19     \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf} = cpf;
+20     \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade} = idade;
+21     \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo} = tipo\_sanguineo;
+22     \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH} = fatorRH;
+23     \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade} = especialidade;
+24 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!````~Funcionario@{$\sim$\+Funcionario}}
+\index{````~Funcionario@{$\sim$\+Funcionario}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{$\sim$\+Funcionario()}{~Funcionario()}}]{\setlength{\rightskip}{0pt plus 5cm}Funcionario\+::$\sim$\+Funcionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a800273bd909dc88f821a414abebc442c}{}\label{classFuncionario_a800273bd909dc88f821a414abebc442c}
+
+
+Destrutor Padrão. 
+
+
+\begin{DoxyCode}
+28 \{
+29 
+30 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Funcionario@{Funcionario}!get\+Cpf@{get\+Cpf}}
+\index{get\+Cpf@{get\+Cpf}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{get\+Cpf()}{getCpf()}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::get\+Cpf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a88db81a06dcaf2115e71be3b1fe8bd1c}{}\label{classFuncionario_a88db81a06dcaf2115e71be3b1fe8bd1c}
+
+
+Getter para o C\+PF. 
+
+
+\begin{DoxyCode}
+81 \{
+82     \textcolor{keywordflow}{return} \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf};
+83 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!get\+Especialidade@{get\+Especialidade}}
+\index{get\+Especialidade@{get\+Especialidade}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{get\+Especialidade()}{getEspecialidade()}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::get\+Especialidade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a1a814a8a11d9750dbfedcf8cdf87fd45}{}\label{classFuncionario_a1a814a8a11d9750dbfedcf8cdf87fd45}
+
+
+Getter para a Especialidade. 
+
+
+\begin{DoxyCode}
+101 \{
+102     \textcolor{keywordflow}{return} \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade};
+103 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!get\+Fator\+RH@{get\+Fator\+RH}}
+\index{get\+Fator\+RH@{get\+Fator\+RH}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{get\+Fator\+R\+H()}{getFatorRH()}}]{\setlength{\rightskip}{0pt plus 5cm}char Funcionario\+::get\+Fator\+RH (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a094e2183a16b6a6acbf1dac8ecc5a52a}{}\label{classFuncionario_a094e2183a16b6a6acbf1dac8ecc5a52a}
+
+
+Getter para o Fator RH. 
+
+
+\begin{DoxyCode}
+96 \{
+97     \textcolor{keywordflow}{return} \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH};
+98 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!get\+Id@{get\+Id}}
+\index{get\+Id@{get\+Id}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{get\+Id()}{getId()}}]{\setlength{\rightskip}{0pt plus 5cm}int Funcionario\+::get\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{}\label{classFuncionario_a0288286a907e587b7ab75d6c23354a06}
+
+
+Getter para o ID. 
+
+
+\begin{DoxyCode}
+71 \{
+72     \textcolor{keywordflow}{return} \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id};
+73 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!get\+Idade@{get\+Idade}}
+\index{get\+Idade@{get\+Idade}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{get\+Idade()}{getIdade()}}]{\setlength{\rightskip}{0pt plus 5cm}short Funcionario\+::get\+Idade (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_ac8b1947b4cb1c1216291c4750670fba2}{}\label{classFuncionario_ac8b1947b4cb1c1216291c4750670fba2}
+
+
+Getter para a idade. 
+
+
+\begin{DoxyCode}
+86 \{
+87     \textcolor{keywordflow}{return} \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade};
+88 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!get\+Nome@{get\+Nome}}
+\index{get\+Nome@{get\+Nome}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{get\+Nome()}{getNome()}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::get\+Nome (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a13f42e2a8cb0515371b49745e5830c4c}{}\label{classFuncionario_a13f42e2a8cb0515371b49745e5830c4c}
+
+
+Getter para o Nome. 
+
+
+\begin{DoxyCode}
+76 \{
+77     \textcolor{keywordflow}{return} \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome};
+78 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!get\+Tipo\+Sanguineo@{get\+Tipo\+Sanguineo}}
+\index{get\+Tipo\+Sanguineo@{get\+Tipo\+Sanguineo}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{get\+Tipo\+Sanguineo()}{getTipoSanguineo()}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::get\+Tipo\+Sanguineo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_aedc6d72aaa308192628b749db2fad037}{}\label{classFuncionario_aedc6d72aaa308192628b749db2fad037}
+
+
+Getter para o Tipo Sanguíneo. 
+
+
+\begin{DoxyCode}
+91 \{
+92     \textcolor{keywordflow}{return} \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo};
+93 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!impress@{impress}}
+\index{impress@{impress}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{impress()=0}{impress()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Funcionario\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFuncionario_aeaa43599aa64998372ad7044315ed4f7}{}\label{classFuncionario_aeaa43599aa64998372ad7044315ed4f7}
+
+
+Implemented in \hyperlink{classAnimal_afd6911459593c12e36e2517e9695f5ba}{Animal}, \hyperlink{classAnfibio_a1905981100749f4cab706d3f6f4ded82}{Anfibio}, \hyperlink{classAve_a047ce9b9f688db5a9faa24e0eb70aad9}{Ave}, \hyperlink{classReptil_aa0e5c9f9397a5f0670915f8de3d7c468}{Reptil}, \hyperlink{classMamifero_aece8169f76ded941f520741fd922cdab}{Mamifero}, \hyperlink{classTratador_ac7651dbd65916ae7a37251314fd06797}{Tratador}, and \hyperlink{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}{Veterinario}.
+
+\index{Funcionario@{Funcionario}!print@{print}}
+\index{print@{print}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{print(ostream \&)=0}{print(ostream &)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual ostream\& Funcionario\+::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classFuncionario_a06bb354ea21c7059a9740a6402f26b5c}{}\label{classFuncionario_a06bb354ea21c7059a9740a6402f26b5c}
+
+
+Implemented in \hyperlink{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}{Animal}, \hyperlink{classAnfibio_a8f2d675d174f4459e400f33de703467a}{Anfibio}, \hyperlink{classAve_abd32f1bfb45910f66aebeba26d231bba}{Ave}, \hyperlink{classReptil_a18885dbd48b1fced7f911f8ebabb58e4}{Reptil}, \hyperlink{classMamifero_a717d161cbc6b3392db3faa2554f5bfa2}{Mamifero}, \hyperlink{classTratador_ac421665ebd5c8661c8a971d8dd1d426b}{Tratador}, \hyperlink{classReptilNativo_ae44fd929f6ca100781d7304802865203}{Reptil\+Nativo}, \hyperlink{classAnfibioExotico_ac5d435b804cb80f3a6c3a476ed9c6990}{Anfibio\+Exotico}, \hyperlink{classAnfibioNativo_a2db2ade56011851b6dab72d8598f52c9}{Anfibio\+Nativo}, \hyperlink{classMamiferoExotico_a465d48bc4a1111059ec38a04f76b264e}{Mamifero\+Exotico}, \hyperlink{classMamiferoNativo_a0116235f807fb5a15ace63321d62518d}{Mamifero\+Nativo}, \hyperlink{classReptilExotico_a24e184c97d40c3e9eec065a156db3703}{Reptil\+Exotico}, \hyperlink{classVeterinario_a2226579fc4858f2a6d7c7d1efe739b2a}{Veterinario}, \hyperlink{classAveExotica_abe7b82c5cd14eefb532db19069fc9fcf}{Ave\+Exotica}, and \hyperlink{classAveNativa_a08a35d6ee2417ab7eebcdbf3b1d164ab}{Ave\+Nativa}.
+
+\index{Funcionario@{Funcionario}!set\+Cpf@{set\+Cpf}}
+\index{set\+Cpf@{set\+Cpf}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{set\+Cpf(string cpf)}{setCpf(string cpf)}}]{\setlength{\rightskip}{0pt plus 5cm}void Funcionario\+::set\+Cpf (
+\begin{DoxyParamCaption}
+\item[{string}]{cpf}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a24de20bbd458ab4723f2f7b42732cf79}{}\label{classFuncionario_a24de20bbd458ab4723f2f7b42732cf79}
+
+
+Setter para o C\+PF. 
+
+
+\begin{DoxyCode}
+45 \{
+46     \hyperlink{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{m\_cpf} = cpf;
+47 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!set\+Especialidade@{set\+Especialidade}}
+\index{set\+Especialidade@{set\+Especialidade}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{set\+Especialidade(string especialidade)}{setEspecialidade(string especialidade)}}]{\setlength{\rightskip}{0pt plus 5cm}void Funcionario\+::set\+Especialidade (
+\begin{DoxyParamCaption}
+\item[{string}]{especialidade}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a799ba2c679c393ca1ee07bb917213f3a}{}\label{classFuncionario_a799ba2c679c393ca1ee07bb917213f3a}
+
+
+Setter para a Especialidade. 
+
+
+\begin{DoxyCode}
+65 \{
+66     \hyperlink{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{m\_especialidade} = especialidade;
+67 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!set\+Fator\+RH@{set\+Fator\+RH}}
+\index{set\+Fator\+RH@{set\+Fator\+RH}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{set\+Fator\+R\+H(char fator\+R\+H)}{setFatorRH(char fatorRH)}}]{\setlength{\rightskip}{0pt plus 5cm}void Funcionario\+::set\+Fator\+RH (
+\begin{DoxyParamCaption}
+\item[{char}]{fator\+RH}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_acb31e4c590efd268c4c6484f5999df23}{}\label{classFuncionario_acb31e4c590efd268c4c6484f5999df23}
+
+
+Setter para o Fator RH. 
+
+
+\begin{DoxyCode}
+60 \{
+61     \hyperlink{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{m\_fatorRH} = fatorRH;
+62 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!set\+Id@{set\+Id}}
+\index{set\+Id@{set\+Id}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{set\+Id(int id)}{setId(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}void Funcionario\+::set\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_acc0b430d08b2c459682d7bb01c0ab1c4}{}\label{classFuncionario_acc0b430d08b2c459682d7bb01c0ab1c4}
+
+
+Setter para o Id. 
+
+
+\begin{DoxyCode}
+35 \{
+36     \hyperlink{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{m\_id} = id;
+37 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!set\+Idade@{set\+Idade}}
+\index{set\+Idade@{set\+Idade}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{set\+Idade(short idade)}{setIdade(short idade)}}]{\setlength{\rightskip}{0pt plus 5cm}void Funcionario\+::set\+Idade (
+\begin{DoxyParamCaption}
+\item[{short}]{idade}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_af85eeb2e2b606d60da800c7084f23769}{}\label{classFuncionario_af85eeb2e2b606d60da800c7084f23769}
+
+
+Setter para a Idade. 
+
+
+\begin{DoxyCode}
+50 \{
+51     \hyperlink{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{m\_idade} = idade;
+52 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!set\+Nome@{set\+Nome}}
+\index{set\+Nome@{set\+Nome}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{set\+Nome(string nome)}{setNome(string nome)}}]{\setlength{\rightskip}{0pt plus 5cm}void Funcionario\+::set\+Nome (
+\begin{DoxyParamCaption}
+\item[{string}]{nome}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_aa7876648c2ad5e3f4d3befcabcce0b1c}{}\label{classFuncionario_aa7876648c2ad5e3f4d3befcabcce0b1c}
+
+
+Setter para o nome. 
+
+
+\begin{DoxyCode}
+40 \{
+41     \hyperlink{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{m\_nome} = nome;
+42 \}
+\end{DoxyCode}
+\index{Funcionario@{Funcionario}!set\+Tipo\+Sanguineo@{set\+Tipo\+Sanguineo}}
+\index{set\+Tipo\+Sanguineo@{set\+Tipo\+Sanguineo}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{set\+Tipo\+Sanguineo(string tipo\+\_\+sanguineo)}{setTipoSanguineo(string tipo_sanguineo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Funcionario\+::set\+Tipo\+Sanguineo (
+\begin{DoxyParamCaption}
+\item[{string}]{tipo\+\_\+sanguineo}
+\end{DoxyParamCaption}
+)}\hypertarget{classFuncionario_a979101220d0113b4fc018e1c938d86a2}{}\label{classFuncionario_a979101220d0113b4fc018e1c938d86a2}
+
+
+Setter para o tipo sanguíneo. 
+
+
+\begin{DoxyCode}
+55 \{
+56     \hyperlink{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{m\_tipo\_sanguineo} = tipo\_sanguineo;
+57 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Funcionario@{Funcionario}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{o, }
+\item[{{\bf Funcionario} \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classFuncionario_ad85dd4ac2b20d496f0d964e424cb35c9}{}\label{classFuncionario_ad85dd4ac2b20d496f0d964e424cb35c9}
+
+
+Sobrecarga do Operador de inserção para a classe funcionário e suas classes Derivadas. 
+
+
+\begin{DoxyCode}
+123 \{
+124     \textcolor{keywordflow}{return} f.\hyperlink{classFuncionario_a06bb354ea21c7059a9740a6402f26b5c}{print}(o);
+125 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Funcionario@{Funcionario}!m\+\_\+cpf@{m\+\_\+cpf}}
+\index{m\+\_\+cpf@{m\+\_\+cpf}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{m\+\_\+cpf}{m_cpf}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::m\+\_\+cpf\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classFuncionario_af367fc8ad2efde9527d1ed0455560690}{}\label{classFuncionario_af367fc8ad2efde9527d1ed0455560690}
+
+
+C\+PF do Funcionário. 
+
+\index{Funcionario@{Funcionario}!m\+\_\+especialidade@{m\+\_\+especialidade}}
+\index{m\+\_\+especialidade@{m\+\_\+especialidade}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{m\+\_\+especialidade}{m_especialidade}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::m\+\_\+especialidade\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classFuncionario_a501682f1767cc891f9908ebc42e9e186}{}\label{classFuncionario_a501682f1767cc891f9908ebc42e9e186}
+
+
+Especialidade animal do Funcionário. 
+
+\index{Funcionario@{Funcionario}!m\+\_\+fator\+RH@{m\+\_\+fator\+RH}}
+\index{m\+\_\+fator\+RH@{m\+\_\+fator\+RH}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{m\+\_\+fator\+RH}{m_fatorRH}}]{\setlength{\rightskip}{0pt plus 5cm}char Funcionario\+::m\+\_\+fator\+RH\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}{}\label{classFuncionario_ae9e77a47e6604c3d981de2e868619b6d}
+
+
+Fator RH do funcionário. 
+
+\index{Funcionario@{Funcionario}!m\+\_\+id@{m\+\_\+id}}
+\index{m\+\_\+id@{m\+\_\+id}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{m\+\_\+id}{m_id}}]{\setlength{\rightskip}{0pt plus 5cm}int Funcionario\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}{}\label{classFuncionario_a123c4af00e4e6eea5d4d9366a8bfefed}
+
+
+Id do Funcionário. 
+
+\index{Funcionario@{Funcionario}!m\+\_\+idade@{m\+\_\+idade}}
+\index{m\+\_\+idade@{m\+\_\+idade}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{m\+\_\+idade}{m_idade}}]{\setlength{\rightskip}{0pt plus 5cm}short Funcionario\+::m\+\_\+idade\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}{}\label{classFuncionario_a2bc5a68aebcf1a792812430ce5c8bdca}
+
+
+Idade do Funcionário. 
+
+\index{Funcionario@{Funcionario}!m\+\_\+nome@{m\+\_\+nome}}
+\index{m\+\_\+nome@{m\+\_\+nome}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{m\+\_\+nome}{m_nome}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::m\+\_\+nome\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}{}\label{classFuncionario_a09663cf1395c066ef8cd538ead0f1a10}
+
+
+Nome do Funcionário. 
+
+\index{Funcionario@{Funcionario}!m\+\_\+tipo\+\_\+sanguineo@{m\+\_\+tipo\+\_\+sanguineo}}
+\index{m\+\_\+tipo\+\_\+sanguineo@{m\+\_\+tipo\+\_\+sanguineo}!Funcionario@{Funcionario}}
+\subsubsection[{\texorpdfstring{m\+\_\+tipo\+\_\+sanguineo}{m_tipo_sanguineo}}]{\setlength{\rightskip}{0pt plus 5cm}string Funcionario\+::m\+\_\+tipo\+\_\+sanguineo\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}{}\label{classFuncionario_a89037092e620b92e1e8e305de50cb2d9}
+
+
+Tipo Sanguíneo do Funcionário. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{funcionario_8h}{funcionario.\+h}\item 
+src/\hyperlink{funcionario_8cpp}{funcionario.\+cpp}\end{DoxyCompactItemize}

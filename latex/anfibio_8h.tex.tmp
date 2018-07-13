@@ -1,0 +1,12 @@
+\hypertarget{anfibio_8h}{}\section{include/anfibio.h File Reference}
+\label{anfibio_8h}\index{include/anfibio.\+h@{include/anfibio.\+h}}
+{\ttfamily \#include \char`\"{}animal.\+h\char`\"{}}\\*
+Include dependency graph for anfibio.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classAnfibio}{Anfibio}
+\begin{DoxyCompactList}\small\item\em Classe Derivada da classe \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\end{DoxyCompactItemize}

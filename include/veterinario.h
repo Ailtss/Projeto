@@ -2,7 +2,7 @@
 #define VETERINARIO_H
 #include "funcionario.h"
 
-
+/**@brief Classe Derivada Veterinário que herda da classe Funcionário*/
 
 class Veterinario : public Funcionario 
 {

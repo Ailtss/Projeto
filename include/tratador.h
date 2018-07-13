@@ -4,7 +4,7 @@
 #include "funcionario.h"
 
 
-
+/**@brief Classe derivada Tratador que herda da classe Funcionario*/
 
 class Tratador : public Funcionario
 {

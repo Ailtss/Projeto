@@ -4,6 +4,7 @@
 #include "reptil.h"
 #include "exotico.h"
 
+/**@brief Classe derivada da classe Exotico e Classe Reptil*/
 class ReptilExotico : public Exotico, public Reptil
 {
 

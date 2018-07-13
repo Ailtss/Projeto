@@ -1,0 +1,190 @@
+\hypertarget{classAnfibio}{}\section{Anfibio Class Reference}
+\label{classAnfibio}\index{Anfibio@{Anfibio}}
+
+
+Classe Derivada da classe \hyperlink{classAnimal}{Animal}.  
+
+
+
+
+{\ttfamily \#include $<$anfibio.\+h$>$}
+
+
+
+Inheritance diagram for Anfibio\+:
+% FIG 0
+
+
+Collaboration diagram for Anfibio\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAnfibio_a91fd9b91b9124ab41ea9e9c9bb013476}{Anfibio} ()
+\item 
+\hyperlink{classAnfibio_a1de0b802b933de9ac9b862cf46f7a3c3}{Anfibio} (int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, \hyperlink{classVeterinario}{Veterinario} vet, \hyperlink{classTratador}{Tratador} trat, string batismo, int total\+Mudas, string ultima\+Muda)
+\item 
+\hyperlink{classAnfibio_a53bb71a1ed0e79c5fc41a62a0af9060c}{$\sim$\+Anfibio} ()
+\item 
+void \hyperlink{classAnfibio_a1905981100749f4cab706d3f6f4ded82}{impress} ()
+\item 
+ostream \& \hyperlink{classAnfibio_a8f2d675d174f4459e400f33de703467a}{print} (ostream \&o)
+\begin{DoxyCompactList}\small\item\em Método Virtual para tornar a classe Abstrata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classAnfibio_a322af56e1ff61753e6abfe2693d29504}{a\+\_\+total\+Mudas}
+\begin{DoxyCompactList}\small\item\em Total de mudas. \end{DoxyCompactList}\item 
+string \hyperlink{classAnfibio_a674f19d430b4781216fac1fee2567771}{a\+\_\+ultima\+Muda}
+\begin{DoxyCompactList}\small\item\em Ultima muda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe Derivada da classe \hyperlink{classAnimal}{Animal}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Anfibio@{Anfibio}!Anfibio@{Anfibio}}
+\index{Anfibio@{Anfibio}!Anfibio@{Anfibio}}
+\subsubsection[{\texorpdfstring{Anfibio()}{Anfibio()}}]{\setlength{\rightskip}{0pt plus 5cm}Anfibio\+::\+Anfibio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnfibio_a91fd9b91b9124ab41ea9e9c9bb013476}{}\label{classAnfibio_a91fd9b91b9124ab41ea9e9c9bb013476}
+
+\begin{DoxyCode}
+5 \{
+6 
+7 \}
+\end{DoxyCode}
+\index{Anfibio@{Anfibio}!Anfibio@{Anfibio}}
+\index{Anfibio@{Anfibio}!Anfibio@{Anfibio}}
+\subsubsection[{\texorpdfstring{Anfibio(int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo, int total\+Mudas, string ultima\+Muda)}{Anfibio(int id, string classe, string nome, string nomeCient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo, int totalMudas, string ultimaMuda)}}]{\setlength{\rightskip}{0pt plus 5cm}Anfibio\+::\+Anfibio (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{classe, }
+\item[{string}]{nome, }
+\item[{string}]{nome\+Cient, }
+\item[{char}]{sexo, }
+\item[{float}]{tamanho, }
+\item[{string}]{dieta, }
+\item[{{\bf Veterinario}}]{vet, }
+\item[{{\bf Tratador}}]{trat, }
+\item[{string}]{batismo, }
+\item[{int}]{total\+Mudas, }
+\item[{string}]{ultima\+Muda}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnfibio_a1de0b802b933de9ac9b862cf46f7a3c3}{}\label{classAnfibio_a1de0b802b933de9ac9b862cf46f7a3c3}
+
+\begin{DoxyCode}
+12 :\hyperlink{classAnimal_a1e726a49ec952443190ac62dad22353c}{Animal}(\textcolor{keywordtype}{id}, classe, nome, nomeCient, sexo, tamanho, dieta, vet, trat, batismo)
+13 \{
+14     \hyperlink{classAnfibio_a322af56e1ff61753e6abfe2693d29504}{a\_totalMudas} = totalMudas;
+15     \hyperlink{classAnfibio_a674f19d430b4781216fac1fee2567771}{a\_ultimaMuda} = ultimaMuda;
+16 \}
+\end{DoxyCode}
+\index{Anfibio@{Anfibio}!````~Anfibio@{$\sim$\+Anfibio}}
+\index{````~Anfibio@{$\sim$\+Anfibio}!Anfibio@{Anfibio}}
+\subsubsection[{\texorpdfstring{$\sim$\+Anfibio()}{~Anfibio()}}]{\setlength{\rightskip}{0pt plus 5cm}Anfibio\+::$\sim$\+Anfibio (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classAnfibio_a53bb71a1ed0e79c5fc41a62a0af9060c}{}\label{classAnfibio_a53bb71a1ed0e79c5fc41a62a0af9060c}
+
+\begin{DoxyCode}
+19 \{
+20 
+21 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Anfibio@{Anfibio}!impress@{impress}}
+\index{impress@{impress}!Anfibio@{Anfibio}}
+\subsubsection[{\texorpdfstring{impress()}{impress()}}]{\setlength{\rightskip}{0pt plus 5cm}void Anfibio\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAnfibio_a1905981100749f4cab706d3f6f4ded82}{}\label{classAnfibio_a1905981100749f4cab706d3f6f4ded82}
+
+
+Implements \hyperlink{classFuncionario_aeaa43599aa64998372ad7044315ed4f7}{Funcionario}.
+
+
+\begin{DoxyCode}
+25 \{
+26     cout << \textcolor{stringliteral}{"Animal: "} << \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} << endl;
+27     cout << \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} << endl;
+28     cout << \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} << endl;
+29     cout << \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} << endl;
+30     cout << \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} << endl;
+31     cout << \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} << endl;
+32     cout << \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} << endl;
+33     cout << \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} << endl;
+34 
+35     cout << \textcolor{stringliteral}{"Características Anfibio: "} << endl;
+36     cout << \textcolor{stringliteral}{"Total de mudas: "} << \hyperlink{classAnfibio_a322af56e1ff61753e6abfe2693d29504}{a\_totalMudas} << endl;
+37     cout << \textcolor{stringliteral}{"Última muda: "} << \hyperlink{classAnfibio_a674f19d430b4781216fac1fee2567771}{a\_ultimaMuda} << endl;
+38 
+39     cout << endl;
+40     cout << endl;
+41 
+42     \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet}.\hyperlink{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}{impress}();
+43 
+44     cout << endl;
+45     cout << endl;
+46     
+47     \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat}.\hyperlink{classTratador_ac7651dbd65916ae7a37251314fd06797}{impress}();
+48 \}
+\end{DoxyCode}
+\index{Anfibio@{Anfibio}!print@{print}}
+\index{print@{print}!Anfibio@{Anfibio}}
+\subsubsection[{\texorpdfstring{print(ostream \&o)}{print(ostream &o)}}]{\setlength{\rightskip}{0pt plus 5cm}ostream \& Anfibio\+::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAnfibio_a8f2d675d174f4459e400f33de703467a}{}\label{classAnfibio_a8f2d675d174f4459e400f33de703467a}
+
+
+Método Virtual para tornar a classe Abstrata. 
+
+
+
+Implements \hyperlink{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}{Animal}.
+
+
+
+Reimplemented in \hyperlink{classAnfibioExotico_ac5d435b804cb80f3a6c3a476ed9c6990}{Anfibio\+Exotico}, and \hyperlink{classAnfibioNativo_a2db2ade56011851b6dab72d8598f52c9}{Anfibio\+Nativo}.
+
+
+\begin{DoxyCode}
+51 \{
+52     o << \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet}.\hyperlink{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{getId}() << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat}.\hyperlink{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{getId}() << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} << \textcolor{stringliteral}{";"}
+53     << \hyperlink{classAnfibio_a322af56e1ff61753e6abfe2693d29504}{a\_totalMudas} << \textcolor{stringliteral}{";"} << \hyperlink{classAnfibio_a674f19d430b4781216fac1fee2567771}{a\_ultimaMuda};
+54     \textcolor{keywordflow}{return} o;
+55 \}\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Anfibio@{Anfibio}!a\+\_\+total\+Mudas@{a\+\_\+total\+Mudas}}
+\index{a\+\_\+total\+Mudas@{a\+\_\+total\+Mudas}!Anfibio@{Anfibio}}
+\subsubsection[{\texorpdfstring{a\+\_\+total\+Mudas}{a_totalMudas}}]{\setlength{\rightskip}{0pt plus 5cm}int Anfibio\+::a\+\_\+total\+Mudas\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnfibio_a322af56e1ff61753e6abfe2693d29504}{}\label{classAnfibio_a322af56e1ff61753e6abfe2693d29504}
+
+
+Total de mudas. 
+
+\index{Anfibio@{Anfibio}!a\+\_\+ultima\+Muda@{a\+\_\+ultima\+Muda}}
+\index{a\+\_\+ultima\+Muda@{a\+\_\+ultima\+Muda}!Anfibio@{Anfibio}}
+\subsubsection[{\texorpdfstring{a\+\_\+ultima\+Muda}{a_ultimaMuda}}]{\setlength{\rightskip}{0pt plus 5cm}string Anfibio\+::a\+\_\+ultima\+Muda\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classAnfibio_a674f19d430b4781216fac1fee2567771}{}\label{classAnfibio_a674f19d430b4781216fac1fee2567771}
+
+
+Ultima muda. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{anfibio_8h}{anfibio.\+h}\item 
+src/\hyperlink{anfibio_8cpp}{anfibio.\+cpp}\end{DoxyCompactItemize}

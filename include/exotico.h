@@ -2,11 +2,13 @@
 #define EXOTICO_H
 #include "animalSilvestre.h"
 
+/**@brief Classe Exotico que herda da classe Animal Silvestre*/
 class Exotico : public AnimalSilvestre
 {
 
 	protected:
-		string m_paisOrigem;
+		/**@brief Local de Origem do animal*/
+		string m_paisOrigem; 
 
 	public:
 		Exotico();

@@ -4,6 +4,8 @@
 #include "mamifero.h"
 #include "exotico.h"
 
+/**@brief Classe Derivada que herda da classe Exotico e da classe Mamifero*/
+
 class MamiferoExotico : public Exotico, public Mamifero
 {
 

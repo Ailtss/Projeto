@@ -4,6 +4,7 @@
 #include "anfibio.h"
 #include "exotico.h"
 
+/**@brief Classe Derivada da classe Anfibio e classe Exotico*/
 class AnfibioExotico : public Exotico, public Anfibio
 {
 

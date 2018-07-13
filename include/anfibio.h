@@ -1,13 +1,15 @@
 #ifndef ANFIBIO_H
 #define ANFIBIO_H
 #include "animal.h"
-
+/**@brief Classe Derivada da classe Animal*/
 class Anfibio : public Animal
 {
 
 protected:
-	int a_totalMudas;
-	string a_ultimaMuda;
+	/**@brief Total de mudas*/
+	int a_totalMudas; 
+	/**@brief Ultima muda*/
+	string a_ultimaMuda; 
 
 public:
 	Anfibio();

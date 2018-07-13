@@ -1,0 +1,1475 @@
+\hypertarget{classPetFera}{}\section{Pet\+Fera Class Reference}
+\label{classPetFera}\index{Pet\+Fera@{Pet\+Fera}}
+
+
+Classe \hyperlink{classPetFera}{Pet\+Fera} que utiliza todos código para tornar mais \char`\"{}limpo\char`\"{} e legível o funcionamento no \hyperlink{main_8cpp}{main.\+cpp}.  
+
+
+
+
+{\ttfamily \#include $<$Pet\+Fera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPetFera_a1d0a2b0e9d459ee1e526c50e381ff82d}{Pet\+Fera} ()
+\item 
+\hyperlink{classPetFera_ab6d608548d1032f06571e0a4db8fd797}{$\sim$\+Pet\+Fera} ()
+\item 
+void \hyperlink{classPetFera_a19adc92934d53fbaa25554836c8d8186}{clear\+Screen} ()
+\item 
+void \hyperlink{classPetFera_a9fdb130a8f1da55ef04e51e01741c87b}{init} ()
+\begin{DoxyCompactList}\small\item\em Inicializa os mapas a partir dos dados contidos no arquivo. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_ac42995494bfa5873d92e8391d1002f1a}{cadastrar\+Animal\+Nativo} ()
+\begin{DoxyCompactList}\small\item\em Cadastra um \hyperlink{classAnimal}{Animal} do tipo \hyperlink{classNativo}{Nativo} no mapa. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_aa095a83bf3fe053b094020a6b7049f66}{cadastrar\+Animal\+Exotico} ()
+\begin{DoxyCompactList}\small\item\em Cadastra um \hyperlink{classAnimal}{Animal} do tipo Exótico no mapa. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_ad1cf3d95ff0985a9942ae15a9c8692c3}{cadastrar\+Veterinario} ()
+\begin{DoxyCompactList}\small\item\em Cadastra um Veterinário no mapa. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_a3f19de637207b79b21af8668d864cea2}{cadastrar\+Tratador} ()
+\begin{DoxyCompactList}\small\item\em Cadastra um \hyperlink{classTratador}{Tratador} no mapa. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_af8534e9ad0f23cec2766845567153923}{consultar\+Animal} ()
+\begin{DoxyCompactList}\small\item\em Faz uma consulta no mapa de Animais. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_ae6f4463c6d4e0b5ca30ced88240cb6ec}{consultar\+Por\+Funcionario} ()
+\begin{DoxyCompactList}\small\item\em Faz uma consulta no mapa de Funcionários. \end{DoxyCompactList}\item 
+bool \hyperlink{classPetFera_a15cf97fce272f94a4dd27bf18fed06b5}{remover\+Animal} ()
+\begin{DoxyCompactList}\small\item\em Remove um animal do mapa. \end{DoxyCompactList}\item 
+bool \hyperlink{classPetFera_a847ce743f73cf9d16958a635b49e6e21}{remover\+Funcionario} ()
+\begin{DoxyCompactList}\small\item\em Remove um Funcionário do Mapa. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_a49accf5dea36c98ba201db971ea17474}{end\+Animais} ()
+\begin{DoxyCompactList}\small\item\em Passa o animais do mapa para seu respectivo arquivo. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_ac0cd93b390e788bb0af4fec1a2fa64da}{end\+Funcionarios} ()
+\begin{DoxyCompactList}\small\item\em Passa os funcionários do mapa para seu respectivo arquivo. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_ada53a8bfa85383a83f0841857f817326}{listar\+Animais} ()
+\begin{DoxyCompactList}\small\item\em Lista os animais existentes. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_af700a6ba89353b2f91ef3224ef0b6e22}{listar\+Funcionarios} ()
+\begin{DoxyCompactList}\small\item\em Lista os Funcionários existentes. \end{DoxyCompactList}\item 
+void \hyperlink{classPetFera_afe29caf9e249d3713ea8f915e8b13d38}{menu} ()
+\begin{DoxyCompactList}\small\item\em Método para gerar uma interface para o usuário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ int, shared\+\_\+ptr$<$ \hyperlink{classAnimal}{Animal} $>$ $>$ \hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapa\+Animais}
+\begin{DoxyCompactList}\small\item\em Mapa que utiliza chaves inteiras e valores sendo objetos da classe \hyperlink{classAnimal}{Animal}. \end{DoxyCompactList}\item 
+map$<$ int, shared\+\_\+ptr$<$ \hyperlink{classVeterinario}{Veterinario} $>$ $>$ \hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapa\+Veterinarios}
+\begin{DoxyCompactList}\small\item\em Mapa que utiliza chaves inteiras e valores sendo objetos da classe \hyperlink{classVeterinario}{Veterinario}. \end{DoxyCompactList}\item 
+map$<$ int, shared\+\_\+ptr$<$ \hyperlink{classTratador}{Tratador} $>$ $>$ \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapa\+Tratadores}
+\begin{DoxyCompactList}\small\item\em Mapa que utiliza chaves inteiras e valores sendo objetos da classe Tratadores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe \hyperlink{classPetFera}{Pet\+Fera} que utiliza todos código para tornar mais \char`\"{}limpo\char`\"{} e legível o funcionamento no \hyperlink{main_8cpp}{main.\+cpp}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pet\+Fera@{Pet\+Fera}!Pet\+Fera@{Pet\+Fera}}
+\index{Pet\+Fera@{Pet\+Fera}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{Pet\+Fera()}{PetFera()}}]{\setlength{\rightskip}{0pt plus 5cm}Pet\+Fera\+::\+Pet\+Fera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_a1d0a2b0e9d459ee1e526c50e381ff82d}{}\label{classPetFera_a1d0a2b0e9d459ee1e526c50e381ff82d}
+
+\begin{DoxyCode}
+4 \{
+5 
+6 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!````~Pet\+Fera@{$\sim$\+Pet\+Fera}}
+\index{````~Pet\+Fera@{$\sim$\+Pet\+Fera}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{$\sim$\+Pet\+Fera()}{~PetFera()}}]{\setlength{\rightskip}{0pt plus 5cm}Pet\+Fera\+::$\sim$\+Pet\+Fera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_ab6d608548d1032f06571e0a4db8fd797}{}\label{classPetFera_ab6d608548d1032f06571e0a4db8fd797}
+
+\begin{DoxyCode}
+9 \{
+10 
+11 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Pet\+Fera@{Pet\+Fera}!cadastrar\+Animal\+Exotico@{cadastrar\+Animal\+Exotico}}
+\index{cadastrar\+Animal\+Exotico@{cadastrar\+Animal\+Exotico}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{cadastrar\+Animal\+Exotico()}{cadastrarAnimalExotico()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::cadastrar\+Animal\+Exotico (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_aa095a83bf3fe053b094020a6b7049f66}{}\label{classPetFera_aa095a83bf3fe053b094020a6b7049f66}
+
+
+Cadastra um \hyperlink{classAnimal}{Animal} do tipo Exótico no mapa. 
+
+
+\begin{DoxyCode}
+464 \{
+465     shared\_ptr<Animal> print;
+466     vector<string> dados;
+467     \textcolor{keywordtype}{string} aux;
+468     \textcolor{keywordtype}{int} id;
+469     \textcolor{keywordtype}{int} valor;
+470     cout << \textcolor{stringliteral}{"Informe o ID do animal: "} << endl;
+471     getline(cin, aux);
+472     \textcolor{keywordtype}{id} = stoi(aux);
+473     dados.push\_back(aux);
+474 
+475     cout << \textcolor{stringliteral}{"Digite um número que indique a classe do Animal: "} << endl;
+476     cout << \textcolor{stringliteral}{"(1)Mammalia"} << \textcolor{stringliteral}{" "} << \textcolor{stringliteral}{"(2)Amphibia"} << \textcolor{stringliteral}{" "} << \textcolor{stringliteral}{"(3)Reptilia"} << \textcolor{stringliteral}{" "} << \textcolor{stringliteral}{"(4)Aves"} << endl;
+477     getline(cin, aux);
+478     valor = stoi(aux);
+479 
+480     \textcolor{keywordflow}{if}(valor == 1)
+481     \{
+482         dados.push\_back(\textcolor{stringliteral}{"Mammalia"});
+483 
+484         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+485         getline(cin, aux);
+486         dados.push\_back(aux);
+487 
+488         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+489         getline(cin, aux);
+490         dados.push\_back(aux);
+491 
+492         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+493         getline(cin, aux);
+494         dados.push\_back(aux);
+495 
+496         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+497         getline(cin, aux);
+498         dados.push\_back(aux);
+499 
+500         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+501         getline(cin, aux);
+502         dados.push\_back(aux);
+503 
+504         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+505         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+506         getline(cin, aux);
+507         \textcolor{keywordtype}{int} idVet = stoi(aux);
+508         dados.push\_back(aux);
+509 
+510         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+511         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+512         getline(cin, aux);
+513         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+514         dados.push\_back(aux);
+515 
+516         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+517         getline(cin, aux);
+518         dados.push\_back(aux);
+519 
+520         cout << \textcolor{stringliteral}{"Informe a cor do pelo do animal: "} << endl;
+521         getline(cin, aux);
+522         dados.push\_back(aux);
+523 
+524         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+525         getline(cin, aux);
+526         dados.push\_back(aux);
+527 
+528         cout << \textcolor{stringliteral}{"Informe o país de origem do animal: "} << endl;
+529         getline(cin, aux);
+530         dados.push\_back(aux);
+531 
+532         shared\_ptr<Animal> m = make\_shared<MamiferoExotico>(stoi(dados[0]), dados[1], dados[2], dados[3], *
+      (dados[4].c\_str()), stof(dados[5]),
+533                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], dados[10], dados[11], dados[12]);
+534         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+535 
+536     \}
+537 
+538     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valor == 2)
+539     \{
+540         dados.push\_back(\textcolor{stringliteral}{"Amphibia"});
+541 
+542         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+543         getline(cin, aux);
+544         dados.push\_back(aux);
+545 
+546         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+547         getline(cin, aux);
+548         dados.push\_back(aux);
+549 
+550         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+551         getline(cin, aux);
+552         dados.push\_back(aux);
+553 
+554         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+555         getline(cin, aux);
+556         dados.push\_back(aux);
+557 
+558         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+559         getline(cin, aux);
+560         dados.push\_back(aux);
+561 
+562         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+563         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+564         getline(cin, aux);
+565         \textcolor{keywordtype}{int} idVet = stoi(aux);
+566         dados.push\_back(aux);
+567 
+568         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+569         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+570         getline(cin, aux);
+571         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+572         dados.push\_back(aux);
+573 
+574         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+575         getline(cin, aux);
+576         dados.push\_back(aux);
+577 
+578         cout << \textcolor{stringliteral}{"Informe o total de mudas do animal: "} << endl;
+579         getline(cin, aux);
+580         \textcolor{keywordtype}{int} mudas = stoi(aux);
+581         dados.push\_back(aux);
+582 
+583         cout << \textcolor{stringliteral}{"Informe a última muda do animal: "} << endl;
+584         getline(cin, aux);
+585         dados.push\_back(aux);
+586 
+587         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+588         getline(cin, aux);
+589         dados.push\_back(aux);
+590 
+591         cout << \textcolor{stringliteral}{"Informe o país de origem do animal: "} << endl;
+592         getline(cin, aux);
+593         dados.push\_back(aux);
+594 
+595         shared\_ptr<Animal> m = make\_shared<AnfibioExotico>(stoi(dados[0]), dados[1], dados[2], dados[3], *(
+      dados[4].c\_str()), stof(dados[5]),
+596                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], mudas, dados[11], dados[12], dados[13]);
+597         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+598 
+599     \}
+600 
+601     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valor == 3)
+602     \{
+603         dados.push\_back(\textcolor{stringliteral}{"Reptilia"});
+604 
+605         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+606         getline(cin, aux);
+607         dados.push\_back(aux);
+608 
+609         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+610         getline(cin, aux);
+611         dados.push\_back(aux);
+612 
+613         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+614         getline(cin, aux);
+615         dados.push\_back(aux);
+616 
+617         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+618         getline(cin, aux);
+619         dados.push\_back(aux);
+620 
+621         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+622         getline(cin, aux);
+623         dados.push\_back(aux);
+624 
+625         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+626         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+627         getline(cin, aux);
+628         \textcolor{keywordtype}{int} idVet = stoi(aux);
+629         dados.push\_back(aux);
+630 
+631         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+632         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+633         getline(cin, aux);
+634         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+635         dados.push\_back(aux);
+636 
+637         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+638         getline(cin, aux);
+639         dados.push\_back(aux);
+640 
+641         cout << \textcolor{stringliteral}{"Informe se o animal é venenoso (true/false): "} << endl;
+642         getline(cin, aux);
+643         \textcolor{keywordtype}{bool} venenoso = \textcolor{keyword}{false};
+644         \textcolor{keywordflow}{if}(aux == \textcolor{stringliteral}{"true"})
+645         \{
+646             venenoso = \textcolor{keyword}{true};
+647         \}
+648         dados.push\_back(aux);
+649 
+650         cout << \textcolor{stringliteral}{"Informe o tipo de veneno do animal: "} << endl;
+651         getline(cin, aux);
+652         dados.push\_back(aux);
+653 
+654         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+655         getline(cin, aux);
+656         dados.push\_back(aux);
+657 
+658         cout << \textcolor{stringliteral}{"Informe o país de origem do animal: "} << endl;
+659         getline(cin, aux);
+660         dados.push\_back(aux);
+661 
+662         shared\_ptr<Animal> m = make\_shared<ReptilExotico>(stoi(dados[0]), dados[1], dados[2], dados[3], *(
+      dados[4].c\_str()), stof(dados[5]),
+663                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], venenoso, dados[11], dados[12], dados[13]);
+664         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+665     \}
+666 
+667     \textcolor{keywordflow}{else}
+668     \{
+669         dados.push\_back(\textcolor{stringliteral}{"Aves"});
+670 
+671         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+672         getline(cin, aux);
+673         dados.push\_back(aux);
+674 
+675         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+676         getline(cin, aux);
+677         dados.push\_back(aux);
+678 
+679         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+680         getline(cin, aux);
+681         dados.push\_back(aux);
+682 
+683         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+684         getline(cin, aux);
+685         dados.push\_back(aux);
+686 
+687         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+688         getline(cin, aux);
+689         dados.push\_back(aux);
+690 
+691         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+692         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+693         getline(cin, aux);
+694         \textcolor{keywordtype}{int} idVet = stoi(aux);
+695         dados.push\_back(aux);
+696 
+697         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+698         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+699         getline(cin, aux);
+700         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+701         dados.push\_back(aux);
+702 
+703         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+704         getline(cin, aux);
+705         dados.push\_back(aux);
+706 
+707         cout << \textcolor{stringliteral}{"Informe se o tamanho do bico do animal: "} << endl;
+708         getline(cin, aux);
+709         \textcolor{keywordtype}{int} bico = stoi(aux);
+710         dados.push\_back(aux);
+711 
+712         cout << \textcolor{stringliteral}{"Informe a envergadura do animal: "} << endl;
+713         getline(cin, aux);
+714         \textcolor{keywordtype}{int} envergadura = stoi(aux);
+715         dados.push\_back(aux);
+716 
+717         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+718         getline(cin, aux);
+719         dados.push\_back(aux);
+720 
+721         cout << \textcolor{stringliteral}{"Informe o país de origem do animal: "} << endl;
+722         getline(cin, aux);
+723         dados.push\_back(aux);
+724 
+725         shared\_ptr<Animal> m = make\_shared<AveExotica>(stoi(dados[0]), dados[1], dados[2], dados[3], *(
+      dados[4].c\_str()), stof(dados[5]),
+726                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], bico, envergadura, dados[12], dados[13]);
+727         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+728     \}
+729     cout << endl;
+730 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!cadastrar\+Animal\+Nativo@{cadastrar\+Animal\+Nativo}}
+\index{cadastrar\+Animal\+Nativo@{cadastrar\+Animal\+Nativo}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{cadastrar\+Animal\+Nativo()}{cadastrarAnimalNativo()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::cadastrar\+Animal\+Nativo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_ac42995494bfa5873d92e8391d1002f1a}{}\label{classPetFera_ac42995494bfa5873d92e8391d1002f1a}
+
+
+Cadastra um \hyperlink{classAnimal}{Animal} do tipo \hyperlink{classNativo}{Nativo} no mapa. 
+
+
+\begin{DoxyCode}
+173 \{
+174     shared\_ptr<Animal> print;
+175     vector<string> dados;
+176     \textcolor{keywordtype}{string} aux;
+177     \textcolor{keywordtype}{int} id;
+178     \textcolor{keywordtype}{int} valor;
+179     cout << \textcolor{stringliteral}{"Informe o ID do animal: "} << endl;
+180     getline(cin, aux);
+181     \textcolor{keywordtype}{id} = stoi(aux);
+182     dados.push\_back(aux);
+183 
+184     cout << \textcolor{stringliteral}{"Digite um número que indique a classe do Animal: "} << endl;
+185     cout << \textcolor{stringliteral}{"(1)Mammalia"} << \textcolor{stringliteral}{" "} << \textcolor{stringliteral}{"(2)Amphibia"} << \textcolor{stringliteral}{" "} << \textcolor{stringliteral}{"(3)Reptilia"} << \textcolor{stringliteral}{" "} << \textcolor{stringliteral}{"(4)Aves"} << endl;
+186     getline(cin, aux);
+187     valor = stoi(aux);
+188 
+189     \textcolor{keywordflow}{if}(valor == 1)
+190     \{
+191         dados.push\_back(\textcolor{stringliteral}{"Mammalia"});
+192 
+193         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+194         getline(cin, aux);
+195         cout << \textcolor{stringliteral}{"Nome do Animal: "} << aux << endl;
+196         dados.push\_back(aux);
+197 
+198         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+199         getline(cin, aux);
+200         cout << \textcolor{stringliteral}{"Nome Científico do Animal: "} << aux << endl;
+201         dados.push\_back(aux);
+202 
+203         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+204         getline(cin, aux);
+205         cout << \textcolor{stringliteral}{"Sexo do animal: "} << aux << endl;
+206         dados.push\_back(aux);
+207 
+208         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+209         getline(cin, aux);
+210         cout << \textcolor{stringliteral}{"Tamanho do animal: "} << aux << endl;
+211         dados.push\_back(aux);
+212 
+213         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+214         getline(cin, aux);
+215         cout << \textcolor{stringliteral}{"Dieta do Animal: "} << aux << endl;
+216         dados.push\_back(aux);
+217 
+218         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+219         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+220         getline(cin, aux);
+221         \textcolor{keywordtype}{int} idVet = stoi(aux);
+222         dados.push\_back(aux);
+223 
+224         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+225         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+226         getline(cin, aux);
+227         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+228         dados.push\_back(aux);
+229 
+230         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+231         getline(cin, aux);
+232         cout << \textcolor{stringliteral}{"Nome de bastismo do animal: "} << aux << endl;
+233         dados.push\_back(aux);
+234 
+235         cout << \textcolor{stringliteral}{"Informe a cor do pelo do animal: "} << endl;
+236         getline(cin, aux);
+237         dados.push\_back(aux);
+238 
+239         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+240         getline(cin, aux);
+241         dados.push\_back(aux);
+242 
+243         cout << \textcolor{stringliteral}{"Informe a UF de origem do animal: "} << endl;
+244         getline(cin, aux);
+245         dados.push\_back(aux);
+246 
+247         cout << \textcolor{stringliteral}{"Informe a Autorização do animal: "} << endl;
+248         getline(cin, aux);
+249         dados.push\_back(aux);
+250 
+251         shared\_ptr<Animal> m = make\_shared<MamiferoNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(
+      dados[4].c\_str()), stof(dados[5]),
+252                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], dados[10], dados[11], dados[12], dados[13]);
+253         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+254 
+255     \}
+256 
+257     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valor == 2)
+258     \{
+259         dados.push\_back(\textcolor{stringliteral}{"Amphibia"});
+260 
+261         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+262         getline(cin, aux);
+263         dados.push\_back(aux);
+264 
+265         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+266         getline(cin, aux);
+267         dados.push\_back(aux);
+268 
+269         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+270         getline(cin, aux);
+271         dados.push\_back(aux);
+272 
+273         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+274         getline(cin, aux);
+275         dados.push\_back(aux);
+276 
+277         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+278         getline(cin, aux);
+279         dados.push\_back(aux);
+280 
+281         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+282         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+283         getline(cin, aux);
+284         \textcolor{keywordtype}{int} idVet = stoi(aux);
+285         dados.push\_back(aux);
+286 
+287         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+288         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+289         getline(cin, aux);
+290         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+291         dados.push\_back(aux);
+292 
+293         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+294         getline(cin, aux);
+295         dados.push\_back(aux);
+296 
+297         cout << \textcolor{stringliteral}{"Informe o total de mudas do animal: "} << endl;
+298         getline(cin, aux);
+299         \textcolor{keywordtype}{int} mudas = stoi(aux);
+300         dados.push\_back(aux);
+301 
+302         cout << \textcolor{stringliteral}{"Informe a última muda do animal: "} << endl;
+303         getline(cin, aux);
+304         dados.push\_back(aux);
+305 
+306         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+307         getline(cin, aux);
+308         dados.push\_back(aux);
+309 
+310         cout << \textcolor{stringliteral}{"Informe a UF de origem do animal: "} << endl;
+311         getline(cin, aux);
+312         dados.push\_back(aux);
+313 
+314         cout << \textcolor{stringliteral}{"Informe a Autorização do animal: "} << endl;
+315         getline(cin, aux);
+316         dados.push\_back(aux);
+317 
+318         shared\_ptr<Animal> m = make\_shared<AnfibioNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(
+      dados[4].c\_str()), stof(dados[5]),
+319                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], mudas, dados[11], dados[12], dados[13], dados[14]);
+320         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+321 
+322     \}
+323 
+324     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valor == 3)
+325     \{
+326         dados.push\_back(\textcolor{stringliteral}{"Reptilia"});
+327 
+328         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+329         getline(cin, aux);
+330         dados.push\_back(aux);
+331 
+332         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+333         getline(cin, aux);
+334         dados.push\_back(aux);
+335 
+336         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+337         getline(cin, aux);
+338         dados.push\_back(aux);
+339 
+340         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+341         getline(cin, aux);
+342         dados.push\_back(aux);
+343 
+344         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+345         getline(cin, aux);
+346         dados.push\_back(aux);
+347 
+348         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+349         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+350         getline(cin, aux);
+351         \textcolor{keywordtype}{int} idVet = stoi(aux);
+352         dados.push\_back(aux);
+353 
+354         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+355         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+356         getline(cin, aux);
+357         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+358         dados.push\_back(aux);
+359 
+360         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+361         getline(cin, aux);
+362         dados.push\_back(aux);
+363 
+364         cout << \textcolor{stringliteral}{"Informe se o animal é venenoso (true/false): "} << endl;
+365         getline(cin, aux);
+366         \textcolor{keywordtype}{bool} venenoso = \textcolor{keyword}{false};
+367         \textcolor{keywordflow}{if}(aux == \textcolor{stringliteral}{"true"})
+368         \{
+369             venenoso = \textcolor{keyword}{true};
+370         \}
+371         dados.push\_back(aux);
+372 
+373         cout << \textcolor{stringliteral}{"Informe o tipo de veneno do animal: "} << endl;
+374         getline(cin, aux);
+375         dados.push\_back(aux);
+376 
+377         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+378         getline(cin, aux);
+379         dados.push\_back(aux);
+380 
+381         cout << \textcolor{stringliteral}{"Informe a UF de origem do animal: "} << endl;
+382         getline(cin, aux);
+383         dados.push\_back(aux);
+384 
+385         cout << \textcolor{stringliteral}{"Informe a Autorização do animal: "} << endl;
+386         getline(cin, aux);
+387         dados.push\_back(aux);
+388 
+389         shared\_ptr<Animal> m = make\_shared<ReptilNativo>(stoi(dados[0]), dados[1], dados[2], dados[3], *(
+      dados[4].c\_str()), stof(dados[5]),
+390                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], venenoso, dados[11], dados[12], dados[13], dados[14]);
+391         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+392     \}
+393 
+394     \textcolor{keywordflow}{else}
+395     \{
+396         dados.push\_back(\textcolor{stringliteral}{"Aves"});
+397 
+398         cout << \textcolor{stringliteral}{"Informe o nome do Animal: "} << endl;
+399         getline(cin, aux);
+400         dados.push\_back(aux);
+401 
+402         cout << \textcolor{stringliteral}{"Informe o nome científico:  "} << endl;
+403         getline(cin, aux);
+404         dados.push\_back(aux);
+405 
+406         cout << \textcolor{stringliteral}{"Informe o sexo do animal(M/F): "} << endl;
+407         getline(cin, aux);
+408         dados.push\_back(aux);
+409 
+410         cout << \textcolor{stringliteral}{"Informe o tamanho do animal: "} << endl;
+411         getline(cin, aux);
+412         dados.push\_back(aux);
+413 
+414         cout << \textcolor{stringliteral}{"Informe a dieta do animal: "} << endl;
+415         getline(cin, aux);
+416         dados.push\_back(aux);
+417 
+418         cout << \textcolor{stringliteral}{"Informe o ID do Veterinário do animal: "} << endl;
+419         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Veterinário digite 0."} << endl;
+420         getline(cin, aux);
+421         \textcolor{keywordtype}{int} idVet = stoi(aux);
+422         dados.push\_back(aux);
+423 
+424         cout << \textcolor{stringliteral}{"Informe o ID do Tratador do animal: "} << endl;
+425         cout << \textcolor{stringliteral}{"Warning: Se o animal não possuir um Tratador digite 0."} << endl;
+426         getline(cin, aux);
+427         \textcolor{keywordtype}{int} idTrat = stoi(aux);
+428         dados.push\_back(aux);
+429 
+430         cout << \textcolor{stringliteral}{"Informe o nome de batismo do animal: "} << endl;
+431         getline(cin, aux);
+432         dados.push\_back(aux);
+433 
+434         cout << \textcolor{stringliteral}{"Informe se o tamanho do bico do animal: "} << endl;
+435         getline(cin, aux);
+436         \textcolor{keywordtype}{int} bico = stoi(aux);
+437         dados.push\_back(aux);
+438 
+439         cout << \textcolor{stringliteral}{"Informe a envergadura do animal: "} << endl;
+440         getline(cin, aux);
+441         \textcolor{keywordtype}{int} envergadura = stoi(aux);
+442         dados.push\_back(aux);
+443 
+444         cout << \textcolor{stringliteral}{"Informe o Ibama do animal: "} << endl;
+445         getline(cin, aux);
+446         dados.push\_back(aux);
+447 
+448         cout << \textcolor{stringliteral}{"Informe a UF de origem do animal: "} << endl;
+449         getline(cin, aux);
+450         dados.push\_back(aux);
+451 
+452         cout << \textcolor{stringliteral}{"Informe a Autorização do animal: "} << endl;
+453         getline(cin, aux);
+454         dados.push\_back(aux);
+455 
+456         shared\_ptr<Animal> m = make\_shared<AveNativa>(stoi(dados[0]), dados[1], dados[2], dados[3], *(dados
+      [4].c\_str()), stof(dados[5]),
+457                     dados[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dados[9], bico, envergadura, dados[12], dados[13], dados[14]);
+458         this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(\textcolor{keywordtype}{id}, m));
+459     \}
+460     cout << endl;
+461 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!cadastrar\+Tratador@{cadastrar\+Tratador}}
+\index{cadastrar\+Tratador@{cadastrar\+Tratador}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{cadastrar\+Tratador()}{cadastrarTratador()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::cadastrar\+Tratador (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_a3f19de637207b79b21af8668d864cea2}{}\label{classPetFera_a3f19de637207b79b21af8668d864cea2}
+
+
+Cadastra um \hyperlink{classTratador}{Tratador} no mapa. 
+
+
+\begin{DoxyCode}
+865 \{
+866     shared\_ptr<Tratador> print;
+867     vector<string> dados;
+868     \textcolor{keywordtype}{string} help;
+869 
+870     cout << \textcolor{stringliteral}{"Informe o ID do Tratador: "} << endl;
+871     getline(cin, help);
+872     dados.push\_back(help);
+873 
+874     cout << \textcolor{stringliteral}{"Informe o Nome do Tratador: "} << endl;
+875     getline(cin, help);
+876     dados.push\_back(help);
+877 
+878     cout << \textcolor{stringliteral}{"Informe o CPF do Tratador: "} << endl;
+879     getline(cin, help);
+880     dados.push\_back(help);
+881 
+882     cout << \textcolor{stringliteral}{"Informe a idade do Tratador:"} << endl;
+883     getline(cin, help);
+884     dados.push\_back(help);
+885 
+886     cout << \textcolor{stringliteral}{"Informe o tipo sanguíneo do Tratador: "} << endl;
+887     getline(cin, help);
+888     dados.push\_back(help);
+889 
+890     cout << \textcolor{stringliteral}{"Informe o fator RH do Tratador: "} << endl;
+891     getline(cin, help);
+892     dados.push\_back(help);
+893 
+894     cout << \textcolor{stringliteral}{"Informe a especialidade do Tratador: "} << endl;
+895     getline(cin, help);
+896     dados.push\_back(help);
+897 
+898     \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = stoi(dados[0]);
+899 
+900     shared\_ptr<Tratador> t = make\_shared<Tratador>(id, dados[1], dados[2], stoi(dados[3]), dados[4], *(
+      dados[5].c\_str()), dados[6]);
+901 
+902     this->\hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Tratador>>(\textcolor{keywordtype}{id}, t));
+903 
+904     cout << endl;
+905 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!cadastrar\+Veterinario@{cadastrar\+Veterinario}}
+\index{cadastrar\+Veterinario@{cadastrar\+Veterinario}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{cadastrar\+Veterinario()}{cadastrarVeterinario()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::cadastrar\+Veterinario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_ad1cf3d95ff0985a9942ae15a9c8692c3}{}\label{classPetFera_ad1cf3d95ff0985a9942ae15a9c8692c3}
+
+
+Cadastra um Veterinário no mapa. 
+
+
+\begin{DoxyCode}
+821 \{
+822     shared\_ptr<Funcionario> print;
+823     vector<string> dados;
+824     \textcolor{keywordtype}{string} help;
+825 
+826     cout << \textcolor{stringliteral}{"Informe o ID do Veterinário: "} << endl;
+827     getline(cin, help);
+828     dados.push\_back(help);
+829 
+830     cout << \textcolor{stringliteral}{"Informe o Nome do Veterinário: "} << endl;
+831     getline(cin, help);
+832     dados.push\_back(help);
+833 
+834     cout << \textcolor{stringliteral}{"Informe o CPF do Veterinário: "} << endl;
+835     getline(cin, help);
+836     dados.push\_back(help);
+837 
+838     cout << \textcolor{stringliteral}{"Informe a idade do Veterinário:"} << endl;
+839     getline(cin, help);
+840     dados.push\_back(help);
+841 
+842     cout << \textcolor{stringliteral}{"Informe o tipo sanguíneo do Veterinário: "} << endl;
+843     getline(cin, help);
+844     dados.push\_back(help);
+845 
+846     cout << \textcolor{stringliteral}{"Informe o fator RH do Veterinário: "} << endl;
+847     getline(cin, help);
+848     dados.push\_back(help);
+849 
+850     cout << \textcolor{stringliteral}{"Informe a especialidade do Veterinário: "} << endl;
+851     getline(cin, help);
+852     dados.push\_back(help);
+853 
+854     \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = stoi(dados[0]);
+855 
+856     shared\_ptr<Veterinario> v = make\_shared<Veterinario>(id, dados[1], dados[2], stoi(dados[3]), dados[4], 
+      *(dados[5].c\_str()), dados[6]);
+857 
+858     this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Veterinario>>(\textcolor{keywordtype}{id}, v));
+859 
+860     cout << endl;
+861 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!clear\+Screen@{clear\+Screen}}
+\index{clear\+Screen@{clear\+Screen}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{clear\+Screen()}{clearScreen()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::clear\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_a19adc92934d53fbaa25554836c8d8186}{}\label{classPetFera_a19adc92934d53fbaa25554836c8d8186}
+
+\begin{DoxyCode}
+168 \{
+169     cout << \textcolor{stringliteral}{"\(\backslash\)033[2J\(\backslash\)033[1;1H"};
+170 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!consultar\+Animal@{consultar\+Animal}}
+\index{consultar\+Animal@{consultar\+Animal}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{consultar\+Animal()}{consultarAnimal()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::consultar\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_af8534e9ad0f23cec2766845567153923}{}\label{classPetFera_af8534e9ad0f23cec2766845567153923}
+
+
+Faz uma consulta no mapa de Animais. 
+
+
+\begin{DoxyCode}
+733 \{
+734     \textcolor{keywordtype}{string} consulta;
+735     \textcolor{keywordtype}{bool} achou = \textcolor{keyword}{false};
+736     cout << \textcolor{stringliteral}{"Digite o id do animal ou a sua classe: "};
+737     getline(cin, consulta);
+738     \textcolor{keywordflow}{if}(consulta == \textcolor{stringliteral}{"Mammalia"} || consulta == \textcolor{stringliteral}{"Aves"} || consulta == \textcolor{stringliteral}{"Amphibia"} || consulta == \textcolor{stringliteral}{"Reptilia"})
+739     \{
+740         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.begin(); it != this->
+      \hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.end(); it++)
+741         \{
+742             \textcolor{keywordflow}{if}(it->second->getAnClasse() == consulta)
+743             \{
+744                 cout << *(it->second) << endl;
+745                 achou = \textcolor{keyword}{true};
+746             \}
+747         \}
+748         \textcolor{keywordflow}{if}(achou == \textcolor{keyword}{false})
+749         \{
+750             cout << \textcolor{stringliteral}{"Classe de animais não encontrada mo sistema..."} << endl;
+751         \}
+752     \}
+753     \textcolor{keywordflow}{else}
+754     \{
+755         \textcolor{keywordtype}{int} idProcurado = stoi(consulta);
+756         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.begin(); it != this->
+      \hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.end(); it++)
+757         \{
+758             \textcolor{keywordflow}{if}(it->second->getAnId() == idProcurado)
+759             \{
+760                 cout << *(it->second) << endl;
+761                 achou = \textcolor{keyword}{true};
+762             \}
+763         \}
+764         \textcolor{keywordflow}{if}(achou == \textcolor{keyword}{false})
+765         \{
+766             cout << \textcolor{stringliteral}{"Animal não encontrado no sistema..."} << endl;
+767         \}
+768     \}
+769     cout << endl;
+770 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!consultar\+Por\+Funcionario@{consultar\+Por\+Funcionario}}
+\index{consultar\+Por\+Funcionario@{consultar\+Por\+Funcionario}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{consultar\+Por\+Funcionario()}{consultarPorFuncionario()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::consultar\+Por\+Funcionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_ae6f4463c6d4e0b5ca30ced88240cb6ec}{}\label{classPetFera_ae6f4463c6d4e0b5ca30ced88240cb6ec}
+
+
+Faz uma consulta no mapa de Funcionários. 
+
+
+\begin{DoxyCode}
+773 \{
+774     \textcolor{keywordtype}{int} idFuncionario;
+775     \textcolor{keywordtype}{bool} achou = \textcolor{keyword}{false};
+776     cout << \textcolor{stringliteral}{"Digite o id do tratador ou do veterinário: "};
+777     cin >> idFuncionario;
+778     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.begin(); it != this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.end(); it++)
+779     \{
+780         \textcolor{keywordflow}{if}(it->second->getAnVet().getId() == idFuncionario)
+781         \{
+782             cout << *(it->second) << endl;
+783             achou = \textcolor{keyword}{true};
+784         \}
+785 
+786         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(it->second->getAnTrat().getId() == idFuncionario)
+787         \{
+788             cout << *(it->second) << endl;
+789             achou = \textcolor{keyword}{true};
+790         \}
+791     \}
+792     \textcolor{keywordflow}{if}(achou == \textcolor{keyword}{false})
+793     \{
+794         cout << \textcolor{stringliteral}{"Não existem animais sob a responsabilidade do tratador/veterinário com id "}<< 
+      idFuncionario << \textcolor{stringliteral}{"..."} << endl;
+795     \}
+796     cout << endl;
+797 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!end\+Animais@{end\+Animais}}
+\index{end\+Animais@{end\+Animais}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{end\+Animais()}{endAnimais()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::end\+Animais (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_a49accf5dea36c98ba201db971ea17474}{}\label{classPetFera_a49accf5dea36c98ba201db971ea17474}
+
+
+Passa o animais do mapa para seu respectivo arquivo. 
+
+
+\begin{DoxyCode}
+958 \{
+959     ofstream Animais(\textcolor{stringliteral}{"data/animais.csv"});
+960     shared\_ptr<Animal> a;
+961 
+962     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.begin(); it != this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.end(); ++it)
+963         \{
+964             a = it->second;
+965 
+966             Animais << *a << endl;
+967             
+968         \}
+969 
+970         Animais.close();
+971 
+972 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!end\+Funcionarios@{end\+Funcionarios}}
+\index{end\+Funcionarios@{end\+Funcionarios}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{end\+Funcionarios()}{endFuncionarios()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::end\+Funcionarios (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_ac0cd93b390e788bb0af4fec1a2fa64da}{}\label{classPetFera_ac0cd93b390e788bb0af4fec1a2fa64da}
+
+
+Passa os funcionários do mapa para seu respectivo arquivo. 
+
+
+\begin{DoxyCode}
+975 \{
+976     ofstream Funcionarios(\textcolor{stringliteral}{"data/funcionarios.csv"});
+977     shared\_ptr<Funcionario> f;
+978 
+979     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.begin(); it != this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.end(); ++it)
+980         \{
+981             f = it->second;
+982 
+983             Funcionarios << *f << endl;
+984             
+985         \}
+986 
+987     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.begin(); it != this->
+      \hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.end(); ++it)
+988         \{
+989             f = it->second;
+990 
+991             Funcionarios << *f << endl;
+992             
+993         \}
+994 
+995         Funcionarios.close();
+996 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!init@{init}}
+\index{init@{init}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{init()}{init()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_a9fdb130a8f1da55ef04e51e01741c87b}{}\label{classPetFera_a9fdb130a8f1da55ef04e51e01741c87b}
+
+
+Inicializa os mapas a partir dos dados contidos no arquivo. 
+
+
+\begin{DoxyCode}
+14 \{
+15     ifstream Funcionarios(\textcolor{stringliteral}{"data/funcionarios.csv"});
+16     vector<string> dadosLinha;
+17 
+18     \textcolor{keywordflow}{if}(!Funcionarios.bad())
+19     \{
+20         \textcolor{keywordflow}{while}(!Funcionarios.eof())
+21         \{
+22             \textcolor{keywordtype}{string} linhas;
+23             \textcolor{keywordtype}{string} dado;
+24             getline(Funcionarios, linhas, \textcolor{charliteral}{'\(\backslash\)n'});
+25             istringstream linha(linhas);
+26 
+27             \textcolor{keywordflow}{while}(getline(linha, dado, \textcolor{charliteral}{';'}))
+28             \{
+29                 dadosLinha.push\_back(dado);
+30             \}
+31             
+32             \textcolor{keywordflow}{if}(dadosLinha[1] == \textcolor{stringliteral}{"Tratador"})
+33             \{
+34 
+35                 \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+36                 \textcolor{keywordtype}{short} idade = stoi(dadosLinha[3]);
+37 
+38                 shared\_ptr<Tratador> f = make\_shared<Tratador>(aux, dadosLinha[2], dadosLinha[3], idade, 
+      dadosLinha[5], *(dadosLinha[6].c\_str()), dadosLinha[7]);
+39                 this->\hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Tratador>>(aux, f));
+40             \}
+41 
+42             \textcolor{keywordflow}{else}
+43             \{
+44                 \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+45                 \textcolor{keywordtype}{short} idade = stoi(dadosLinha[3]);
+46 
+47                 shared\_ptr<Veterinario> f = make\_shared<Veterinario>(aux, dadosLinha[2], dadosLinha[3], 
+      idade, dadosLinha[5], *(dadosLinha[6].c\_str()), dadosLinha[7]);
+48                 this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Veterinario>>(aux, f));
+49             \}
+50 
+51             dadosLinha.clear();
+52         \}
+53     \}
+54 
+55     \textcolor{keywordflow}{else}
+56     \{
+57         cerr << \textcolor{stringliteral}{"Arquivo de Funcionários não foi aberto corretamente!"} << endl;
+58     \}
+59 
+60     Funcionarios.close();
+61 
+62     ifstream Animais(\textcolor{stringliteral}{"data/animais.csv"});
+63     \textcolor{keywordflow}{if}(!Animais.bad())
+64     \{
+65         \textcolor{keywordflow}{while}(!Animais.eof())
+66         \{
+67             \textcolor{keywordtype}{string} linhas;
+68             \textcolor{keywordtype}{string} dado;
+69             getline(Animais, linhas, \textcolor{charliteral}{'\(\backslash\)n'});
+70             istringstream linha(linhas);
+71             \textcolor{keywordflow}{while}(getline(linha, dado, \textcolor{charliteral}{';'}))
+72             \{
+73                 dadosLinha.push\_back(dado);
+74             \}
+75             \textcolor{keywordtype}{int} idVet = stoi(dadosLinha[7]);
+76             \textcolor{keywordtype}{int} idTrat = stoi(dadosLinha[8]);
+77             \textcolor{keywordflow}{if}(dadosLinha[1] == \textcolor{stringliteral}{"Mammalia"})
+78             \{
+79                 \textcolor{keywordflow}{if}(dadosLinha[13] != \textcolor{stringliteral}{""})
+80                 \{
+81                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+82                     shared\_ptr<Animal> m = make\_shared<MamiferoNativo>(stoi(dadosLinha[0]), dadosLinha[1], 
+      dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+83                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], dadosLinha[10], dadosLinha[11], dadosLinha[12], 
+      dadosLinha[13]);
+84                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+85                 \}
+86                 \textcolor{keywordflow}{else}
+87                 \{
+88                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+89                     shared\_ptr<Animal> m = make\_shared<MamiferoExotico>(stoi(dadosLinha[0]), dadosLinha[1],
+       dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+90                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], dadosLinha[10], dadosLinha[11], dadosLinha[12]);
+91                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+92                 \}
+93             \}
+94             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(dadosLinha[1] == \textcolor{stringliteral}{"Aves"})
+95             \{
+96                 \textcolor{keywordflow}{if}(dadosLinha[14] != \textcolor{stringliteral}{""})
+97                 \{
+98                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+99                     shared\_ptr<Animal> m = make\_shared<AveNativa>(stoi(dadosLinha[0]), dadosLinha[1], 
+      dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+100                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], stoi(dadosLinha[10]), stoi(dadosLinha[11]), 
+      dadosLinha[12], dadosLinha[13], dadosLinha[14]);
+101                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+102                 \}
+103                 \textcolor{keywordflow}{else}
+104                 \{
+105                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+106                     shared\_ptr<Animal> m = make\_shared<AveExotica>(stoi(dadosLinha[0]), dadosLinha[1], 
+      dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+107                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], stoi(dadosLinha[10]), stoi(dadosLinha[11]), 
+      dadosLinha[12], dadosLinha[13]);
+108                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+109                 \}
+110             \}
+111             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(dadosLinha[1] == \textcolor{stringliteral}{"Reptilia"})
+112             \{
+113                 \textcolor{keywordflow}{if}(dadosLinha[14] != \textcolor{stringliteral}{""})
+114                 \{
+115                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+116                     \textcolor{keywordtype}{bool} venenoso = \textcolor{keyword}{false};
+117                     \textcolor{keywordflow}{if}(dadosLinha[10] == \textcolor{stringliteral}{"true"})
+118                     \{
+119                         venenoso = \textcolor{keyword}{true};
+120                     \}
+121                     shared\_ptr<Animal> m = make\_shared<ReptilNativo>(stoi(dadosLinha[0]), dadosLinha[1], 
+      dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+122                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], venenoso, dadosLinha[11], dadosLinha[12], dadosLinha[
+      13], dadosLinha[14]);
+123                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+124                 \}
+125                 \textcolor{keywordflow}{else}
+126                 \{
+127                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+128                     \textcolor{keywordtype}{bool} venenoso = \textcolor{keyword}{false};
+129                     \textcolor{keywordflow}{if}(dadosLinha[10] == \textcolor{stringliteral}{"true"})
+130                     \{
+131                         venenoso = \textcolor{keyword}{true};
+132                     \}
+133                     shared\_ptr<Animal> m = make\_shared<ReptilExotico>(stoi(dadosLinha[0]), dadosLinha[1], 
+      dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+134                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], venenoso, dadosLinha[11], dadosLinha[12], dadosLinha[
+      13]);
+135                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+136                 \}
+137             \}
+138             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(dadosLinha[1] == \textcolor{stringliteral}{"Amphibia"})
+139             \{
+140                 \textcolor{keywordflow}{if}(dadosLinha[14] != \textcolor{stringliteral}{""})
+141                 \{
+142                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+143                     shared\_ptr<Animal> m = make\_shared<AnfibioNativo>(stoi(dadosLinha[0]), dadosLinha[1], 
+      dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+144                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], stoi(dadosLinha[10]), dadosLinha[11], dadosLinha[12],
+       dadosLinha[13], dadosLinha[14]);
+145                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+146                 \}
+147                 \textcolor{keywordflow}{else}
+148                 \{
+149                     \textcolor{keywordtype}{int} aux = stoi(dadosLinha[0]);
+150                     shared\_ptr<Animal> m = make\_shared<AnfibioExotico>(stoi(dadosLinha[0]), dadosLinha[1], 
+      dadosLinha[2], dadosLinha[3], *(dadosLinha[4].c\_str()), stof(dadosLinha[5]),
+151                     dadosLinha[6], *(this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}[idVet]), *(this->
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}[idTrat]), dadosLinha[9], stoi(dadosLinha[10]), dadosLinha[11], dadosLinha[12],
+       dadosLinha[13]);
+152                     this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.insert(pair<\textcolor{keywordtype}{int}, shared\_ptr<Animal>>(aux, m));
+153                 \}
+154             \}
+155             dadosLinha.clear();
+156         \}
+157     \}
+158 
+159     \textcolor{keywordflow}{else}
+160     \{
+161         cerr << \textcolor{stringliteral}{"Arquivo de Animais não foi aberto corretamente!"} << endl;
+162     \}
+163 
+164     Animais.close();
+165 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!listar\+Animais@{listar\+Animais}}
+\index{listar\+Animais@{listar\+Animais}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{listar\+Animais()}{listarAnimais()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::listar\+Animais (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_ada53a8bfa85383a83f0841857f817326}{}\label{classPetFera_ada53a8bfa85383a83f0841857f817326}
+
+
+Lista os animais existentes. 
+
+
+\begin{DoxyCode}
+999 \{
+1000     cout << \textcolor{stringliteral}{"Animais:"} << endl;
+1001     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.begin(); it != \hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.end(); it++)
+1002     \{
+1003         cout << *(it->second) << endl;
+1004     \}
+1005     cout << endl;
+1006 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!listar\+Funcionarios@{listar\+Funcionarios}}
+\index{listar\+Funcionarios@{listar\+Funcionarios}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{listar\+Funcionarios()}{listarFuncionarios()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::listar\+Funcionarios (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_af700a6ba89353b2f91ef3224ef0b6e22}{}\label{classPetFera_af700a6ba89353b2f91ef3224ef0b6e22}
+
+
+Lista os Funcionários existentes. 
+
+
+\begin{DoxyCode}
+1009 \{
+1010     cout << \textcolor{stringliteral}{"Tratadores:"} << endl;
+1011     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.begin(); it != 
+      \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.end(); it++)
+1012     \{
+1013         cout << *(it->second) << endl;
+1014     \}
+1015     cout << endl;
+1016     cout << \textcolor{stringliteral}{"Veterinários:"} << endl;
+1017     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this->\hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.begin(); it != 
+      \hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.end(); it++)
+1018     \{
+1019         cout << *(it->second) << endl;
+1020     \}
+1021     cout << endl;
+1022 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!menu@{menu}}
+\index{menu@{menu}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{menu()}{menu()}}]{\setlength{\rightskip}{0pt plus 5cm}void Pet\+Fera\+::menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_afe29caf9e249d3713ea8f915e8b13d38}{}\label{classPetFera_afe29caf9e249d3713ea8f915e8b13d38}
+
+
+Método para gerar uma interface para o usuário. 
+
+
+\begin{DoxyCode}
+1027 \{
+1028     this->\hyperlink{classPetFera_a9fdb130a8f1da55ef04e51e01741c87b}{init}();
+1029     \textcolor{keywordtype}{bool} sair = \textcolor{keyword}{false};
+1030     cout << \textcolor{stringliteral}{"Bem-vindo ao PetFera."} << endl;
+1031     cout << endl;
+1032     \textcolor{keywordflow}{while}(sair == \textcolor{keyword}{false})
+1033     \{
+1034         \textcolor{keywordtype}{int} input;
+1035         cout << \textcolor{stringliteral}{"(1) Cadastro de animais"} << endl;
+1036         cout << \textcolor{stringliteral}{"(2) Remoção de animal"} << endl;
+1037         cout << \textcolor{stringliteral}{"(3) Alteração de dados de um animal"} << endl;
+1038         cout << \textcolor{stringliteral}{"(4) Consulta de animal por nome ou classe"} << endl;
+1039         cout << \textcolor{stringliteral}{"(5) Consulta de animal por veterinário ou tratador"} << endl;
+1040         cout << \textcolor{stringliteral}{"(6) Cadastro de funcionário"} << endl;
+1041         cout << \textcolor{stringliteral}{"(7) Remoção de funcionário"} << endl;
+1042         cout << \textcolor{stringliteral}{"(8) Listar animais"} << endl;
+1043         cout << \textcolor{stringliteral}{"(9) Listar funcionarios"} << endl;
+1044         cout << \textcolor{stringliteral}{"(0) Sair"} << endl;
+1045         cout << endl;
+1046         cout << \textcolor{stringliteral}{"Opção escolhida: "};
+1047         cin >> input;
+1048         \textcolor{keywordflow}{switch}(input)
+1049         \{
+1050             \textcolor{keywordflow}{case} 0:
+1051             \{
+1052                 sair = \textcolor{keyword}{true};
+1053                 \textcolor{keywordflow}{break};
+1054             \}
+1055             \textcolor{keywordflow}{case} 1:
+1056             \{
+1057                 \textcolor{keywordtype}{string} aux;
+1058                 cout << \textcolor{stringliteral}{"Deseja cadastrar um animal exotico ou nativo? (E/N)"} << endl;
+1059                 cin.ignore();
+1060                 getline(cin, aux);
+1061                 \textcolor{keywordflow}{if}(aux == \textcolor{stringliteral}{"E"})
+1062                 \{
+1063                     this->\hyperlink{classPetFera_aa095a83bf3fe053b094020a6b7049f66}{cadastrarAnimalExotico}();
+1064                     \textcolor{keywordflow}{break};
+1065                 \}
+1066                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(aux == \textcolor{stringliteral}{"N"})
+1067                 \{
+1068                     this->\hyperlink{classPetFera_ac42995494bfa5873d92e8391d1002f1a}{cadastrarAnimalNativo}();
+1069                     \textcolor{keywordflow}{break};
+1070                 \}
+1071                 \textcolor{keywordflow}{else}
+1072                 \{
+1073                     cout << \textcolor{stringliteral}{"Tipo de animal não identificado..."} << endl;
+1074                     \textcolor{keywordflow}{break};
+1075                 \}
+1076             \}
+1077             \textcolor{keywordflow}{case} 2:
+1078             \{
+1079                 this->\hyperlink{classPetFera_a15cf97fce272f94a4dd27bf18fed06b5}{removerAnimal}();
+1080                 \textcolor{keywordflow}{break};
+1081             \}
+1082             \textcolor{keywordflow}{case} 3:
+1083             \{
+1084                 cout << \textcolor{stringliteral}{"Digite o ID do animal a ser alterado: "};
+1085                 \textcolor{comment}{//AlteracaoCadastro();}
+1086                 \textcolor{keywordflow}{break};
+1087             \}
+1088             \textcolor{keywordflow}{case} 4:
+1089             \{
+1090                 cin.ignore();
+1091                 this->\hyperlink{classPetFera_af8534e9ad0f23cec2766845567153923}{consultarAnimal}();
+1092                 \textcolor{keywordflow}{break};
+1093             \}
+1094             \textcolor{keywordflow}{case} 5:
+1095             \{
+1096                 cin.ignore();
+1097                 this->\hyperlink{classPetFera_ae6f4463c6d4e0b5ca30ced88240cb6ec}{consultarPorFuncionario}();
+1098                 \textcolor{keywordflow}{break};
+1099             \}
+1100             \textcolor{keywordflow}{case} 6:
+1101             \{
+1102                 \textcolor{keywordtype}{string} aux;
+1103                 cout << \textcolor{stringliteral}{"Deseja cadastrar um tratador ou um veterinário? (T/V)"} << endl;
+1104                 getline(cin, aux);
+1105                 \textcolor{keywordflow}{if}(aux == \textcolor{stringliteral}{"T"})
+1106                 \{
+1107                     this->\hyperlink{classPetFera_a3f19de637207b79b21af8668d864cea2}{cadastrarTratador}();
+1108                     \textcolor{keywordflow}{break};
+1109                 \}
+1110                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(aux == \textcolor{stringliteral}{"V"})
+1111                 \{
+1112                     this->\hyperlink{classPetFera_ad1cf3d95ff0985a9942ae15a9c8692c3}{cadastrarVeterinario}();
+1113                     \textcolor{keywordflow}{break};
+1114                 \}
+1115                 \textcolor{keywordflow}{else}
+1116                 \{
+1117                     cout << \textcolor{stringliteral}{"Tipo de funcionário não identificado..."} << endl;
+1118                     \textcolor{keywordflow}{break};
+1119                 \}
+1120             \}
+1121             \textcolor{keywordflow}{case} 7:
+1122             \{
+1123                 this->\hyperlink{classPetFera_a847ce743f73cf9d16958a635b49e6e21}{removerFuncionario}();
+1124                 \textcolor{keywordflow}{break};
+1125             \}
+1126             \textcolor{keywordflow}{case} 8:
+1127             \{
+1128                 this->\hyperlink{classPetFera_ada53a8bfa85383a83f0841857f817326}{listarAnimais}();
+1129                 \textcolor{keywordflow}{break};
+1130             \}
+1131             \textcolor{keywordflow}{case} 9:
+1132             \{
+1133                 this->\hyperlink{classPetFera_af700a6ba89353b2f91ef3224ef0b6e22}{listarFuncionarios}();
+1134                 \textcolor{keywordflow}{break};
+1135             \}
+1136 
+1137         \}
+1138     \}
+1139     this->\hyperlink{classPetFera_a49accf5dea36c98ba201db971ea17474}{endAnimais}();
+1140     this->\hyperlink{classPetFera_ac0cd93b390e788bb0af4fec1a2fa64da}{endFuncionarios}();
+1141 \}\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!remover\+Animal@{remover\+Animal}}
+\index{remover\+Animal@{remover\+Animal}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{remover\+Animal()}{removerAnimal()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pet\+Fera\+::remover\+Animal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_a15cf97fce272f94a4dd27bf18fed06b5}{}\label{classPetFera_a15cf97fce272f94a4dd27bf18fed06b5}
+
+
+Remove um animal do mapa. 
+
+
+\begin{DoxyCode}
+800 \{
+801     shared\_ptr<Animal> print;
+802     \textcolor{keywordtype}{int} idRemovido = 0;
+803     cout << \textcolor{stringliteral}{"Digite o id do animal a ser removido: "};
+804     cin >> idRemovido;
+805     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i = \hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.begin(); i != \hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.end(); i++)
+806     \{
+807         \textcolor{keywordflow}{if}(i->first == idRemovido)
+808         \{
+809             \hyperlink{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{mapaAnimais}.erase(i);
+810             cout << \textcolor{stringliteral}{"Animal removido com sucesso!"} << endl;
+811             cout << endl;
+812             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+813         \}
+814     \}
+815     cout << \textcolor{stringliteral}{"Animal não foi encontrado no sistema, tente novamente..."} << endl;
+816     cout << endl;
+817     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+818 \}
+\end{DoxyCode}
+\index{Pet\+Fera@{Pet\+Fera}!remover\+Funcionario@{remover\+Funcionario}}
+\index{remover\+Funcionario@{remover\+Funcionario}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{remover\+Funcionario()}{removerFuncionario()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pet\+Fera\+::remover\+Funcionario (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPetFera_a847ce743f73cf9d16958a635b49e6e21}{}\label{classPetFera_a847ce743f73cf9d16958a635b49e6e21}
+
+
+Remove um Funcionário do Mapa. 
+
+
+\begin{DoxyCode}
+908 \{
+909     shared\_ptr<Funcionario> print;
+910     \textcolor{keywordtype}{int} idRemovido = 0;
+911     \textcolor{keywordtype}{char} aux;
+912     cout << \textcolor{stringliteral}{"Deseja remover um Tratador ou Veterinário? (T/V)"} << endl;
+913     cin >> aux;
+914 
+915     \textcolor{keywordflow}{if}(aux == \textcolor{charliteral}{'T'})
+916     \{
+917         cout << \textcolor{stringliteral}{"Digite o id do Tratador a ser removido: "};
+918         cin >> idRemovido;
+919         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i = \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.begin(); i != \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.end(); i++)
+920         \{
+921             \textcolor{keywordflow}{if}(i->first == idRemovido)
+922             \{
+923                 \hyperlink{classPetFera_ac85920fc6c1471743838e6fe4444304d}{mapaTratadores}.erase(i);
+924                 cout << \textcolor{stringliteral}{"Tratador removido com sucesso!"} << endl;
+925                 cout << endl;
+926                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+927             \}
+928         \}
+929         cout << \textcolor{stringliteral}{"Funcionário não foi encontrado no sistema, tente novamente..."} << endl;
+930         cout << endl;
+931         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+932     \}
+933 
+934     \textcolor{keywordflow}{else}
+935     \{
+936         cout << \textcolor{stringliteral}{"Digite o id do Veterinário a ser removido: "};
+937         cin >> idRemovido;
+938         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} i = \hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.begin(); i != 
+      \hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.end(); i++)
+939         \{
+940             \textcolor{keywordflow}{if}(i->first == idRemovido)
+941             \{
+942                 \hyperlink{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{mapaVeterinarios}.erase(i);
+943                 cout << \textcolor{stringliteral}{"Veterinário removido com sucesso!"} << endl;
+944                 cout << endl;
+945                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+946             \}
+947         \}
+948         cout << \textcolor{stringliteral}{"Fuincionário não foi encontrado no sistema, tente novamente..."} << endl;
+949         cout << endl;
+950         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+951     \}
+952 
+953     \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+954     
+955 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Pet\+Fera@{Pet\+Fera}!mapa\+Animais@{mapa\+Animais}}
+\index{mapa\+Animais@{mapa\+Animais}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{mapa\+Animais}{mapaAnimais}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$int, shared\+\_\+ptr$<${\bf Animal}$>$ $>$ Pet\+Fera\+::mapa\+Animais\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}{}\label{classPetFera_ab0ba5fe6332bcffdabb7b03001280697}
+
+
+Mapa que utiliza chaves inteiras e valores sendo objetos da classe \hyperlink{classAnimal}{Animal}. 
+
+\index{Pet\+Fera@{Pet\+Fera}!mapa\+Tratadores@{mapa\+Tratadores}}
+\index{mapa\+Tratadores@{mapa\+Tratadores}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{mapa\+Tratadores}{mapaTratadores}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$int, shared\+\_\+ptr$<${\bf Tratador}$>$ $>$ Pet\+Fera\+::mapa\+Tratadores\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classPetFera_ac85920fc6c1471743838e6fe4444304d}{}\label{classPetFera_ac85920fc6c1471743838e6fe4444304d}
+
+
+Mapa que utiliza chaves inteiras e valores sendo objetos da classe Tratadores. 
+
+\index{Pet\+Fera@{Pet\+Fera}!mapa\+Veterinarios@{mapa\+Veterinarios}}
+\index{mapa\+Veterinarios@{mapa\+Veterinarios}!Pet\+Fera@{Pet\+Fera}}
+\subsubsection[{\texorpdfstring{mapa\+Veterinarios}{mapaVeterinarios}}]{\setlength{\rightskip}{0pt plus 5cm}map$<$int, shared\+\_\+ptr$<${\bf Veterinario}$>$ $>$ Pet\+Fera\+::mapa\+Veterinarios\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}{}\label{classPetFera_a2bed2112a627bbdb3c0338654330a1ab}
+
+
+Mapa que utiliza chaves inteiras e valores sendo objetos da classe \hyperlink{classVeterinario}{Veterinario}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{PetFera_8h}{Pet\+Fera.\+h}\item 
+src/\hyperlink{PetFera_8cpp}{Pet\+Fera.\+cpp}\end{DoxyCompactItemize}

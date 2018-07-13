@@ -1,0 +1,179 @@
+\hypertarget{classMamifero}{}\section{Mamifero Class Reference}
+\label{classMamifero}\index{Mamifero@{Mamifero}}
+
+
+Classe Derivada da classe \hyperlink{classAnimal}{Animal}.  
+
+
+
+
+{\ttfamily \#include $<$mamifero.\+h$>$}
+
+
+
+Inheritance diagram for Mamifero\+:
+% FIG 0
+
+
+Collaboration diagram for Mamifero\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMamifero_adc6af2531b40fb6b0bc91cb5bbb205e8}{Mamifero} ()
+\item 
+\hyperlink{classMamifero_a129e77203cb5ef91e729913271abd6b7}{Mamifero} (int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, \hyperlink{classVeterinario}{Veterinario} vet, \hyperlink{classTratador}{Tratador} trat, string batismo, string \hyperlink{classMamifero_a7fed480798de8d55d17b3fd8cfdb24fb}{a\+\_\+cor\+Pelo})
+\item 
+\hyperlink{classMamifero_a56eb196d45222e754eb6f19000667d5d}{$\sim$\+Mamifero} ()
+\item 
+void \hyperlink{classMamifero_aece8169f76ded941f520741fd922cdab}{impress} ()
+\item 
+ostream \& \hyperlink{classMamifero_a717d161cbc6b3392db3faa2554f5bfa2}{print} (ostream \&o)
+\begin{DoxyCompactList}\small\item\em Método Virtual para tornar a classe Abstrata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classMamifero_a7fed480798de8d55d17b3fd8cfdb24fb}{a\+\_\+cor\+Pelo}
+\begin{DoxyCompactList}\small\item\em Cor do pelo do mamífero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe Derivada da classe \hyperlink{classAnimal}{Animal}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Mamifero@{Mamifero}!Mamifero@{Mamifero}}
+\index{Mamifero@{Mamifero}!Mamifero@{Mamifero}}
+\subsubsection[{\texorpdfstring{Mamifero()}{Mamifero()}}]{\setlength{\rightskip}{0pt plus 5cm}Mamifero\+::\+Mamifero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMamifero_adc6af2531b40fb6b0bc91cb5bbb205e8}{}\label{classMamifero_adc6af2531b40fb6b0bc91cb5bbb205e8}
+
+\begin{DoxyCode}
+4 \{
+5 
+6 \}
+\end{DoxyCode}
+\index{Mamifero@{Mamifero}!Mamifero@{Mamifero}}
+\index{Mamifero@{Mamifero}!Mamifero@{Mamifero}}
+\subsubsection[{\texorpdfstring{Mamifero(int id, string classe, string nome, string nome\+Cient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo, string a\+\_\+cor\+Pelo)}{Mamifero(int id, string classe, string nome, string nomeCient, char sexo, float tamanho, string dieta, Veterinario vet, Tratador trat, string batismo, string a_corPelo)}}]{\setlength{\rightskip}{0pt plus 5cm}Mamifero\+::\+Mamifero (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{string}]{classe, }
+\item[{string}]{nome, }
+\item[{string}]{nome\+Cient, }
+\item[{char}]{sexo, }
+\item[{float}]{tamanho, }
+\item[{string}]{dieta, }
+\item[{{\bf Veterinario}}]{vet, }
+\item[{{\bf Tratador}}]{trat, }
+\item[{string}]{batismo, }
+\item[{string}]{a\+\_\+cor\+Pelo}
+\end{DoxyParamCaption}
+)}\hypertarget{classMamifero_a129e77203cb5ef91e729913271abd6b7}{}\label{classMamifero_a129e77203cb5ef91e729913271abd6b7}
+
+\begin{DoxyCode}
+10 :\hyperlink{classAnimal_a1e726a49ec952443190ac62dad22353c}{Animal}(\textcolor{keywordtype}{id}, classe, nome, nomeCient, sexo, tamanho, dieta, vet, trat, batismo)
+11 \{
+12     \hyperlink{classMamifero_a7fed480798de8d55d17b3fd8cfdb24fb}{a\_corPelo} = corPelo;
+13 \}
+\end{DoxyCode}
+\index{Mamifero@{Mamifero}!````~Mamifero@{$\sim$\+Mamifero}}
+\index{````~Mamifero@{$\sim$\+Mamifero}!Mamifero@{Mamifero}}
+\subsubsection[{\texorpdfstring{$\sim$\+Mamifero()}{~Mamifero()}}]{\setlength{\rightskip}{0pt plus 5cm}Mamifero\+::$\sim$\+Mamifero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMamifero_a56eb196d45222e754eb6f19000667d5d}{}\label{classMamifero_a56eb196d45222e754eb6f19000667d5d}
+
+\begin{DoxyCode}
+16 \{
+17 
+18 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Mamifero@{Mamifero}!impress@{impress}}
+\index{impress@{impress}!Mamifero@{Mamifero}}
+\subsubsection[{\texorpdfstring{impress()}{impress()}}]{\setlength{\rightskip}{0pt plus 5cm}void Mamifero\+::impress (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMamifero_aece8169f76ded941f520741fd922cdab}{}\label{classMamifero_aece8169f76ded941f520741fd922cdab}
+
+
+Reimplemented from \hyperlink{classAnimal_afd6911459593c12e36e2517e9695f5ba}{Animal}.
+
+
+\begin{DoxyCode}
+21 \{
+22     cout << \textcolor{stringliteral}{"Animal: "} << \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} << endl;
+23     cout << \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} << endl;
+24     cout << \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} << endl;
+25     cout << \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} << endl;
+26     cout << \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} << endl;
+27     cout << \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} << endl;
+28     cout << \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} << endl;
+29     cout << \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo} << endl;
+30 
+31     cout << \textcolor{stringliteral}{"Características Mamifero: "} << endl;
+32     cout << \textcolor{stringliteral}{"Cor do pelo: "} << \hyperlink{classMamifero_a7fed480798de8d55d17b3fd8cfdb24fb}{a\_corPelo} << endl;
+33 
+34     cout << endl;
+35     cout << endl;
+36 
+37     \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet}.\hyperlink{classVeterinario_af46d22c41b2103062ad598ad4b97dda3}{impress}();
+38 
+39     cout << endl;
+40     cout << endl;
+41     
+42     \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat}.\hyperlink{classTratador_ac7651dbd65916ae7a37251314fd06797}{impress}();
+43 \}
+\end{DoxyCode}
+\index{Mamifero@{Mamifero}!print@{print}}
+\index{print@{print}!Mamifero@{Mamifero}}
+\subsubsection[{\texorpdfstring{print(ostream \&o)}{print(ostream &o)}}]{\setlength{\rightskip}{0pt plus 5cm}ostream \& Mamifero\+::print (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMamifero_a717d161cbc6b3392db3faa2554f5bfa2}{}\label{classMamifero_a717d161cbc6b3392db3faa2554f5bfa2}
+
+
+Método Virtual para tornar a classe Abstrata. 
+
+
+
+Implements \hyperlink{classAnimal_afb840c2d5209cba2e9d33d34bf9f5e3e}{Animal}.
+
+
+
+Reimplemented in \hyperlink{classMamiferoExotico_a465d48bc4a1111059ec38a04f76b264e}{Mamifero\+Exotico}, and \hyperlink{classMamiferoNativo_a0116235f807fb5a15ace63321d62518d}{Mamifero\+Nativo}.
+
+
+\begin{DoxyCode}
+46 \{
+47     o << \hyperlink{classAnimal_a1eab12d1133a739dc0fea720cf6cc927}{a\_id} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a1f32b4455559489b5f5dce71913a6f8f}{a\_classe} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_ad815bbe345d7c5274858ac8ccb24bc52}{a\_nome} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_af2ae0fc23b0eaf3edaee4579f6199dfc}{a\_nomeCient} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_af2b1c520d145f82af7a5a88bb4271a0d}{a\_sexo} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a72366b060dfdbc0dd074fbe41decfcc2}{a\_tamanho} << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_a32088524517a531af269e3ec04275135}{a\_dieta} << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a12ce5681957e27dae674cbbde7fb1e4f}{a\_vet}.\hyperlink{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{getId}() << \textcolor{stringliteral}{";"} << \hyperlink{classAnimal_a19fbf607b29b06a86f598dd1ffb8c712}{a\_trat}.\hyperlink{classFuncionario_a0288286a907e587b7ab75d6c23354a06}{getId}() << \textcolor{stringliteral}{";"} << 
+      \hyperlink{classAnimal_a4e308163c5b3d82e546fb39b399bcb71}{a\_batismo}
+48     << \textcolor{stringliteral}{";"} << \hyperlink{classMamifero_a7fed480798de8d55d17b3fd8cfdb24fb}{a\_corPelo};
+49     \textcolor{keywordflow}{return} o;
+50 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Mamifero@{Mamifero}!a\+\_\+cor\+Pelo@{a\+\_\+cor\+Pelo}}
+\index{a\+\_\+cor\+Pelo@{a\+\_\+cor\+Pelo}!Mamifero@{Mamifero}}
+\subsubsection[{\texorpdfstring{a\+\_\+cor\+Pelo}{a_corPelo}}]{\setlength{\rightskip}{0pt plus 5cm}string Mamifero\+::a\+\_\+cor\+Pelo\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMamifero_a7fed480798de8d55d17b3fd8cfdb24fb}{}\label{classMamifero_a7fed480798de8d55d17b3fd8cfdb24fb}
+
+
+Cor do pelo do mamífero. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{mamifero_8h}{mamifero.\+h}\item 
+src/\hyperlink{mamifero_8cpp}{mamifero.\+cpp}\end{DoxyCompactItemize}

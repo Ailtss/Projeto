@@ -8,7 +8,7 @@ DOC_DIR = ./doc
 .PHONY: all clean debug doxy doc
 
 CC = g++
-CPPFLAGS += -I$(INC_DIR) -ansi -Wall -pedantic -ansi -Wpedantic -pg -std=c++14 -I.
+CPPFLAGS += -I$(INC_DIR) -ansi -Wall -pedantic -ansi -Wpedantic -pg -std=c++11 -I -g.
 LDFLAGS += -L$(LIB_DIR)
 LDLIBS += -lm
 RM = rm -f

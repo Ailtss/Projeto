@@ -3,7 +3,7 @@
 
 #include "exotico.h"
 #include "ave.h"
-
+/**@brief Classe Derivada da classe Ave e Classe Exotico*/
 class AveExotica : public Ave, public Exotico
 {
 	public:
